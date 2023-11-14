@@ -1,3 +1,18 @@
+@media (max-width: 768px) {
+
+.site-header-sticky {
+height: 52px !important; 
+}
+
+.site-header {
+padding: 0px !important; 
+} 
+
+.site-header__logo {
+max-width: 90px!important; 
+}  
+  }
+
 .colpagestar .yotpo .standalone-bottomline .star-clickable {
 display: block !important;
 } 
