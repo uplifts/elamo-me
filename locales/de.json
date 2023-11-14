@@ -326,7 +326,8 @@
       "waiting_for_stock": "Inventar auf dem Weg",
       "view_in_space": "In Ihrem Bereich ansehen",
       "view_in_space_label": "„Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster",
-      "free_delivery": "KOSTENFREIE Lieferung"
+      "free_delivery": "KOSTENFREIE Lieferung",
+      "free_shipping_by_html": "● <b>Gratis Lieferung<\/b> bis <span class=\"dynamic-date estShipDate\"><\/span>"
     }
   },
   "store_availability": {
