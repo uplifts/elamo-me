@@ -34,6 +34,14 @@
           "type": "liquid",
           "settings": {
             "css_class": "pdp-shipping-time",
+            "liquid": "{% render 'product-availability-dynamic', product: product %}"
+          }
+        },
+        "93741fb2-ffcf-430b-8676-c6843da205a3": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "css_class": "pdp-shipping-time",
             "liquid": "<div hidden>{% render 'product-availability-indicator', product: product %}<\/div>\n<div class=\"pdp-shipping-time-prediction\"><\/div>"
           }
         },
@@ -126,6 +134,7 @@
         "eb396bb8-5a94-488a-9df0-113d63732837",
         "price",
         "0cf0a4f5-28e2-4353-ba73-d0546a7f03ae",
+        "93741fb2-ffcf-430b-8676-c6843da205a3",
         "e656f5d9-316d-42a8-8d3e-c2805dce24b6",
         "dc06c2fb-6e95-43e9-9a17-38c8450a3cfd",
         "15f268d0-f1f1-4db4-8c2e-712dff48527e",
@@ -611,7 +620,8 @@
     },
     "165779646907a065f2": {
       "type": "yotpo-gallery",
-      "settings": {}
+      "settings": {
+      }
     },
     "16577955825113c962": {
       "type": "apps",
@@ -640,7 +650,8 @@
     },
     "collection-return": {
       "type": "collection-return",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

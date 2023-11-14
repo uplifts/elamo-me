@@ -243,12 +243,15 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "7570552984445421165": {
         "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "3650027678699231211": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/article\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
@@ -263,12 +266,14 @@
       "18331215849590791805": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/carousel\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "6472724134860490182": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/breadcrumb\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "6039927293107162517": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/logo\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
@@ -299,7 +304,8 @@
       "9467949409069952136": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/productFAQ\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "9389739334699838615": {
         "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/search\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
@@ -311,7 +317,8 @@
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "13647546867862338453": {
         "type": "shopify:\/\/apps\/webrex-seo-schema-breadcrumb\/blocks\/product\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
@@ -339,7 +346,8 @@
       "8847685616676869210": {
         "type": "shopify:\/\/apps\/webrex-announcement-bar-banner\/blocks\/app-embed\/3494d573-4520-4d27-b2eb-ba0554423f65",
         "disabled": true,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
@@ -431,7 +439,8 @@
             "reminder-block": {
               "type": "header",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -534,7 +543,8 @@
             "reminder-block": {
               "type": "header",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -549,7 +559,8 @@
         },
         "password-header": {
           "type": "password-header",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-recommendations": {
           "type": "product-recommendations",
@@ -629,7 +640,8 @@
             "reminder-block": {
               "type": "header",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
