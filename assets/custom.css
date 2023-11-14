@@ -2293,7 +2293,7 @@ display: none;
 /* Header Icons & new Styles May 23 */
 .cart-new-style {
   border-radius: 4px!important;
-  padding: 10px 8px 4px 8px!important;
+  padding: 6px 6px 6px 6px!important;
 }
 
 .cart-has-items .site-nav__link--cart.site-nav__link--cart.cart-new-style {
