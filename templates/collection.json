@@ -57,7 +57,7 @@
             "title": "Work",
             "text": "",
             "button_label": "",
-            "button_link": "shopify:\/\/collections\/work-rucksacke"
+            "button_link": "shopify:\/\/collections\/business-rucksack"
           }
         },
         "aff27b79-5185-4ba2-8c2b-2d29aed92cce": {
@@ -170,7 +170,8 @@
       "blocks": {
         "bfb41a3f-8eba-4452-afdd-9eb3fab9233c": {
           "type": "collection_description",
-          "settings": {}
+          "settings": {
+          }
         },
         "product_grid": {
           "type": "product_grid",
@@ -187,7 +188,8 @@
       "custom_css": [
         ".text-center {max-width: 900px; margin: auto;}"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "1657826251f3cef86c": {
       "type": "rich-text",

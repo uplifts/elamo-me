@@ -3,7 +3,8 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "b3aba623-fc65-4a7c-a7fd-a67e63624e88": {
       "type": "advanced-content",
@@ -137,7 +138,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/ela-mo-work-rucksack-black-45441738965256.jpg",
             "title": "Work",
-            "link": "shopify:\/\/collections\/work-rucksacke",
+            "link": "shopify:\/\/collections\/business-rucksack",
             "sizing": "<div style=\"font-size:2em;font-weight:500\">15 L<\/div>\nGröße",
             "icon_01": "shopify:\/\/shop_images\/Laptop_2.png",
             "icon_01_text": "Laptops bis 17 Zoll (38 x 24,5 x 3cm)",
