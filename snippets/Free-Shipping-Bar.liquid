@@ -112,7 +112,7 @@
         const subtitleWhenShipping = "Nur noch price für GRATIS Versand 🥳";
         const subtitleWhenGift = "Nur noch price für ein GRATIS GESCHENK 🥳";
         const subtitleWhenComplete = "Du erhältst ein ÜBERRASCHUNGSGESCHENK 🥳";
-        const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
+        const remaining = subtotal > threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
         const isCompleted = subtotal >= threshold2;
         let subtitleApplied = subtitleWhenComplete;
         console.log(subtitleApplied)

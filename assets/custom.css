@@ -89,7 +89,7 @@ display: block !important;
 }
 
 .slide-nav__overflow--thumb {
-  z-index: 9999999999;
+  z-index: 100;
 }
 
 .slide-nav__overflow--thumb,
@@ -1761,12 +1761,12 @@ display: none;
 }
 
 .comparison01-column--icon-group-img {
-  height: 45px;
+  height: 75px;
   margin-bottom: 10px;
 }
 
 .comparison01-column--icon-group-img img {
-  max-height: 100%;
+  max-height: 75%;
 }
 
 .comparison01-column--icon-group-text {
@@ -1803,7 +1803,7 @@ display: none;
 
 @media (min-width: 769px) {
   .comparison-01-slider .comparison01-slider--item {
-    --width: 25%;
+    --width: 33.3333%;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1860,6 +1860,7 @@ display: none;
 
   .comparison01-column--unit.mod-top {
     position: sticky;
+    top: 60px;
     top: 0;
     margin-bottom: 16px;
     padding-bottom: 8px;
@@ -1869,27 +1870,19 @@ display: none;
   }
 }
 
-@media (max-width: 1000px) {.comparison01-column--icon-group-text {
-    font-size: 13px;
-    line-height: 1.15;
-    max-width: 120px;
-    margin: auto;
-}
-  }
-
 @media (min-width: 1280px) {
   .comparison01-column--icon-group-img {
-    height: 50px;
+    height: 110px;
     margin-bottom: 15px;
   }
 
   .comparison01-column--icon-group-text {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .comparison01-column--inner {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .comparison01-column--unit {
@@ -1912,7 +1905,6 @@ display: none;
 @media (min-width: 769px) {
   .site-header .header-item--navigation .site-nav__link {
      padding: 16px 15px; 
-     font-size: 17px; 
   }
 
   .site-header--sticky {
@@ -1940,7 +1932,7 @@ display: none;
 
 .comparison-01-rte-top {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 /* START ID - 07.02.23 - Free gift in cart */
 .cart-drawer--upsells {
@@ -2352,7 +2344,7 @@ display: none;
 .patterns-popup {
   overflow-y: auto;
   flex-wrap: wrap;
-  z-index: 9999999999;
+  z-index: 999999999;
 }
 
 .patterns-popup .modal__inner {

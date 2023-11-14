@@ -7,7 +7,7 @@
         return Number(moneyString.replace(/[^0-9-]+/g,"")) / 100.0;
     }
 
-    console.log("current template", '{{ template }}');
+    {% comment %} console.log("current template", '{{ template }}'); {% endcomment %}
 
 // PRODUCT PAGE
 {% if template contains 'product' %}

@@ -27,7 +27,6 @@
         },
         "15ecee05-fe4f-49b7-bb31-3072d19adb73": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "code": "<h3 style=\"color:#3A505E;font-weight:500;\">Scrolle nach rechts, um alle Modelle zu vergleichen. ➔<\/h3>",
             "width": "100%",
@@ -40,38 +39,8 @@
         "166f0ae7-0b47-4133-b60b-ebf2ccc5da38",
         "15ecee05-fe4f-49b7-bb31-3072d19adb73"
       ],
-      "custom_css": [
-        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; padding-left: 0px; margin-bottom: 30px;} }"
-      ],
       "settings": {
         "css_class": "comparison-01-rte-top",
-        "full_width": false,
-        "space_around": false,
-        "alt": false
-      }
-    },
-    "1010dbca-fc18-4a45-b980-c5da3d6a1264": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--18222051000584__1010dbca-fc18-4a45-b980-c5da3d6a1264-liquid-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h3 style=\"color:#3A505E;font-weight:500;\">Scrolle nach rechts, um alle Modelle zu vergleichen. ➔<\/h3>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--18222051000584__1010dbca-fc18-4a45-b980-c5da3d6a1264-liquid-1"
-      ],
-      "custom_css": [
-        "h3 {margin-bottom: 0px !important;}",
-        ".custom__item {margin-bottom: 0px !important;}",
-        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; padding-left: 0px; margin-bottom: 30px; }}"
-      ],
-      "settings": {
-        "css_class": "",
         "full_width": false,
         "space_around": false,
         "alt": false
@@ -231,7 +200,6 @@
   "order": [
     "main",
     "b3aba623-fc65-4a7c-a7fd-a67e63624e88",
-    "1010dbca-fc18-4a45-b980-c5da3d6a1264",
     "d85864b0-a9af-4eb4-ac95-a1faa9311ca5"
   ]
 }

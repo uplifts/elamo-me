@@ -2,22 +2,15 @@
 {%- assign threshold_cents = threshold | times: 100 -%}
 {%- assign threshold_money = threshold | times: 100 | money -%}
 {%- assign item_is_added = false -%}
-{%- assign item_discount_type = '' -%}
 {%- for line_item in cart.items -%}
   {%- if line_item.variant.id == first_variant.id -%}
-    {%- for alloc in line_item.discount_allocations -%}
-      {%- if alloc.discount_application.type == 'script' and line_item.variant.id == first_variant.id -%}
-        {%- assign item_is_added = true -%}
-        {%- assign item_discount_type = 'script' -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- assign item_is_added = true -%}
   {%- endif -%}
 {%- endfor -%}
 {%- if product != blank and product.available -%}
   <div
     class="cart-drawer--gift customATCForm{% if item_is_added %} d-none{% endif %}{% if cart.total_price < threshold_cents %} is-disabled{% endif %}"
     data-threshold="{{ threshold_cents }}"
-    {% if item_discount_type != '' %}data-discount-type="{{ item_discount_type }}"{% endif %}
     data-product-id="{{ product.id }}"
     data-variant-id="{{ first_variant.id }}">
     <div class="cart-drawer--gift-wrap flex-align-center">

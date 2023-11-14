@@ -8656,7 +8656,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
         cartDrawerUpsellsGlob.classList.remove('d-none');
       }
     }
-console
+
     document.addEventListener('cart:updated', function(e) {
       let cartObj = e.detail.cart;
       let cartDrawerUpsells = document.querySelector('.cartDrawerUpsells');
@@ -8667,11 +8667,10 @@ console
         let threshold = Number(form.dataset.threshold) ?? null;
         let varId = Number(form.dataset.variantId) ?? null;
         let matchItem = cartObj.items ? cartObj.items.filter(el => el.variant_id === varId) : [];
-        let matchItemHasScripts = matchItem.filter(el => el['line_level_discount_allocations'].length > 0);
         let matchThreshold = threshold > cartObj.total_price;
-        form.classList.toggle('d-none', (matchItem.length > 0 && matchItemHasScripts.length > 0));
+        form.classList.toggle('d-none', matchItem.length > 0);
         form.classList.toggle('is-disabled', matchThreshold);
-        (matchItem.length > 0 && matchItemHasScripts.length > 0) && customATCFormPassed++;
+        matchItem.length > 0 && customATCFormPassed++;
       });
       cartDrawerUpsells && cartDrawerUpsells.classList.toggle('d-none', customATCFormPassed === customATCFormCount);
     });

@@ -261,8 +261,8 @@
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/retoure.png",
             "image_width": 140,
-            "title": "Kostenloser Versand ab 50€",
-            "text": "<p>Deine Bestellung in unserem Shop schätzen wir sehr. Ab einem Bestellwert von 50€ übernehmen wir für Dich alle Versandkosten. Sollte das Produkt nicht Deinen Vorstellungen entsprechen, ist auch die Rücksendung für Dich kostenfrei.<\/p>",
+            "title": "Kostenlose Lieferung + Rückversand",
+            "text": "<p>Deine Bestellung in unserem Shop werten wir als großen Vertrauensvorschuß und übernehmen selbstverständlich alle Versandkosten inkl. Rücksendung, wenn das Produkt nicht Deinen Vorstellungen entsprechen sollte.<\/p>",
             "button_label": "",
             "button_link": ""
           }

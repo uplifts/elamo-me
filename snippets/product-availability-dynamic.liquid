@@ -1,0 +1,104 @@
+{%- if product.available -%}
+  {{ 'products.product.free_shipping_by_html' | t }}
+{%- else -%}
+  {{ product.metafields.custom.lieferzeit_ausverkauft.value }}
+{%- endif -%}
+
+{%- if product.available -%}
+  <script>
+    // Calculate the sequence number of the holidays here: https://miniwebtool.com/day-of-the-year-calculator/
+    const PUBLIC_HOLIDAYS_DAYS = [1,97,100,121,139,149,276,316,359,360];
+
+    function calcWithHolidays(holidays, today, total) {
+      var finalTotal = total;
+      var futureDate = today + total;
+      for (let i = today; i <= futureDate; i++) {
+        if (holidays.includes(i)) {
+          finalTotal++;
+        }
+      }
+      return finalTotal
+    }
+
+    function getShortDayName(day) {
+      const dayNumber = day.getDay();
+      const shortDayNames = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+      return shortDayNames[dayNumber];
+    }
+    
+    function getShortMonthName(day) {
+      const monthNumber = day.getMonth();
+      const shortMonthNames = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+      return shortMonthNames[monthNumber];
+    }
+    
+    function calculateDate() {
+      // define which class to alter
+      const className = "dynamic-date";
+    
+      // start with today
+      const today = new Date();
+      var start = new Date(today.getFullYear(), 0, 0);
+      var diff = today - start;
+      var oneDay = 1000 * 60 * 60 * 24;
+      var day = Math.floor(diff / oneDay);
+      console.log(day);
+
+      const currentDayOfWeekNumber = today.getDay();
+    
+      // skip over weekend logic
+    
+      // Monday -> Tuesday, Tuesday -> Wednesday, Wedneday -> Friday
+      let futureTotalDays = 2;
+      let calcFutureTotalDays;
+    
+      // Thursday -> Monday
+      if (currentDayOfWeekNumber === 4 ) {
+        futureTotalDays = 4;
+        calcFutureTotalDays = calcWithHolidays(PUBLIC_HOLIDAYS_DAYS, day, futureTotalDays);
+        futureTotalDays = Math.max(futureTotalDays, calcFutureTotalDays);
+      } 
+      // Friday -> Monday
+      else if (currentDayOfWeekNumber === 5 ) {
+        futureTotalDays = 3;
+        calcFutureTotalDays = calcWithHolidays(PUBLIC_HOLIDAYS_DAYS, day, futureTotalDays);
+        futureTotalDays = Math.max(futureTotalDays, calcFutureTotalDays);
+      } 
+      // Saturday -> Monday
+      else if (currentDayOfWeekNumber === 6 ) {
+        futureTotalDays = 2;
+        calcFutureTotalDays = calcWithHolidays(PUBLIC_HOLIDAYS_DAYS, day, futureTotalDays);
+        futureTotalDays = Math.max(futureTotalDays, calcFutureTotalDays);
+      } 
+      // Saturday -> Tuesday
+      else if (currentDayOfWeekNumber === 0 ) {
+        futureTotalDays = 1;
+        calcFutureTotalDays = calcWithHolidays(PUBLIC_HOLIDAYS_DAYS, day, futureTotalDays);
+        futureTotalDays = Math.max(futureTotalDays, calcFutureTotalDays);
+      }
+    
+      // Calculate Future Delivery Date
+      const futureDate = new Date(today.getTime() + (futureTotalDays * 24 * 60 * 60 * 1000));
+    
+      // Get the day, month, and year of the Future Delivery day
+      const shortDayName = getShortDayName(futureDate);
+      const month = getShortMonthName(futureDate);
+      const date = futureDate.getDate();
+    
+      let content = `${shortDayName}, ${month} ${date}`;
+    
+    
+      // get the element with the "date" id
+      var dateElements = Array.from(document.querySelectorAll("." + className));
+    
+      for (const dateElement of dateElements) {
+        // set the text of the paragraph element to the day and date
+        dateElement.textContent = content
+      }
+    
+      console.log("Set the content of " + dateElements.length + " elements with class " + className + " to", content)
+    }
+
+    calculateDate();
+  </script>
+{%- endif -%}
