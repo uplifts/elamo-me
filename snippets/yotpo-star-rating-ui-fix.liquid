@@ -1,0 +1,14 @@
+<script>
+  setTimeout(function() {
+    var yotpoReviewsCount = document.querySelectorAll('.pdpStarRating .text-m');
+    if (yotpoReviewsCount) {
+      yotpoReviewsCount.forEach(function(el) {
+        let content = el.innerHTML;
+        let indexOfSpace = content.indexOf(' ');
+        let reviewsNum = '('+ content.substring(0, indexOfSpace) + ')';
+        el.innerHTML = reviewsNum;
+        el.classList.add('is-loaded');
+      })
+    }
+  }, 2000);
+</script>

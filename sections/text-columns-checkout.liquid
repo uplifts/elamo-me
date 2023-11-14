@@ -1,0 +1,61 @@
+<div class="text-columns-checkout textColumnsCheckout">
+  <div class="text-columns-checkout--wrap">    
+    <div class="text-columns-checkout--row">
+      {%- for block in section.blocks -%}
+        {% render 'text-columns-checkout-item', block: block %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{%- unless shop.enabled_payment_types == empty -%}
+  <div class="checkout-page-notify">{{ section.settings.text }}</div>
+  <div class="checkout-page--payicons">
+    <ul class="inline-list payment-icons">
+      {%- for type in shop.enabled_payment_types -%}
+        <li class="icon--payment">
+          {{ type | payment_type_svg_tag }}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endunless -%}
+
+{% schema %}
+  {
+    "name": "Text columns with images",
+    "class": "sec--checkout-text-columns",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "Show image",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

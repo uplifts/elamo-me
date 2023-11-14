@@ -1,0 +1,50 @@
+<div class="site-nav site-nav--icons">
+  <div class="site-nav__icons">
+    {%- if section.settings.header_search_enable -%}
+      <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-modal-open-search-modal js-no-transition">
+        {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg> {% endcomment %}
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M773.231 889.923 529.154 645.846q-29.696 26.829-69.261 40.914-39.564 14.086-79.585 14.086-95.585 0-161.793-66.028-66.208-66.029-66.208-161.001 0-94.971 66.029-161.125t160.941-66.154q94.911 0 161.509 66.065 66.599 66.066 66.599 160.961 0 41.205-14.769 80.821-14.77 39.615-41.231 69.23l246.077 244.847q4.384 4.309 4.384 10.577 0 6.269-5.465 10.964-5.073 5.074-11.757 5.074-6.684 0-11.393-5.154ZM380.077 670.077q82.66 0 139.599-56.731 56.939-56.731 56.939-139.654t-56.939-139.654q-56.939-56.73-139.599-56.73-82.853 0-139.926 56.73-57.074 56.731-57.074 139.654t57.074 139.654q57.073 56.731 139.926 56.731Z"/></svg>
+        <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+      </a>
+    {%- endif -%}
+
+    {%- if menu_alignment == 'left'
+       or menu_alignment == 'left-center'
+       or menu_alignment == 'right' -%}
+      <button
+        type="button"
+        class="site-nav__link site-nav__link--icon js-toggle-slide-nav{% if menu_alignment == 'left' or menu_alignment == 'left-center' or menu_alignment == 'right' %} medium-up--hide{% endif %}{% if mobile_menu_style == 'thumb' or menu_alignment == 'right' %} hide{% endif %}">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+        <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+      </button>
+    {%- endif -%}
+
+    <a href="#swym-wishlist" class="site-nav__link site-nav__link--icon swym-wishlist">
+      <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m442.846 849.231-39.154-35.923q-115.538-105-199.615-201.039Q120 516.231 120 417.615 120 343 170.5 292.5T295.385 242q42.538 0 91.384 22.961Q435.615 287.923 480 357q46.308-69.077 93.692-92.039Q621.077 242 664.615 242 739 242 789.5 292.5T840 417.615q0 100.924-87.923 198.116-87.923 97.192-195.769 196.808l-39.154 35.923Q500.923 862.154 480 862.539q-20.923.384-37.154-13.308Zm23.462-457q-35.462-62.077-79.462-90.77-44-28.692-91.461-28.692-62.924 0-103.77 40.962-40.846 40.961-40.846 103.884 0 47.231 25.923 96.116t69.539 100.039q43.615 51.153 100.077 104.192Q402.769 771 463.846 826q6.923 6.923 16.154 6.923T496.154 826q61.077-54.769 117.538-107.923 56.462-53.154 100.077-104.423 43.616-51.269 69.539-100.154 25.923-48.885 25.923-95.885 0-62.923-40.962-103.884-40.961-40.962-103.654-40.962-48.461 0-91.961 28.577t-79.423 90.885q-2.692 4.154-6.385 6.5-3.692 2.346-7.077 2.346-4.154 0-7.961-2.346-3.808-2.346-5.5-6.5ZM480 553.615Z"/></svg>
+<!--       <svg class="icon" viewBox="0 0 50 50" focusable="false" fill="currentColor">
+        <path d="M25.2931 42.5836L8.22699 25.5175C6.31775 23.6083 5.26611 21.0698 5.26611 18.3692C5.26611 15.6687 6.31775 13.1306 8.22699 11.2209C10.1362 9.31126 12.6748 8.26006 15.3753 8.26006C18.0758 8.26006 20.6143 9.3117 22.5236 11.2209L25.2931 13.9904L28.0626 11.2209C29.9718 9.31126 32.5108 8.26006 35.2113 8.26006C37.9118 8.26006 40.4499 9.3117 42.3596 11.2209C44.2693 13.1302 45.32 15.6691 45.32 18.3692C45.32 21.0693 44.2684 23.6078 42.3592 25.5175L25.2931 42.5836ZM15.3753 9.15015C12.9129 9.15015 10.5977 10.1092 8.85672 11.8502C7.11571 13.5912 6.1562 15.9068 6.1562 18.3692C6.1562 20.8317 7.11527 23.1468 8.85628 24.8878L25.2931 41.3246L41.7299 24.8878C43.4709 23.1468 44.4299 20.8321 44.4299 18.3692C44.4299 15.9064 43.4709 13.5917 41.7299 11.8502C39.9884 10.1092 37.6729 9.15015 35.2109 9.15015C32.7484 9.15015 30.4333 10.1092 28.6919 11.8502L25.2931 15.2495L21.8943 11.8507C20.1528 10.1092 17.8381 9.15015 15.3753 9.15015Z" fill="currentColor" fill-rule="nonzero" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.1" vectornator:shadowAngle="1.5708" vectornator:shadowColor="#000000" vectornator:shadowOffset="10" vectornator:shadowOpacity="0.33" vectornator:shadowRadius="10"/>
+      </svg> -->
+      {% comment %} <span class="swym-whishlist-icon"></span> {% endcomment %}
+    </a>
+
+    {%- unless settings.cart_type == 'sticky' -%}
+      <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon site-nav__link--cart js-drawer-open-cart js-no-transition" aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
+        <span class="cart-link">
+          {%- if settings.cart_icon == 'cart' -%}
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><path d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"/><circle cx="27" cy="53" r="2"/><circle cx="47" cy="53" r="2"/></svg>
+          {%- else -%}
+            {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 64 64"><g fill="none" stroke="#000" stroke-width="2"><path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20"/><path d="M14.74 18h36.51l3.59 36.73h-43.7z"/></g></svg> {% endcomment %}
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M744.616 936H215.384q-23.057 0-39.221-16.163Q160 903.673 160 880.616V426.769q0-23.058 16.163-39.221 16.164-16.164 39.221-16.164h109.231q0-65.154 44.154-110.269Q412.923 216 477.692 216q64.77 0 111.231 45.227 46.462 45.226 46.462 110.157h109.231q23.057 0 39.221 16.164Q800 403.711 800 426.769v453.847q0 23.057-16.163 39.221Q767.673 936 744.616 936ZM355.385 371.384h249.23q0-51.923-36.346-88.269-36.346-36.346-88.269-36.346-51.923 0-88.269 36.346-36.346 36.346-36.346 88.269Zm389.231 533.847q10.769 0 17.692-6.923t6.923-17.692V426.769q0-10.769-6.923-17.692t-17.692-6.923H215.384q-10.769 0-17.692 6.923t-6.923 17.692v453.847q0 10.769 6.923 17.692t17.692 6.923h529.232Zm-264.68-303.077q61.629 0 109.654-44.192 48.026-44.193 48.026-100.5 0-5.616-4.893-9.501-4.893-3.884-11.556-3.884-5.533 0-9.811 4.808-4.279 4.807-4.741 10.653-6.153 47.77-42.115 79.808-35.962 32.039-84.5 32.039t-84.115-32.039q-35.577-32.038-42.5-79.808-.462-5.077-5.231-10.269t-10.385-5.192q-6.615 0-11 3.884-4.385 3.885-4.385 9.501 0 56.377 47.962 100.534 47.962 44.158 109.59 44.158Zm-289.167-200v503.077-503.077Z"/></svg>
+          {%- endif -%}
+          <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+          <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}">
+            <span class="cart-link__bubble-num" aria-hidden="true">
+              {{ cart.item_count }}
+            </span>
+          </span>
+        </span>
+      </a>
+    {%- endunless -%}
+  </div>
+</div>

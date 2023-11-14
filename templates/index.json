@@ -1,0 +1,620 @@
+{
+  "sections": {
+    "hero-video": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Mach Deinen Weg!",
+        "title_size": 87,
+        "subheading": "Schöne & nachhaltige Rucksäcke und Taschen für die Wege Deines Lebens.",
+        "link_text": "Jetzt einkaufen",
+        "link": "shopify:\/\/collections\/rucksacke-von-ela-mo-aus-hamburg",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https:\/\/youtu.be\/QgxRSp6_5wo",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "75d9d04b-3ebd-4751-99cf-5a8045c1efd9": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--16396353700104__75d9d04b-3ebd-4751-99cf-5a8045c1efd9-1670015150d1f35282-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/header-poncho-1800px.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/header-poncho-mobil-3.jpg",
+            "focal_point": "center center"
+          }
+        },
+        "d79f9bbd-879d-4688-9502-07e7e0e1d68b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/header-poncho-1800px.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/header-poncho-mobil-1.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16396353700104__75d9d04b-3ebd-4751-99cf-5a8045c1efd9-1670015150d1f35282-0",
+        "d79f9bbd-879d-4688-9502-07e7e0e1d68b"
+      ],
+      "custom_css": [
+        ".h1 {max-width: 580px;}",
+        ".hero__subtitle {max-width: 400px !important;}",
+        "@media (max-width: 800px) {.h1 {font-size: 35px; } .hero__subtitle {font-size: 15px; font-weight: 500; }}"
+      ],
+      "settings": {
+        "css_class": "home-hero-banner",
+        "style": "gif",
+        "title": "Schlechtes Wetter - gute Laune!",
+        "title_size": 64,
+        "subheading": "NEU: Schöne & praktische Regenponchos aus 100% recyceltem Material.",
+        "link": "shopify:\/\/collections\/regenponchos",
+        "link_text": "Jetzt entdecken",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-bottom horizontal-left",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "cd6880e6-184c-4475-871b-7e98c4566e59": {
+      "type": "hero-animated",
+      "blocks": {
+        "20faf56e-3fb9-4e4e-b9d6-c2a4fb00084a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/078.Motiv_elamo_4736_KLEIN_JPEG.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/elamo-summer-banner.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "20faf56e-3fb9-4e4e-b9d6-c2a4fb00084a"
+      ],
+      "disabled": true,
+      "settings": {
+        "css_class": "home-hero-banner",
+        "style": "gif",
+        "title": "Mach Dich bereit für den Uni-Start!",
+        "title_size": 70,
+        "subheading": "Spare 15% auf unsere smarten Rucksäcke für Schule & Uni mit Code SCHOOL15",
+        "link": "shopify:\/\/collections\/rucksacke-von-ela-mo-aus-hamburg",
+        "link_text": "Jetzt Bestseller entdecken",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-bottom horizontal-left",
+        "desktop_size": -20,
+        "mobile_size": -20
+      }
+    },
+    "7f3d38f1-c187-454c-aa0e-afed8c599b45": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-rolltop-rucksack-salmon-41742839644424_1080x-removebg-preview_d4eb1afe-caec-4527-adb7-c71bcb304727.png",
+            "image_width": 150,
+            "title": "Rolltop",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/rolltop-rucksaecke"
+          }
+        },
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-daypack-rucksack-waterleaf-gold-31951441100978-fotor-bg-remover-20230327184651.png",
+            "image_width": 150,
+            "title": "Daypack",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/daypacks"
+          }
+        },
+        "d7615d94-6c9d-4f3c-ac31-c203a11fa061": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-mini-rucksack-old-mint-44557081084168_500x500_d8d119d7-4ef1-4d50-8821-7616db1648f8.png",
+            "image_width": 150,
+            "title": "Mini",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/mini-rucksack"
+          }
+        },
+        "26299f79-f56a-47cb-84e6-e4a6ac3ee338": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-work-rucksack-black-45441738965256-removebg-preview.png",
+            "image_width": 150,
+            "title": "Work",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/work-rucksacke"
+          }
+        },
+        "aff27b79-5185-4ba2-8c2b-2d29aed92cce": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-flow-rucksack-beauty-in-darkness-32601746800818-removebg-preview.png",
+            "image_width": 150,
+            "title": "Flow",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/flow"
+          }
+        },
+        "8a837a97-10fc-4be9-b71d-af12940d7409": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Rucksack-Regenschutz.png",
+            "image_width": 150,
+            "title": "Zubehör",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/products\/ela-mo-rucksack-regenschutz"
+          }
+        },
+        "257209c2-0f8d-4617-8946-304d6e155dc3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Lieblingstasche-Handtasche_567ba9aa-da86-4eda-afbf-2d59a42f4713.png",
+            "image_width": 150,
+            "title": "Taschen",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/taschen"
+          }
+        },
+        "1f2cfa2b-5957-4fb7-9632-8e1173f5e4c2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-alle-produkte.png",
+            "image_width": 150,
+            "title": "Alle Produkte",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/alle-produkte"
+          }
+        },
+        "a2916c04-05dd-44cb-b387-08ad35152632": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Reisetasche-Sporttasche.png",
+            "image_width": 110,
+            "title": "Reisetaschen",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/products\/ela-mo-sporttasche-pastell-shades"
+          }
+        },
+        "f09ad588-7a84-4486-b8c4-8d3b3d51acd1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Crossbody-tasche.png",
+            "image_width": 110,
+            "title": "Crossbody",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/crossbody-taschen"
+          }
+        }
+      },
+      "block_order": [
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-0",
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-1",
+        "d7615d94-6c9d-4f3c-ac31-c203a11fa061",
+        "26299f79-f56a-47cb-84e6-e4a6ac3ee338",
+        "aff27b79-5185-4ba2-8c2b-2d29aed92cce",
+        "8a837a97-10fc-4be9-b71d-af12940d7409",
+        "257209c2-0f8d-4617-8946-304d6e155dc3",
+        "1f2cfa2b-5957-4fb7-9632-8e1173f5e4c2",
+        "a2916c04-05dd-44cb-b387-08ad35152632",
+        "f09ad588-7a84-4486-b8c4-8d3b3d51acd1"
+      ],
+      "settings": {
+        "css_class": "home-text-columns-slider sec-force-disable-animation",
+        "is_slider": true,
+        "bg_color": "#fdf9f7",
+        "txt_color": "",
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "36c2a9cf-aa83-4d2d-be4a-6d6919ec1bb9": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<img style=\"width:400px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/ElaMo_Begruessung.png?v=1676903302\" alt=\"Begrüßung Rucksack Kundinnen>\">"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Wir sind ein familiengeführtes Startup aus Hamburg und entwickeln smarte Begleiter für den Weg zur Arbeit, in die Uni, zur Schule, in den Urlaub, zum Sport oder zu Freunden. Wir nutzen unsere Produkte selbst jeden Tag und entwickeln sie ständig weiter. Es geht um mehr als von A nach B zu kommen.<\/p><p>Der Weg ist unser Ziel.<\/p>"
+          }
+        },
+        "96e97944-a6fb-4d94-95a8-a5385934af40": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<img style=\"max-width:200px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/ElaMo_Gruender_Duo.png?v=1677836900\" alt=\"ElaMo Gründer>\">"
+          }
+        }
+      },
+      "block_order": [
+        "36c2a9cf-aa83-4d2d-be4a-6d6919ec1bb9",
+        "text",
+        "96e97944-a6fb-4d94-95a8-a5385934af40"
+      ],
+      "custom_css": [
+        "p {max-width: 700px; margin: auto;}",
+        ".index-section--alt {padding-top: 50px; padding-bottom: 50px;}"
+      ],
+      "settings": {
+        "css_class": "home-branding",
+        "bg_color": "#e4ebef",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "1775ddcc-6d1d-489d-a1fe-f81c4e127b16": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "Entdecke unsere Bestseller.",
+        "description": "Smarte Rucksäcke zum Schockverlieben.",
+        "home_featured_products": "rucksacke-von-ela-mo-aus-hamburg",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "c92764fe-e588-4fa2-b3c2-9c1ead7e0fef": {
+      "type": "rich-text",
+      "blocks": {
+        "72197a4f-3f71-480d-ae7e-234aace6749c": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<h2 class=\"section-header__title appear-delay\">„Der beste Rucksack, den ich je hatte“<\/h2>"
+          }
+        },
+        "71222042-7a2a-480c-8021-53e51d66b24d": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<p class=\"hermine\" style=\"font-size: 22px\"><strong>Kerstin Held und 489.358 weitere<\/strong> lieben unsere Rucksäcke<\/p>"
+          }
+        },
+        "cc6acee5-7be4-48b4-bdee-039ab1183f54": {
+          "type": "text_raw",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<img style=\"max-width:200px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/Group_2.jpg?v=1680534210\" alt=\"ElaMo Gründer>\">"
+          }
+        },
+        "217e0baa-7cc6-443c-b50e-351f69022750": {
+          "type": "reviews",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "72197a4f-3f71-480d-ae7e-234aace6749c",
+        "71222042-7a2a-480c-8021-53e51d66b24d",
+        "cc6acee5-7be4-48b4-bdee-039ab1183f54",
+        "217e0baa-7cc6-443c-b50e-351f69022750"
+      ],
+      "custom_css": [],
+      "settings": {
+        "css_class": "text-sp",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "60cb8125-c710-48ff-861a-ce0865552d18": {
+      "type": "slideshow",
+      "blocks": {
+        "678c8103-281b-4009-b52c-10ef8e19b8df": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "bottom_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/ElaMo-Zufriedene-Kunden-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ElaMo-Zufriedene-Kunden-Mobile.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "678c8103-281b-4009-b52c-10ef8e19b8df"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16571295981ef00c01": {
+      "type": "text-columns",
+      "blocks": {
+        "f6037c60-fa3b-486a-89ed-96e0d6d1cb14": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/star.png",
+            "image_width": 100,
+            "title": "Gratis Versand ab 50 €",
+            "text": "<p>Lieferungen nach Deutschland und Österreich sind für Dich ab 50 € 100% kostenfrei.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16571295983d88b5f0-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/kerze.png",
+            "image_width": 100,
+            "title": "100 Tage testen",
+            "text": "<p>Stressfrei einkaufen! Du hast ganze 100 Tage Zeit, um Dich für einen unserer Wegbegleiter zu entscheiden.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16571295983d88b5f0-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/service.png",
+            "image_width": 100,
+            "title": "Kostenlose Retouren",
+            "text": "<p>Falls Du mal nicht komplett überzeugt sein solltest, kannst Du Dein Produkt einfach kostenlos wieder zurück schicken.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f6037c60-fa3b-486a-89ed-96e0d6d1cb14",
+        "16571295983d88b5f0-1",
+        "16571295983d88b5f0-0"
+      ],
+      "custom_css": [
+        "img {width: 900px !important;}"
+      ],
+      "settings": {
+        "css_class": "",
+        "is_slider": false,
+        "bg_color": "#ffffff",
+        "txt_color": "",
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "68359e2a-5d25-4341-a5d3-3ffecff5a990": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "New in: Einzigartige Designs",
+        "description": "Jetzt neu bei ElaMo",
+        "home_featured_products": "neu",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "cef9d234-7745-4f6c-b470-c512ac3c39ca": {
+      "type": "testimonials",
+      "blocks": {
+        "7757a57e-1f60-4ad2-a036-c2f62cc4254d": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer viel unterwegs ist, ist mit diesen praktischen Rucksäcken bestens beraten.“<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/Esquire_logo__1993__svg.png",
+            "author": ""
+          }
+        },
+        "template--18156733530376__cef9d234-7745-4f6c-b470-c512ac3c39ca-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Der Rucksack setzt den klassischen Look mit edler Farbkombination optimal um.“<\/p>",
+            "image": "shopify:\/\/shop_images\/ntv.png",
+            "author": ""
+          }
+        },
+        "f9b762a5-8895-480f-8e96-079c5f9ae09e": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer unterwegs umwerfend aussehen möchte, ist mit dem durchdachten Rucksack bestens bedient.“<\/p>",
+            "image": "shopify:\/\/shop_images\/bunte-de-vector-logo.png",
+            "author": ""
+          }
+        },
+        "template--18156733530376__cef9d234-7745-4f6c-b470-c512ac3c39ca-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Das Preis-Leistungs-Verhältnis ist einfach unschlagbar.“ Testsieger 2023<\/p>",
+            "image": "shopify:\/\/shop_images\/sz-690x480-crop-50-50.jpg",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "7757a57e-1f60-4ad2-a036-c2f62cc4254d",
+        "template--18156733530376__cef9d234-7745-4f6c-b470-c512ac3c39ca-testimonial-2",
+        "f9b762a5-8895-480f-8e96-079c5f9ae09e",
+        "template--18156733530376__cef9d234-7745-4f6c-b470-c512ac3c39ca-testimonial-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "title": "Unser Rucksäcke im Test",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "62ac78de-6709-4d6f-b272-e1843bcd1630": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "#fdf9f7",
+        "txt_color": "",
+        "alt": true,
+        "image": "shopify:\/\/shop_images\/Impact_Report_2023.jpg",
+        "image_width": 490,
+        "subtitle": "",
+        "title": "Unsere Wirkung.",
+        "text": "<p>Wir verstehen uns als Teil unserer Umwelt und Gemeinschaft. Daher produzieren und vertreiben wir unsere Produkte fair und verantwortungsvoll und unterstützen mit ⅓ unseres Unternehmensgewinns junge Menschen auf ihrem Weg im Leben. Ohne Kund*innen wie Dich wäre nichts davon möglich. DANKE!<\/p>",
+        "button_label": "Impact Report herunterladen",
+        "button_link": "https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view",
+        "open_new_tab": true,
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "57c445ef-1b38-4a42-b93b-45a97644f1fd": {
+      "type": "rich-text",
+      "blocks": {
+        "a04088b2-81a4-48c5-88ac-4525140df3b3": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<h1 style=\"font-weight: bold;\">Dein Begleiter für den Alltag.<\/h1>"
+          }
+        }
+      },
+      "block_order": [
+        "a04088b2-81a4-48c5-88ac-4525140df3b3"
+      ],
+      "custom_css": [
+        "div {margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "16577961056a248a50": {
+      "type": "yotpo-gallery",
+      "settings": {}
+    },
+    "d4b6f58f-584b-4e83-b291-6edcdec8d244": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--17732762501384__d4b6f58f-584b-4e83-b291-6edcdec8d244-1676633850bb5a32d5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"yotpo pdp-yotpo-reviews-carousel yotpo-reviews-carousel\"  data-background-color=\"transparent\"  data-mode=\"top_rated\"  data-type=\"site\"  data-count=\"9\"  data-show-bottomline=\"1\"  data-autoplay-enabled=\"1\"  data-autoplay-speed=\"3000\"  data-show-navigation=\"0\">&nbsp;<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--17732762501384__d4b6f58f-584b-4e83-b291-6edcdec8d244-1676633850bb5a32d5-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    },
+    "8f443ac8-40cf-4e20-8241-5cd6a1e2db0c": {
+      "type": "logo-list",
+      "blocks": {
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-1",
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-2",
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-3",
+        "template--18156733530376__8f443ac8-40cf-4e20-8241-5cd6a1e2db0c-logo_image-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "logo_opacity": 76,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "hero-video",
+    "75d9d04b-3ebd-4751-99cf-5a8045c1efd9",
+    "cd6880e6-184c-4475-871b-7e98c4566e59",
+    "7f3d38f1-c187-454c-aa0e-afed8c599b45",
+    "rich-text",
+    "1775ddcc-6d1d-489d-a1fe-f81c4e127b16",
+    "c92764fe-e588-4fa2-b3c2-9c1ead7e0fef",
+    "60cb8125-c710-48ff-861a-ce0865552d18",
+    "16571295981ef00c01",
+    "68359e2a-5d25-4341-a5d3-3ffecff5a990",
+    "cef9d234-7745-4f6c-b470-c512ac3c39ca",
+    "62ac78de-6709-4d6f-b272-e1843bcd1630",
+    "57c445ef-1b38-4a42-b93b-45a97644f1fd",
+    "16577961056a248a50",
+    "d4b6f58f-584b-4e83-b291-6edcdec8d244",
+    "8f443ac8-40cf-4e20-8241-5cd6a1e2db0c"
+  ]
+}

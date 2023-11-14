@@ -1,0 +1,39 @@
+{%- assign rel_products = product.metafields.custom.cross_sell_products.value -%}
+
+{%- if rel_products != blank -%}
+  <div class="pdp-crosssells">
+    {%- for crosssell_product in rel_products -%}
+      {%- assign variant = crosssell_product.selected_or_first_available_variant -%}
+      
+      <div class="pdp-crosssell">
+        <input
+          type="checkbox"
+          class="crosssell-checkbox-input visually-hidden crosssellCheckbox"
+          name="product-crosssell"
+          data-variant-id="{{ variant.id }}"
+          id="crosssell-{{ variant.id }}">
+        <label for="crosssell-{{ variant.id }}" class="crosssell-checkbox">
+          <div class="crosssell-checkbox--icon">
+            {% render 'icon', icon: 'checkbox-solid' %}
+          </div>
+          <div class="crosssell-checkbox--info flex-1">
+            <div class="crosssell-checkbox--image">
+              <img 
+                loading="lazy" 
+                src="{{ crosssell_product.featured_image | img_url: '120x' }}" 
+                alt="{{ crosssell_product.title }}">
+            </div>
+            <div class="crosssell-checkbox--title flex-1">
+              {{ crosssell_product.title }}
+            </div>
+          </div>
+          <div class="crosssell-checkbox--pricing">
+            <span class="crosssell-checkbox--price">
+              {{ crosssell_product.price | money }}
+            </span>
+          </div>
+        </label>
+      </div>
+    {%- endfor -%}
+  </div>
+{%- endif -%}

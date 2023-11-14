@@ -1,0 +1,254 @@
+.checkout-breadcrumbs * {
+  box-sizing: border-box;
+}
+
+.checkout-breadcrumbs {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  padding-bottom: 36px;
+}
+
+.checkout-breadcrumbs .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.breadcrumb-step {
+  position: relative;
+}
+
+.breadcrumb-link {
+  display: inline-flex;
+  position: relative;
+  color: inherit;
+}
+
+.breadcrumb-link:hover {
+  color: inherit;
+}
+
+.breadcrumb-step.step-1,
+.breadcrumb-step.step-3 {
+  flex: 0 0 calc(62px + ((100% - 186px) / 4));
+  max-width: calc(62px + ((100% - 186px) / 4));
+}
+
+.breadcrumb-step.step-2 {
+  flex: 0 0 calc(62px + ((100% - 186px) / 2));
+  max-width: calc(62px + ((100% - 186px) / 2));
+}
+
+.breadcrumb-step.step-1 {
+  text-align: left;
+}
+
+.breadcrumb-step.step-3 {
+  text-align: right;
+}
+
+.breadcrumb-step:before,
+.breadcrumb-step:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.breadcrumb-step:before {
+  left: 0;
+}
+
+.breadcrumb-step:after {
+  right: 0;
+}
+
+.breadcrumb .breadcrumb-step:first-child:before {
+  display: none;
+}
+
+.breadcrumb .breadcrumb-step:last-child:after {
+  display: none;
+}
+
+.breadcrumb-step {
+  color: #D1DBD1;
+}
+
+.breadcrumb-step.mod-passed,
+.breadcrumb-step.mod-active {
+  color: #2A4C28;
+}
+
+.breadcrumb-caption {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: auto;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #151100;
+  text-align: center;
+}
+
+.breadcrumb-caption--step,
+.breadcrumb-caption--name {
+  white-space: nowrap;
+}
+
+.breadcrumb-caption--name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.breadcrumb-bubble {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: 62px;
+  height: 62px;
+  padding: 12px;
+  border: 4px solid currentColor;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.breadcrumb-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.breadcrumb-step.mod-passed .breadcrumb-bubble,
+.breadcrumb-step.mod-active .breadcrumb-bubble {
+  background-color: #2A4C28;
+  border-color: #2A4C28;
+  color: #fff;
+}
+
+.breadcrumb-step.mod-passed .breadcrumb-icon .icon,
+.breadcrumb-step.mod-active .breadcrumb-icon .icon {
+  color: #fff;
+}
+
+[data-current-step="thank_you"] .breadcrumb-step {
+  pointer-events: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 1000px) {
+  .checkout-breadcrumbs {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main {
+    width: 54%;
+    padding-right: 4%;
+  }
+
+  .main__content {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 54%;
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 767px) {
+  .dynamic-checkout__buttons .shopify-cleanslate ul {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+  }
+  .dynamic-checkout__buttons li {
+    width: 49%;
+  }
+}
+
+/* Support box */
+.d-grid {
+  display: grid;
+}
+
+.text-columns-checkout .checkout-page--payicons {
+  display: none;
+}
+
+.supportbox {
+  background-color: #f7f7f7;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.supportbox-top {
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.supportbox-top--status {
+  color: #2A4C28;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.supportbox-top--status:before {
+  content: '●';
+  color: #22BC28;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.supportbox-footer {
+  font-size: 11px;
+  align-items: center;
+  grid-template-columns: 92px auto;
+  gap: 24px;
+  line-height: 1.5;
+}
+
+.supportbox-footer--content {
+  display: grid;
+  gap: 4px;
+}
+
+@media (min-width: 1000px) {
+  .order-summary__sections {
+    height: auto;
+  }
+  .supportbox {
+    padding: 20px 24px;
+    background-color: #f8f8f8;
+  }
+
+  .supportbox-footer {
+    grid-template-columns: 58px auto;
+    gap: 8px;
+  }
+
+  .supportbox-footer--content {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .supportbox-footer--contacts {
+    padding-left: 8px;
+    border-left: 2px solid #DDDDDD;
+  }
+}

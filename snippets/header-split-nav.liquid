@@ -1,0 +1,25 @@
+{%- assign link_count = 0 -%}
+{% for link in main_menu.links %}
+  {%- assign link_count = link_count | plus: 1 -%}
+{% endfor %}
+{%- assign link_count_half = link_count | divided_by: 2 -%}
+{%- assign left = link_count_half | plus: 1 %}
+
+<div class="header-item header-item--logo-split" role="navigation" aria-label="Primary">
+  <div class="header-item header-item--split-left">
+    {%- render 'header-desktop-nav', main_menu: linklists['hauptmen-new'], limit: left -%}
+  </div>
+  <div class="header-item header-item--logo">
+    {%- render 'header-logo-block', section: section -%}
+  </div>
+  <div class="header-item header-item--split-right">
+    {%- render 'header-desktop-nav', main_menu:  linklists['hauptmen-new'], offset: left -%}
+
+    {% comment %}
+      Center mobile logo if icons are not visible
+    {% endcomment %}
+    <div class="header-item header-item--icons{% if mobile_logo_only %} small--hide{% endif %}">
+      {%- render 'header-icons-new', section: section, menu_alignment: menu_alignment -%}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{%- liquid
+  unless search_btn_style
+    assign search_btn_style = 'btn--secondary'
+  endunless
+-%}
+
+<form action="{{ routes.search_url }}" method="get" class="input-group search-bar {{ search_bar_location }}" role="search">
+  <input type="hidden" name="type" value="{{ settings.search_type }}">
+  <input type="hidden" name="options[prefix]" value="last">
+  <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
+  <span class="input-group-btn">
+    <button type="submit" class="{{ search_btn_style }}">
+      {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg> {% endcomment %}
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search-alt" viewBox="0 0 27 28"><path d="M10.6977 0C4.79579 0 0 4.86014 0 10.8413C0 16.8224 4.79579 21.6826 10.6977 21.6826C13.033 21.6826 15.1912 20.9203 16.9512 19.6299L25.2302 28L27 26.2064L18.8194 17.8961C20.427 15.9979 21.3955 13.5342 21.3955 10.8413C21.3955 4.86014 16.5997 0 10.6977 0ZM10.6977 1.27544C15.9188 1.27544 20.1369 5.55018 20.1369 10.8413C20.1369 16.1324 15.9188 20.4071 10.6977 20.4071C5.47669 20.4071 1.25856 16.1324 1.25856 10.8413C1.25856 5.55018 5.47669 1.27544 10.6977 1.27544Z"/></svg>
+      <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+    </button>
+  </span>
+</form>

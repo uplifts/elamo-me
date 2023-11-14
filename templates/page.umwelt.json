@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "165713418478e1ac7d": {
+      "type": "slideshow",
+      "blocks": {
+        "165713418427e5cdb6-0": {
+          "type": "image",
+          "settings": {
+            "title": "Umwelt",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "bottom_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-top horizontal-center",
+            "image": "shopify:\/\/shop_images\/NetZero2030.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "165713418427e5cdb6-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": -10,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16571342002b8dfab8": {
+      "type": "rich-text",
+      "blocks": {
+        "66f8ed71-7738-4c14-b499-6ee3752c79bc": {
+          "type": "heading",
+          "settings": {
+            "title": "Wir sind (noch) nicht nachhaltig - aber wir arbeiten dran."
+          }
+        },
+        "16571342007f4bd3f9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Bei der Herstellung unserer Rucksäcke werden klimaschädliche Treibhausgase freigesetzt, die zur Erderwärmung beitragen. Was tun wir dagegen? Wir sind Mitglied des <a href=\"https:\/\/smeclimatehub.org\"><span style=\"text-decoration:underline\">SME Climate Hubs <\/span><\/a>- einer globalen Initiative, die wissenschaftsbasierte Vorgaben zur drastischen Verringerung der CO2-Emissionen macht. Zudem überkompensieren wir unsere Jahresemissionen durch die Förderung von Klimaschutzprojekten. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "66f8ed71-7738-4c14-b499-6ee3752c79bc",
+        "16571342007f4bd3f9-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "1657134232504570e1": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-30_um_14.47.37_56d339d5-6433-494a-934b-b6fa1ff542cd.png",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Messen",
+        "text": "<p>Seit 2021 berichten wir transparent über die Berechnung unseres <a href=\"https:\/\/docs.google.com\/document\/d\/19mV9s3KC6rhOglvkKj0XKpUUluVRHmK23zWGVWfcBrM\/edit?usp=sharing\" target=\"_blank\" title=\"neu.land CO2 Methodologie\">CO2-Fußabdrucks<\/a> - und zwar auf Unternehmens- und Produktebene. Hierbei nehmen wir die <strong>gesamte Lieferkette <\/strong>in den Blick: Vom Rohmaterial, über die Produktion bis hin zum Transport, Logistik & Versand an unsere Kund*innen.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right"
+      }
+    },
+    "16571342495dfb203b": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": true,
+        "image": "shopify:\/\/shop_images\/impact3.jpg",
+        "image_width": 550,
+        "subtitle": "",
+        "title": "Reduzieren",
+        "text": "<p>Nach wissenschaftsbasierten Vorgaben des <a href=\"https:\/\/smeclimatehub.org\"><span style=\"text-decoration:underline\">SME Climate Hubs <\/span><\/a>und der <a href=\"https:\/\/sciencebasedtargets.org\/\"><span style=\"text-decoration:underline\">Science Based Targets Initiative<\/span><\/a> <strong>verringern wir unsere CO2e-Emissionen (Scope 1, 2, 3) pro Euro Umsatz um jährlich mindestens 7% und bis 2030 um mindestens 70% gegenüber 2020.<\/strong><\/p><p>Da 95% unserer Emissionen mit unseren Produkten verbunden sind und unsere Bestseller wiederum rund 90 % dieser Emissionen ausmachen, lautet unser nächstes Etappenziel: <strong>Bis 2025 reduzieren wir den CO2e-Fußabdruck unserer Bestseller um mindestens 30% gegenüber 2022<\/strong>.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left"
+      }
+    },
+    "16571353834ce9096c": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/CR_Klima-Zertifikat_neuland_GmbH_2__page-0001.jpg",
+        "image2": "shopify:\/\/shop_images\/CR_Klima-Zertifikat_neuland_GmbH_3_1__page-0001.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Kompensieren",
+        "text": "<p>Es befinden sich bereits zu viele Treibhausgase in der Atmosphäre, um die Pariser Klimaziele zu erreichen. Daher <strong>kompensieren wir 120% unserer Jahresemissionen. <\/strong>Wir investieren in naturbasierte <a href=\"https:\/\/lets-woodify.de\/klimawaelder\/#bergisches-land\"><span style=\"text-decoration:underline\">Klimaschutzprojekte<\/span><\/a>, die verhindern, dass neues CO2 in die Atmosphäre gelangt (Vermeidung) oder Treibhausgase aktiv der Atmosphäre entziehen (Bindung). Letztere Projekte sind teurer, aber dringend notwendig. Daher werden wir ihren Anteil bis 2030 kontinuierlich auf 100% steigern.   <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right"
+      }
+    },
+    "1657135420cb63e5b7": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": true,
+        "image": "shopify:\/\/shop_images\/man-in-eyeglasses-and-long-sleeve-shirt-sewing-3811861.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Lang lebe euer Wegbegleiter",
+        "text": "<p>Damit Eure Lieblingsstücke noch länger halten, verbessern wir kontinuierlich das <strong>Design<\/strong> und die <strong>Qualität<\/strong> auf der Grundlage Eures Feedbacks. Zudem erstatten wir Euch unkompliziert <strong>Reparaturkosten<\/strong> zurück oder stellen Ersatzteile bereit. Leicht beschädigte oder verschmutzte B-Ware spenden wir an <strong>Hanseatic Help<\/strong>, welche diese bedarfsorientiert an Partnerorganisationen in Hamburg weitergibt. 2021 haben wir so 310 Rucksäcken ein neues Leben geschenkt!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right"
+      }
+    },
+    "165713456752a5a1a1": {
+      "type": "rich-text",
+      "blocks": {
+        "1657134567afdfff4f-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Erfahre mehr in unserem Impact Report 2022!"
+          }
+        },
+        "1657134567afdfff4f-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>+++ blicke mit uns auf das Jahr 2022 zurück +++ erfahre, was wir dank Deines Kaufes erreicht haben +++ lerne unsere Ziele für 2023 kennen  +++<\/p>"
+          }
+        },
+        "699127cb-f12e-436d-87c9-d760b1c15d13": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view",
+            "link_text": "Report öffnen"
+          }
+        }
+      },
+      "block_order": [
+        "1657134567afdfff4f-0",
+        "1657134567afdfff4f-1",
+        "699127cb-f12e-436d-87c9-d760b1c15d13"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165713418478e1ac7d",
+    "16571342002b8dfab8",
+    "1657134232504570e1",
+    "16571342495dfb203b",
+    "16571353834ce9096c",
+    "1657135420cb63e5b7",
+    "165713456752a5a1a1"
+  ]
+}

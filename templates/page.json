@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "1657137283cf2fc3cc": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "165713728390c94b1c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"yotpo-testimonials-custom-tab\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "165713728390c94b1c-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657137283cf2fc3cc"
+  ]
+}

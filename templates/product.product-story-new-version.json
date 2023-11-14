@@ -1,0 +1,670 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "606c99f0-4703-4e62-949b-807238c97fa9": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-short-description",
+            "liquid": "{{ product.metafields.custom.short_description }}"
+          }
+        },
+        "eb396bb8-5a94-488a-9df0-113d63732837": {
+          "type": "pattern_picker",
+          "settings": {
+            "image": "{{ product.metafields.custom.popup_preview_image.value }}",
+            "products_number": "",
+            "collection": "{{ product.metafields.custom.popup_collection_link.value }}",
+            "show_wishlist": false,
+            "show_badges": false,
+            "show_titles": false,
+            "show_ratings": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "css_class": "mod-rating-above",
+            "note": "inkl. MwSt.",
+            "rating_snippet": "<div id=\"custom-star-rating\" class=\"yotpo bottomLine\"\n    data-appkey=\"tJmxt4zRgumG3PYICN6qu3hwno6mR3DtSSBtJWNX\"\n    data-domain=\"{{shop.permanent_domain | escape }}\"\n    data-product-id=\"{{ product.id }}\"\n    data-product-models=\"{{ product.id }}\"\n    data-name=\"{{ product.title | escape }}\"\n    data-url=\"{{ shop.url }}{{ product.url }}\"\n    data-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\n    data-description=\"{{ product.description | escape }}\"\n    data-bread-crumbs=\"{% for tag in product.tags %}{{ tag | escape }};{% endfor %}\">\n<\/div>"
+          }
+        },
+        "0cf0a4f5-28e2-4353-ba73-d0546a7f03ae": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-shipping-time",
+            "liquid": "<div hidden>{% render 'product-availability-indicator', product: product %}<\/div>\n<div class=\"pdp-shipping-time-prediction\"><\/div>"
+          }
+        },
+        "e656f5d9-316d-42a8-8d3e-c2805dce24b6": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "css_class": "pdp-shipping-time",
+            "liquid": "{% render 'product-availability-indicator', product: product %}"
+          }
+        },
+        "dc06c2fb-6e95-43e9-9a17-38c8450a3cfd": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "15f268d0-f1f1-4db4-8c2e-712dff48527e": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "is_open": false,
+            "css_class": "salesbadgepdp",
+            "image": "shopify:\/\/shop_images\/icons8-discount_63c3d34a-9998-442e-8d45-41c3ceb9637c.png",
+            "heading": "Spare 15% mit CODE: SCHOOL15",
+            "text": "Bitte gib den Rabattcode <b>SCHOOL15<\/b> im <u><b>Kassenbereich<\/b><\/u> ein, um dir 15% Rabatt zu sichern."
+          }
+        },
+        "a9b62c94-0f73-4571-94ea-702805cdaf28": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "product-block-crosssells pdpCrosssells",
+            "liquid": "{% render 'pdp-crosssell-products' %}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "5bfffeb3-4695-4fc3-8e9a-c8a67de31c98": {
+          "type": "advantages",
+          "settings": {
+            "css_class": "pdpAdvantages",
+            "images": "https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-shipped.png?v=1680168067\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-100_430x.png?v=1680168083#\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-cardboard_box.png?v=1680168004",
+            "texts": "Gratis Versand ab 50€\nTage Rückgaberecht\nKostenlose Retouren"
+          }
+        },
+        "399d99da-6722-4a5e-b361-6a933fc0a211": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-visitors-count",
+            "liquid": "<div class=\"text-center\"><div><input name=\"add\" style=\"display: none;\" pvc-override=\"true\"><input name=\"add\" style=\"display: none;\" pvc-override=\"true\"><\/div><\/div>"
+          }
+        },
+        "1ff9ee26-4171-4de4-97e1-6913ab9f6c92": {
+          "type": "tab",
+          "settings": {
+            "css_class": "",
+            "force_open": false,
+            "below_buybox": true,
+            "image": "shopify:\/\/shop_images\/icons8-family_2.png",
+            "title": "Dein Kauf unterstützt ein Familien-Startup",
+            "content": "<p>Mit unseren Kindern sitzt die Zukunft an unserem Tisch. Wir unterstützen mit 1\/3 unserer Gewinne insbesondere benachteiligte Kinder & Familien. Seit 2020 konnten wir dank Kund*innen wie Dir bereits 200.548 € spenden.<\/p>",
+            "liquid": "<img style=\"max-width: 230px;\"src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/DEU-B-Corp-Logo-Tagline-Lockup-Standards-Black-RGB.png?v=1669138746\">",
+            "page": ""
+          }
+        },
+        "e8f91501-b336-401b-8193-fbb4f49d3ae9": {
+          "type": "tab",
+          "settings": {
+            "css_class": "pdp-collapse-description",
+            "force_open": false,
+            "below_buybox": true,
+            "image": "shopify:\/\/shop_images\/icons8-rucksack_1.png",
+            "title": "Details ansehen",
+            "content": "",
+            "liquid": "<div class=\"pdp-collapse-tabs\">\n{%- render 'product-meta-tabs', product: product, block: block -%}\n<\/div>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "606c99f0-4703-4e62-949b-807238c97fa9",
+        "eb396bb8-5a94-488a-9df0-113d63732837",
+        "price",
+        "0cf0a4f5-28e2-4353-ba73-d0546a7f03ae",
+        "e656f5d9-316d-42a8-8d3e-c2805dce24b6",
+        "dc06c2fb-6e95-43e9-9a17-38c8450a3cfd",
+        "15f268d0-f1f1-4db4-8c2e-712dff48527e",
+        "a9b62c94-0f73-4571-94ea-702805cdaf28",
+        "buy_buttons",
+        "5bfffeb3-4695-4fc3-8e9a-c8a67de31c98",
+        "399d99da-6722-4a5e-b361-6a933fc0a211",
+        "1ff9ee26-4171-4de4-97e1-6913ab9f6c92",
+        "e8f91501-b336-401b-8193-fbb4f49d3ae9"
+      ],
+      "custom_css": [
+        ".hive-delivery-promise-green {color: inherit !important;}"
+      ],
+      "settings": {
+        "show_topline_metatags": true,
+        "online_visitors_count": "",
+        "has_product_buybox": true,
+        "product_buybox_bordered": true,
+        "gallery_is_sticky": true,
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "0c8fe22b-f4e6-4a45-9f50-3ad1b7bf0c61": {
+      "type": "upsell-category-slider",
+      "blocks": {
+        "c90034cb-b43a-4773-9fc5-2083ffc0bcbb": {
+          "type": "daypack-products",
+          "settings": {
+            "daypack-collection": "daypacks"
+          }
+        },
+        "e49ad86e-a750-4619-83a3-0e27ec62f5b8": {
+          "type": "rolltop-products",
+          "settings": {
+            "rolltop-collection": "rolltop-rucksaecke"
+          }
+        }
+      },
+      "block_order": [
+        "c90034cb-b43a-4773-9fc5-2083ffc0bcbb",
+        "e49ad86e-a750-4619-83a3-0e27ec62f5b8"
+      ],
+      "settings": {
+        "title": "Andere kauften auch",
+        "sub-title": "Vergleiche hier unsere Rucksackmodelle",
+        "sub-title-url": "https:\/\/www.elamo.me\/pages\/rucksacke-vergleichen"
+      }
+    },
+    "3f48f5ae-b3c3-4742-95df-379dd250e8fe": {
+      "type": "marquee",
+      "settings": {
+        "text": "{{ product.metafields.custom.pdp_promo_text_marquee_.value }}",
+        "link": "",
+        "text_size": 40,
+        "text_spacing": true,
+        "color_scheme": "button",
+        "direction": "right",
+        "speed": "slow"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "1664378228fadb2ef4": {
+      "type": "text-columns",
+      "blocks": {
+        "1664378228bfe923fd-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_1.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_1.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "c80b9907-82cf-41dc-ad45-b1152c232e17": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_2.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_2.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "f0eda5de-098b-43a3-aeb8-df24098f2168": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_3.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_3.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "c1a66237-02be-43f4-aaf1-23f4d3f79509": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_4.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_4.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1664378228bfe923fd-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_5.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_5.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "816f31e7-8899-48f6-a618-a4125d6c0e03": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "{{ product.metafields.custom.leiste_icon_6.value }}",
+            "image_width": 110,
+            "title": "{{ product.metafields.custom.leiste_text_6.value }}",
+            "text": "<p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1664378228bfe923fd-1",
+        "c80b9907-82cf-41dc-ad45-b1152c232e17",
+        "f0eda5de-098b-43a3-aeb8-df24098f2168",
+        "c1a66237-02be-43f4-aaf1-23f4d3f79509",
+        "1664378228bfe923fd-0",
+        "816f31e7-8899-48f6-a618-a4125d6c0e03"
+      ],
+      "settings": {
+        "css_class": "pdp-advantages-icons sec-force-disable-animation",
+        "is_slider": false,
+        "bg_color": "#fcf5f0",
+        "txt_color": "#584f4b",
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "70ee6182-21fa-4752-a736-829c2d48d7af": {
+      "type": "text-with-button",
+      "settings": {
+        "heading": "Vergleiche unsere Rucksäcke & finde dein passendes Modell",
+        "link": "https:\/\/www.elamo.me\/pages\/rucksacke-vergleichen",
+        "btn_txt": "Rucksäcke vergleichen",
+        "bg_color": "#fcf5f0",
+        "btn_bg_color": "#7e6c61",
+        "txt_color": "#2d2d2d",
+        "btn_txt_color": "#ffffff"
+      }
+    },
+    "1657137737fd8e8c9d": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Mach Deinen Weg.",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "{{ product.metafields.my_fields.produktvideo_youtube_url.value }}",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "7e0a5c87-0c3f-46a8-9abf-9e9c50c3eace": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "css_class": "pdp-sec--image-w-text",
+        "bg_color": "#e2aeae",
+        "txt_color": "#173845",
+        "alt": true,
+        "image": "shopify:\/\/shop_images\/BTS-AD-SCHULrucksack-salmon-1x1-k_1.jpg",
+        "image_width": 440,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3>Perfekt für die Schule<\/h3><p>„Der Rucksack bietet sehr viel Platz und sieht dabei trotzdem sehr schön aus. Die vielen Fächer ermöglichen Ordnung und leichtes Finden. Unsere Tochter (16) hat ihn als Schulrucksack für sich entdeckt. Würde ich jederzeit wieder kaufen!“<\/p><p><strong>Martina E.<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "16643612544aba361d": {
+      "type": "rich-text",
+      "blocks": {
+        "16643612540c0259a3-0": {
+          "type": "heading",
+          "settings": {
+            "title": "{{ product.metafields.custom.block_berschrift.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "16643612540c0259a3-0"
+      ],
+      "settings": {
+        "css_class": "pdp-sec--image-w-text-intro",
+        "bg_color": "#fdf9f7",
+        "txt_color": "#1f4a5b",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "0273c78c-4fdd-4034-b7bc-6af1d3decc2e": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "pdp-sec--image-w-text",
+        "bg_color": "#fdf9f7",
+        "txt_color": "#173845",
+        "alt": true,
+        "image": "{{ product.metafields.custom.block_bild_1.value }}",
+        "image_width": 400,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ product.metafields.custom.block_text_1.value }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "16643610201ce31712": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "pdp-sec--image-w-text",
+        "bg_color": "#fdf9f7",
+        "txt_color": "#173845",
+        "alt": true,
+        "image": "{{ product.metafields.custom.block_bild_2.value }}",
+        "image_width": 400,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ product.metafields.custom.block_text_2.value }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "1664361156f3ddd071": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "pdp-sec--image-w-text",
+        "bg_color": "#fdf9f7",
+        "txt_color": "#173845",
+        "alt": true,
+        "image": "{{ product.metafields.custom.block_bild_3.value }}",
+        "image_width": 400,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ product.metafields.custom.block_text_3.value }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "166436116074b0424a": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "pdp-sec--image-w-text",
+        "bg_color": "#fdf9f7",
+        "txt_color": "#173845",
+        "alt": true,
+        "image": "{{ product.metafields.custom.block_bild_4.value }}",
+        "image_width": 400,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ product.metafields.custom.block_text_4.value }}<\/p><p> <\/p><p> <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "af0a5ebc-714a-418b-ba4f-03ee7eb9cc3d": {
+      "type": "social-proof-1",
+      "settings": {
+        "css_class": "social-proof",
+        "bg_color": "#e7f0f8",
+        "txt_color": "#2b5464",
+        "narrow_column": false,
+        "alt": true,
+        "media_title": "Mehr als <b>28.500 mal<\/b> in den letzten 3 Monaten verkauft",
+        "media_image": "shopify:\/\/shop_images\/ElaMo-Community-begeisterte-Kundinnen.jpg",
+        "title": "Daher kommt der Hype um diesen Rucksack.",
+        "product": "",
+        "text": "<h3 style=\"font-style: normal; text-transform: none;\">Der beste Rucksack, den ich je hatte!<\/h3>\n<div>„Eine Freundin hatte einen Ela Mo Rucksack und ich war sofort begeistert und wollte auch unbedingt einen haben. Hab es nicht bereut, bin super zufrieden, er gefällt mir sehr gut. Auch die vielen und gut verschließbaren Taschen sind super praktisch. Für Frauen find ich ihn super und ist mal was anderes 👍 Kann ihn nur jedem weiterempfehlen 😊“<\/div>",
+        "reviewer_image": "shopify:\/\/shop_images\/Bildschirmfoto_2022-11-01_um_16.49.49.png"
+      }
+    },
+    "5f1838e2-4df5-4145-8e11-3f127b92c959": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18156734087432__5f1838e2-4df5-4145-8e11-3f127b92c959-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer viel unterwegs ist, ist mit diesen praktischen Rucksäcken bestens beraten.“<\/p>",
+            "image": "shopify:\/\/shop_images\/Esquire_logo__1993__svg.png",
+            "author": ""
+          }
+        },
+        "65cb9deb-c250-4a7e-b062-1b4b2fa14884": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Der Rucksack setzt den klassischen Look mit edler Farbkombination optimal um.“<\/p>",
+            "image": "shopify:\/\/shop_images\/ntv.png",
+            "author": ""
+          }
+        },
+        "template--18156734087432__5f1838e2-4df5-4145-8e11-3f127b92c959-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer unterwegs umwerfend aussehen möchte, ist mit dem durchdachten Rucksack bestens bedient.“<\/p>",
+            "image": "shopify:\/\/shop_images\/bunte-de-vector-logo.png",
+            "author": ""
+          }
+        },
+        "32a0df9f-b5af-489c-819b-94aea1e03425": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Das Preis-Leistungs-Verhältnis ist einfach unschlagbar.“ Testsieger 2023<\/p>",
+            "image": "shopify:\/\/shop_images\/sz-690x480-crop-50-50.jpg",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18156734087432__5f1838e2-4df5-4145-8e11-3f127b92c959-testimonial-1",
+        "65cb9deb-c250-4a7e-b062-1b4b2fa14884",
+        "template--18156734087432__5f1838e2-4df5-4145-8e11-3f127b92c959-testimonial-2",
+        "32a0df9f-b5af-489c-819b-94aea1e03425"
+      ],
+      "settings": {
+        "css_class": "",
+        "title": "Unser Rucksäcke im Test",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "ae98b9b0-5df9-4731-a523-0883ce22b830": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16181352956168__ae98b9b0-5df9-4731-a523-0883ce22b830-1667248776a56d92b5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"yotpo pdp-yotpo-reviews-carousel yotpo-reviews-carousel\"  data-background-color=\"transparent\"  data-mode=\"top_rated\"  data-type=\"site\"  data-count=\"9\"  data-show-bottomline=\"1\"  data-autoplay-enabled=\"1\"  data-autoplay-speed=\"3000\"  data-show-navigation=\"0\">&nbsp;<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16181352956168__ae98b9b0-5df9-4731-a523-0883ce22b830-1667248776a56d92b5-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "css_class": "pdp-yotpo-carousel",
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    },
+    "93d15273-c3a0-4205-8457-c3e76fad5c9d": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16181352956168__93d15273-c3a0-4205-8457-c3e76fad5c9d-16673136470e64bae9-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/recycled-daypack-recycled_750x_k_Kopie.jpg",
+            "image_width": 650,
+            "title": "Rucksack for future CO2 im Fokus",
+            "text": "<p>Als Familienunternehmen sitzt mit unseren Kindern auch die Zukunft an unserem Tisch. Daher reduzieren wir kontinuierlich den CO2-Fußabdruck unserer Rucksäcke, z.B. durch den Einsatz von recyceltem Material. Unvermeidbare Emissionen kompensieren wir zu 120% durch die Förderung von Klimaschutzprojekten.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16181352956168__93d15273-c3a0-4205-8457-c3e76fad5c9d-16673136470e64bae9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/miteinander-fuereinander-elamo-social-impact.jpg",
+            "image_width": 650,
+            "title": "Rucksack für alle <br><b>1\/3 für soziale Initiativen<\/b>",
+            "text": "<p>Du wärst gern Teil einer Gemeinschaft, die sich füreinander einsetzt? Wir auch! Deshalb erhalten die Näher*innen unserer Produkte Löhne, die über dem gesetzlichen Mindestlohn liegen. Zudem verwenden wir 1\/3 unserer Gewinne für soziale Initiativen. Gemeinsam mit Dir und vielen Anderen kämpfen wir für eine Welt, die mitfühlend, gerecht und schön ist. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1973da24-b759-4c2b-a734-23834f20415d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/unser-weg-elamo-social-impact.jpg",
+            "image_width": 650,
+            "title": "Nachricht vom Gründer<br> <b>Unser Weg<\/b>",
+            "text": "<p>Meine Frau und ich haben unser Unternehmen 2017 aus unserer Küche heraus gegründet. Mit der Geburt unserer ersten Tochter war mir klar geworden, dass ich einen neuen Weg einschlagen musste. Ich wollte dabei sein, wenn meine Kinder groß werden und mich nicht von meinem Managerjob auffressen lassen. Heute unterstützen wir andere Menschen dabei, ihren eigenen Weg zu gehen.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16181352956168__93d15273-c3a0-4205-8457-c3e76fad5c9d-16673136470e64bae9-0",
+        "template--16181352956168__93d15273-c3a0-4205-8457-c3e76fad5c9d-16673136470e64bae9-1",
+        "1973da24-b759-4c2b-a734-23834f20415d"
+      ],
+      "settings": {
+        "css_class": "branding",
+        "is_slider": false,
+        "bg_color": "#dcece7",
+        "txt_color": "#0e3529",
+        "title": "",
+        "align_text": "left",
+        "alt": true
+      }
+    },
+    "1664533482837d3a3b": {
+      "type": "rich-text",
+      "blocks": {
+        "0d726551-b8bf-4b6d-9d62-54e3985cdde5": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<h1 style=\"line-height:1.3;margin-bottom:-100px;\">Über 489.358 glückliche Kundinnen <h1><\/h1>\n<\/h1>"
+          }
+        }
+      },
+      "block_order": [
+        "0d726551-b8bf-4b6d-9d62-54e3985cdde5"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "#ffffff",
+        "txt_color": "#2d2d2d",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "165779646907a065f2": {
+      "type": "yotpo-gallery",
+      "settings": {}
+    },
+    "16577955825113c962": {
+      "type": "apps",
+      "blocks": {
+        "6fd2f92f-f272-4d38-bc90-09168e888c42": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "6fd2f92f-f272-4d38-bc90-09168e888c42"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "DAS KÖNNTE DIR AUCH GEFALLEN"
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "0c8fe22b-f4e6-4a45-9f50-3ad1b7bf0c61",
+    "3f48f5ae-b3c3-4742-95df-379dd250e8fe",
+    "sub",
+    "1664378228fadb2ef4",
+    "70ee6182-21fa-4752-a736-829c2d48d7af",
+    "1657137737fd8e8c9d",
+    "7e0a5c87-0c3f-46a8-9abf-9e9c50c3eace",
+    "16643612544aba361d",
+    "0273c78c-4fdd-4034-b7bc-6af1d3decc2e",
+    "16643610201ce31712",
+    "1664361156f3ddd071",
+    "166436116074b0424a",
+    "af0a5ebc-714a-418b-ba4f-03ee7eb9cc3d",
+    "5f1838e2-4df5-4145-8e11-3f127b92c959",
+    "ae98b9b0-5df9-4731-a523-0883ce22b830",
+    "93d15273-c3a0-4205-8457-c3e76fad5c9d",
+    "1664533482837d3a3b",
+    "165779646907a065f2",
+    "16577955825113c962",
+    "product-recommendations",
+    "collection-return"
+  ]
+}

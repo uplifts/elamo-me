@@ -1,0 +1,188 @@
+<style>
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} .index-section--alt {
+      background-color: {{ section.settings.bg_color }};
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .index-section {
+    color: {{ section.settings.txt_color }};
+  }
+</style>
+
+<div class="index-section{% if section.settings.alt %} index-section--alt{% endif %} {{ section.settings.css_class }}">
+
+  <div class="page-width">
+    {%- if section.settings.title != blank or section.settings.button_link != blank -%}
+      <div class="sec-mosaic-01--header flex-align-center">
+        {%- if section.settings.title != blank -%}
+          <h2 class="sec-mosaic-01--title h3">
+            {{ section.settings.title }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.button_link != blank and section.settings.button_label != blank -%}
+          <div class="sec-mosaic-01--cta">
+            <a class="btn {% if template contains 'index' %}index-grid-cta{% endif %}" href="{{ section.settings.button_link }}">
+              {{ section.settings.button_label }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="mosaic-wrapper">
+      {%- if section.settings.image_01 != blank -%}
+        {% render 'mosaic-01-item',
+          class: 'item-1',
+          image: section.settings.image_01,
+          subtitle: section.settings.subtitle_01,
+          title: section.settings.title_01,
+          link: section.settings.link_01
+        %}
+      {%- endif -%}
+
+      {%- if section.settings.image_02 != blank -%}
+        {% render 'mosaic-01-item',
+          class: 'item-2',
+          image: section.settings.image_02,
+          subtitle: section.settings.subtitle_02,
+          title: section.settings.title_02,
+          link: section.settings.link_02
+        %}
+      {%- endif -%}
+
+      {%- if section.settings.image_03 != blank -%}
+        {% render 'mosaic-01-item',
+          class: 'item-3',
+          image: section.settings.image_03,
+          subtitle: section.settings.subtitle_03,
+          title: section.settings.title_03,
+          link: section.settings.link_03
+        %}
+      {%- endif -%}
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.mosaic-1.name",
+  "class": "sec-mosaic-01",
+  "settings": [
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "t:sections.mosaic-1.settings.css_class.label"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "t:sections.mosaic-1.settings.bg_color.label",
+      "info": "t:sections.mosaic-1.settings.bg_color.info"
+    },
+    {
+      "type": "color",
+      "id": "txt_color",
+      "label": "t:sections.mosaic-1.settings.txt_color.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "alt",
+      "label": "t:sections.mosaic-1.settings.alt.label"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.mosaic-1.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.mosaic-1.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.mosaic-1.settings.button_link.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.mosaic-1.settings.image_1_header.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_01",
+      "label": "t:sections.mosaic-1.settings.image_01.label"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_01",
+      "label": "t:sections.mosaic-1.settings.subtitle_01.label"
+    },
+    {
+      "type": "text",
+      "id": "title_01",
+      "label": "t:sections.mosaic-1.settings.title_01.label"
+    },
+    {
+      "type": "url",
+      "id": "link_01",
+      "label": "t:sections.mosaic-1.settings.link_01.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.mosaic-1.settings.image_2_header.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_02",
+      "label": "t:sections.mosaic-1.settings.image_02.label"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_02",
+      "label": "t:sections.mosaic-1.settings.subtitle_02.label"
+    },
+    {
+      "type": "text",
+      "id": "title_02",
+      "label": "t:sections.mosaic-1.settings.title_02.label"
+    },
+    {
+      "type": "url",
+      "id": "link_02",
+      "label": "t:sections.mosaic-1.settings.link_02.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.mosaic-1.settings.image_3_header.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_03",
+      "label": "t:sections.mosaic-1.settings.image_03.label"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_03",
+      "label": "t:sections.mosaic-1.settings.subtitle_03.label"
+    },
+    {
+      "type": "text",
+      "id": "title_03",
+      "label": "t:sections.mosaic-1.settings.title_03.label"
+    },
+    {
+      "type": "url",
+      "id": "link_03",
+      "label": "t:sections.mosaic-1.settings.link_03.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.mosaic-1.presets.mosaic_1.name"
+    }
+  ]
+}
+{% endschema %}

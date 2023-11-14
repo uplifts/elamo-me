@@ -1,0 +1,56 @@
+{%- assign first_variant = product.first_available_variant -%}
+{%- assign threshold_cents = threshold | times: 100 -%}
+{%- assign threshold_money = threshold | times: 100 | money -%}
+{%- assign item_is_added = false -%}
+{%- assign item_discount_type = '' -%}
+{%- for line_item in cart.items -%}
+  {%- if line_item.variant.id == first_variant.id -%}
+    {%- for alloc in line_item.discount_allocations -%}
+      {%- if alloc.discount_application.type == 'script' and line_item.variant.id == first_variant.id -%}
+        {%- assign item_is_added = true -%}
+        {%- assign item_discount_type = 'script' -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if product != blank and product.available -%}
+  <div
+    class="cart-drawer--gift customATCForm{% if item_is_added %} d-none{% endif %}{% if cart.total_price < threshold_cents %} is-disabled{% endif %}"
+    data-threshold="{{ threshold_cents }}"
+    {% if item_discount_type != '' %}data-discount-type="{{ item_discount_type }}"{% endif %}
+    data-product-id="{{ product.id }}"
+    data-variant-id="{{ first_variant.id }}">
+    <div class="cart-drawer--gift-wrap flex-align-center">
+      {%- if product.featured_media != blank -%}
+        <div class="cart-drawer--gift-image">
+          <div class="cart-drawer--gift-picture img-contain">
+            <img 
+              src="{{ product.featured_media | img_url: '200x' }}"
+              alt="{{ product.title }}"
+              loading="lazy">
+          </div>
+        </div>
+      {%- endif -%}
+      <div class="cart-drawer--gift-content">
+        <div class="cart-drawer--gift-title">
+          {{ product.title }}
+        </div>
+        <div class="cart-drawer--gift-threshold">
+          {{ 'cart.general.free_from' | t }} {{ threshold_money }}
+        </div>
+        <div class="cart-drawer--gift-footer flex-align-center">
+          <div class="cart-drawer--gift-price">
+            {% comment %} {{ 0 | money }} {% endcomment %}
+            <s>{{ first_variant.price | money }}</s>
+          </div>
+          <div class="cart-drawer--gift-action">
+            <button
+              class="cart-drawer--gift-atc btn button--primary button--small customATCBtn">
+              {{ 'cart.general.add_for_free' | t }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}

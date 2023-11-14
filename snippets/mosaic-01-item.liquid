@@ -1,0 +1,24 @@
+<div class="mosaic-tile {{ class }}">
+  <div class="mosaic-tile--img absolute-cover img-cover">
+    <img
+      src="{{ image | img_url: 'master' }}"
+      alt="{{ image }}">
+  </div>
+  <div class="mosaic-tile--content mod-bottom-left">
+    <div class="mosaic-tile--content-inner">
+      {%- if subtitle != blank -%}
+        <div class="mosaic-tile--subtitle h4">
+          {{ subtitle }}
+        </div>
+      {%- endif -%}
+      {%- if title != blank -%}
+        <div class="mosaic-tile--title h2">
+          {{ title }}
+        </div>
+      {%- endif -%}
+    </div>
+    {%- if link != blank -%}
+      <a class="mosaic-tile--link {% if template contains 'index' %}index-grid-item{% endif %}  absolute-cover" href="{{ link }}"></a>
+    {%- endif -%}
+  </div>
+</div>

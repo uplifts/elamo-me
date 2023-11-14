@@ -1,0 +1,67 @@
+<div id="PatternsPopup" class="modal patterns-popup">
+  <div class="modal__inner">
+    <div class="patterns-popup--inner">
+      <div class="patterns-popup--grid">
+        {%- for prod in collection.products -%}
+          {%- if prod.type != 'Regenschutz' and prod.type != 'Geschenkgutschein' -%}
+            {%- assign topline_tags = prod.metafields.custom.product_badges.value -%}
+            <div class="patterns-popup--item{% if current_product.id == prod.id %} mod-current{% endif %}">
+              <div class="grid-product__content">
+                <a class="patterns-popup--link absolute-cover" href="{{ prod.url }}"></a>
+                {%- if show_wishlist -%}
+                  <div class="grid-product__whishlist whishlist-holder">
+                    <!-- Swym Wishlist Plus EPI Button-->
+                    <button data-with-epi="true" class="swym-button swym-add-to-wishlist-view-product product_{{prod.id}}" data-swaction="addToWishlist" data-product-id="{{prod.id | json}}" data-variant-id="{{prod.variants[0].id}}" data-product-url="{{ shop.url }}{{ prod.url }}"></button>
+                    <!-- Swym Wishlist Plus EPI Button-->
+                  </div>
+                {%- endif -%}
+
+                <div class="patterns-popup--item-img img-contain">
+                  <img
+                    src="{{ prod.featured_image | img_url: 'master' }}"
+                    loading="lazy"
+                    alt="{{ prod.featured_image.alt | escape }}">
+                </div>
+
+                {%- if show_ratings -%}
+                  <div class="patterns-popup--item-ratings">
+                    <div class="yotpo bottomLine"
+                      data-product-id="{{ prod.id }}">
+                  </div> 
+                  </div>
+                {%- endif -%}
+
+                {%- if show_titles -%}
+                  <div class="patterns-popup--item-title">
+                    {{ prod.title }}
+                  </div>
+                {%- endif -%}
+
+                {%- if show_badges and topline_tags != blank -%}
+                  <div class="patterns-popup--item-badges">
+                    <div class="pdp-buybox--topline-tags flex-align-center">
+                      {%- for tag in topline_tags -%}
+                        {%- assign txt_color = tag.text_color -%}
+                        {%- assign bg_color = tag.background_color -%}
+                        <span
+                          style="--bg-color: {{ bg_color | default: '#FCF5F0' }};--txt-color: {{ txt_color | default: '#7e6c61' }}"
+                          class="pdp-buybox--topline-tag">
+                          {{ tag.title }}
+                        </span>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <button type="button" class="btn btn--tertiary btn--circle modal__close js-modal-close text-link">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+      <span class="icon__fallback-text">{{ 'general.accessibility.close' | t }}</span>
+    </button>
+  </div>
+
+</div>

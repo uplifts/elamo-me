@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Unsere Bestseller",
+        "description": "",
+        "home_featured_products": "rucksacke-von-ela-mo-aus-hamburg",
+        "rows": 2,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured-collection"
+  ]
+}

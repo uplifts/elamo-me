@@ -1,0 +1,364 @@
+{
+  "sections": {
+    "8c029614-07d4-4585-95e8-64d1eaca0afc": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16180765720840__8c029614-07d4-4585-95e8-64d1eaca0afc-166685696825e5a621-0": {
+          "type": "image",
+          "settings": {
+            "title": "Gewinne <euro style=\"color:#7284A5;font-size:100px;\">500€<\/euro>\nWeihnachtsgeld",
+            "title_size": 70,
+            "subheading": "...und viele weitere tolle Geschenke!",
+            "link": "https:\/\/www.elamo.me\/pages\/gewinnspiel#newsletter",
+            "link_text": "Jetzt teilnehmen",
+            "bottom_text": "<b style=\"color:#2B5464\">Nur noch bis zum 30.11<\/b>",
+            "color_accent": "#2b5464",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/header-win-variante-uplifts.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16180765720840__8c029614-07d4-4585-95e8-64d1eaca0afc-166685696825e5a621-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 60,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "745d2bef-381b-48f6-a0ca-a28901d2228e": {
+      "type": "rich-text",
+      "blocks": {
+        "253eb204-55cf-40d5-8f1b-f9f6027a8299": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<img style=\"max-width:100px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-christmas_gift.png?v=1667472140\" alt=\"Italian Trulli\">"
+          }
+        },
+        "abfe6452-7c08-492d-a83a-3c908c14eba3": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<h1>Wir zahlen Dein Weihnachten!<\/h1>"
+          }
+        },
+        "761a469d-0b83-4d82-abcb-f6945f5b1796": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": true,
+            "text_raw": "<p class=\"gewinnen\" style=\"max-width: 750px; margin: auto;\">Nimm jetzt an unserem großen Weihnachts-Gewinnspiel teil und gewinne mit etwas Glück einen unserer tollen Preise. Das Gewinnspiel läuft bis zum <strong>30.11.2022<\/strong>. Gewinner werden via Email informiert. Mit der Teilnahme am Gewinnspiel ist die Anmeldung für unseren Newsletter verbunden. Eine Abmeldung ist jederzeit möglich. Es gelten unsere <a href=\"https:\/\/www.elamo.me\/pages\/teilnahmebedingungen\" target=\"_blank\" class=\"js-no-transition\"><span style=\"text-decoration:underline\">Teilnahmebedingungen<\/span><\/a>. Keine Sorge - wir mögen Spam genauso wenig wie Du.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "253eb204-55cf-40d5-8f1b-f9f6027a8299",
+        "abfe6452-7c08-492d-a83a-3c908c14eba3",
+        "761a469d-0b83-4d82-abcb-f6945f5b1796"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "#f9f9f9",
+        "txt_color": "#454545",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "c60c7e32-a39e-425c-80d2-f34240819303": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "css_class": "",
+        "bg_color": "#f9f9f9",
+        "txt_color": "#454545",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/PeachBrothers_ElaMo_alternate-16__1629726528_77.20.249.27_750x_92b25fd6-df1d-48d1-9631-c50101f878c6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Wir zahlen Dein Weihnachten!",
+        "text": "<p>Nimm jetzt an unserem großen Weihnachts-Gewinnspiel teil und gewinne mit etwas Glück einen unser tollen Preise. <\/p><p>Das Gewinnspiel läuft bis zum <strong>30.11.2022<\/strong>. Gewinner werden via Email informiert. Mit der Teilnahme am Gewinnspiel ist die Anmeldung für unseren Newsletter verbunden. Eine Abmeldung ist jederzeit möglich. Es gelten unsere <a href=\"https:\/\/www.elamo.me\/pages\/teilnahmebedingungen\" target=\"_blank\"><span style=\"text-decoration:underline\">Teilnahmebedingungen<\/span><\/a>. ­Keine Sorge, wir mögen Spam genauso wenig wie Du. <\/p>",
+        "button_label": "Jetzt anmelden & teilnehmen",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "9a683a61-8c14-43a9-9da3-3aa7b4773c34": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--16180765720840__9a683a61-8c14-43a9-9da3-3aa7b4773c34-1666857028220ef6fa-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--16180765720840__9a683a61-8c14-43a9-9da3-3aa7b4773c34-1666857028220ef6fa-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>1. Preis: 500€ Weihnachtsgeld in bar<\/strong><\/p><p><strong>2-5. Preis: 100€ Ela Mo<\/strong>™<strong> Einkaufsgutschein <\/strong><\/p><p><strong>6-10. Preis: Ein Ela Mo<\/strong>™<strong> Rucksack Deiner Wahl<\/strong><\/p><p>Das Gewinnspiel läuft bis zum 27.11.2022. Melde Dich für unseren Newsletter an und nimm automatisch am Gewinnspiel teilnehmen. <\/p><p>Wir wünschen Dir viel Glück!<\/p><p><em>Dein Team von Ela Mo™<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16180765720840__9a683a61-8c14-43a9-9da3-3aa7b4773c34-1666857028220ef6fa-0",
+        "template--16180765720840__9a683a61-8c14-43a9-9da3-3aa7b4773c34-1666857028220ef6fa-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "72cebb72-9c67-4540-bc09-80de72df7eef": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16180765720840__72cebb72-9c67-4540-bc09-80de72df7eef-1666900396d330b4e2-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "bottom_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/header-win-gewinne-seite2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Bildschirmfoto_2022-10-28_um_16.32.05.png",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16180765720840__72cebb72-9c67-4540-bc09-80de72df7eef-1666900396d330b4e2-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "5d8df6fc-fbb0-492a-b387-bcd61a47822a": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "template--16181352595720__5d8df6fc-fbb0-492a-b387-bcd61a47822a-16674023276f91363c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icons8-banknotes_2bc5915c-b0de-41e8-8430-ae869f85905e.png",
+            "image_width": 150,
+            "title": "<h3>500€ Weihnachtsgeld<\/h3>",
+            "text": "<p>Platz 1<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16181352595720__5d8df6fc-fbb0-492a-b387-bcd61a47822a-16674023276f91363c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icons8-gift_card.png",
+            "image_width": 150,
+            "title": "<h3>100€ ElaMo Gutschein<\/h3>",
+            "text": "<p>Platz 2 - 5<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1231d78c-6c1a-4059-9eac-6bb78f6e65a3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icons8-backpack.png",
+            "image_width": 150,
+            "title": "<h3>ElaMo Rucksack Deiner Wahl<\/h3>",
+            "text": "<p>Platz 6 - 10<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16181352595720__5d8df6fc-fbb0-492a-b387-bcd61a47822a-16674023276f91363c-0",
+        "template--16181352595720__5d8df6fc-fbb0-492a-b387-bcd61a47822a-16674023276f91363c-1",
+        "1231d78c-6c1a-4059-9eac-6bb78f6e65a3"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "#eef7fa",
+        "txt_color": "#2b5464",
+        "title": "Diese Gewinne warten auf dich...",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "92d9edc3-c983-42ac-8552-1cbf07e55844": {
+      "type": "rich-text",
+      "blocks": {
+        "317ad21a-1e01-42ba-ade3-1e106fd5047e": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<h1>Nur noch bis zum 30.11<\/h1>"
+          }
+        },
+        "f9cf9506-d5be-4b40-858a-c39e2fa060ae": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": true,
+            "text_raw": "<p style=\"max-width: 650px;margin:auto;\">Das Gewinnspiel wird Ende November aufgelöst und danach nicht mehr wiederholt. Die 10 glücklichen Gewinner erhalten anschließend ihre Preise. <\/p>"
+          }
+        },
+        "269bc254-8371-49f3-a966-937412958087": {
+          "type": "text_raw",
+          "settings": {
+            "enlarge_text": false,
+            "text_raw": "<a id=\"newsletter\"><\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "317ad21a-1e01-42ba-ade3-1e106fd5047e",
+        "f9cf9506-d5be-4b40-858a-c39e2fa060ae",
+        "269bc254-8371-49f3-a966-937412958087"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "4480e5ad-1296-4442-b8ef-ce281b1cfe87": {
+      "type": "newsletter",
+      "blocks": {
+        "e3b0c42e-a289-4fec-a7ef-f7dd286df8fb": {
+          "type": "text_raw",
+          "settings": {
+            "text_raw": "<img style=\"max-width:150px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/elamo_logo_schwarz-cut_110x@2x.webp?v=1661456944\" alt=\"Italian Trulli\">"
+          }
+        },
+        "0a1a93e4-7d1c-434e-b669-930579894933": {
+          "type": "text_raw",
+          "settings": {
+            "text_raw": "<h1>Jetzt eintragen & teilnehmen:<\/h1>"
+          }
+        },
+        "template--16180765720840__4480e5ad-1296-4442-b8ef-ce281b1cfe87-16669003961ce1325c-2": {
+          "type": "form",
+          "settings": {}
+        },
+        "7269826a-d612-4d36-bd1f-9e21321d1beb": {
+          "type": "text_raw",
+          "settings": {
+            "text_raw": "100% kostenlos I kein Spam"
+          }
+        },
+        "cc4b9f17-6b8d-4fd9-883b-73cd3788dbef": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "57d11ccd-56b5-41d7-92ba-4f3cc96edfba": {
+          "type": "title",
+          "settings": {
+            "title": "Die Gewinner werden von uns benachrichtigt."
+          }
+        },
+        "a0915cd3-6399-4fbf-8d51-613ddf5a4a2f": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "disabled": true,
+          "settings": {
+            "formId": "JuarbG"
+          }
+        }
+      },
+      "block_order": [
+        "e3b0c42e-a289-4fec-a7ef-f7dd286df8fb",
+        "0a1a93e4-7d1c-434e-b669-930579894933",
+        "template--16180765720840__4480e5ad-1296-4442-b8ef-ce281b1cfe87-16669003961ce1325c-2",
+        "7269826a-d612-4d36-bd1f-9e21321d1beb",
+        "cc4b9f17-6b8d-4fd9-883b-73cd3788dbef",
+        "57d11ccd-56b5-41d7-92ba-4f3cc96edfba",
+        "a0915cd3-6399-4fbf-8d51-613ddf5a4a2f"
+      ],
+      "settings": {}
+    },
+    "895076b4-078e-480b-b5fd-ce92e773f301": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "envelope",
+            "title": "1. Zum Newsletter anmelden",
+            "text": "<p>Melde Dich bis zum 30.11.22 für unseren Newsletter an und nimm automatisch am Gewinnspiel teil. <a href=\"\/pages\/teilnahmebedingungen\" target=\"_blank\" title=\"Teilnahmebedingungen\"><span style=\"text-decoration:underline\"><em>Teilnahmebedingungen<\/em><\/span><\/a><\/p>"
+          }
+        },
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "calendar",
+            "title": "2. Auslosung am 30. November",
+            "text": "<p>Am Ende des 30. Novembers 2022 losen wir unter allen Anmeldungen den Gewinner oder die Gewinnerin aus.<\/p>"
+          }
+        },
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "charity",
+            "title": "3. Gewinner\/in erhält 500€",
+            "text": "<p>Die Gewinner werden von uns per Mail benachrichtigt und erhalten von uns einen der tollen Preise.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-0",
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-1",
+        "template--16181352595720__895076b4-078e-480b-b5fd-ce92e773f301-1667398766d9dd3f75-2"
+      ],
+      "settings": {
+        "title": "Und so einfach funktioniert's",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#1c5977",
+        "button_label": "",
+        "button_link": "",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "8c029614-07d4-4585-95e8-64d1eaca0afc",
+    "745d2bef-381b-48f6-a0ca-a28901d2228e",
+    "c60c7e32-a39e-425c-80d2-f34240819303",
+    "9a683a61-8c14-43a9-9da3-3aa7b4773c34",
+    "main",
+    "72cebb72-9c67-4540-bc09-80de72df7eef",
+    "5d8df6fc-fbb0-492a-b387-bcd61a47822a",
+    "92d9edc3-c983-42ac-8552-1cbf07e55844",
+    "4480e5ad-1296-4442-b8ef-ce281b1cfe87",
+    "895076b4-078e-480b-b5fd-ce92e773f301"
+  ]
+}

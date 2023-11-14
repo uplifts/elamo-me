@@ -1,0 +1,377 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "606c99f0-4703-4e62-949b-807238c97fa9": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-short-description",
+            "liquid": "{{ product.metafields.custom.short_description }}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "css_class": "",
+            "note": "inkl. MwSt.",
+            "rating_snippet": "<div id=\"custom-star-rating\" class=\"yotpo bottomLine\"\n    data-appkey=\"tJmxt4zRgumG3PYICN6qu3hwno6mR3DtSSBtJWNX\"\n    data-domain=\"{{shop.permanent_domain | escape }}\"\n    data-product-id=\"{{ product.id }}\"\n    data-product-models=\"{{ product.id }}\"\n    data-name=\"{{ product.title | escape }}\"\n    data-url=\"{{ shop.url }}{{ product.url }}\"\n    data-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\n    data-description=\"{{ product.description | escape }}\"\n    data-bread-crumbs=\"{% for tag in product.tags %}{{ tag | escape }};{% endfor %}\">\n<\/div>"
+          }
+        },
+        "0cf0a4f5-28e2-4353-ba73-d0546a7f03ae": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-shipping-time",
+            "liquid": "{% render 'product-availability-indicator', product: product %}"
+          }
+        },
+        "a7e842bd-18e6-4b21-ae1f-bbdff24c55c6": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "5bfffeb3-4695-4fc3-8e9a-c8a67de31c98": {
+          "type": "advantages",
+          "settings": {
+            "css_class": "",
+            "images": "https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-shipped_1.png?v=1663187253\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-100_1.png?v=1663187253\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/icons8-heart_1.png?v=1663187253",
+            "texts": "Kostenloser Versand\nTage Rückagberecht\nKostenlose Retouren"
+          }
+        },
+        "399d99da-6722-4a5e-b361-6a933fc0a211": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "pdp-visitors-count",
+            "liquid": "<div class=\"text-center\"><div><input name=\"add\" style=\"display: none;\" pvc-override=\"true\"><input name=\"add\" style=\"display: none;\" pvc-override=\"true\"><\/div><\/div>"
+          }
+        },
+        "1ff9ee26-4171-4de4-97e1-6913ab9f6c92": {
+          "type": "tab",
+          "settings": {
+            "css_class": "",
+            "force_open": false,
+            "below_buybox": true,
+            "image": "shopify:\/\/shop_images\/icons8-family_2.png",
+            "title": "Dein Kauf unterstützt ein Familien-Startup",
+            "content": "<p>Als Familien-Startup möchten wir die Welt ein Stückchen besser machen! Wir helfen mit 1\/3 unserer Gewinne insbesondere benachteiligten Kindern & Familien. 2021 konnten wir dank Kund*innen wie Dir 63.704,36€ spenden.<\/p>",
+            "liquid": "<img style=\"max-width: 230px;\"src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/DEU-B-Corp-Logo-Tagline-Lockup-Standards-Black-RGB.png?v=1669138746\">",
+            "page": ""
+          }
+        },
+        "e8f91501-b336-401b-8193-fbb4f49d3ae9": {
+          "type": "tab",
+          "settings": {
+            "css_class": "pdp-collapse-description",
+            "force_open": true,
+            "below_buybox": true,
+            "image": "shopify:\/\/shop_images\/icons8-rucksack_1.png",
+            "title": "Details ansehen",
+            "content": "",
+            "liquid": "<div class=\"pdp-collapse-tabs\">\n{%- render 'product-meta-tabs', product: product, block: block -%}\n<\/div>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "606c99f0-4703-4e62-949b-807238c97fa9",
+        "price",
+        "0cf0a4f5-28e2-4353-ba73-d0546a7f03ae",
+        "a7e842bd-18e6-4b21-ae1f-bbdff24c55c6",
+        "buy_buttons",
+        "5bfffeb3-4695-4fc3-8e9a-c8a67de31c98",
+        "399d99da-6722-4a5e-b361-6a933fc0a211",
+        "1ff9ee26-4171-4de4-97e1-6913ab9f6c92",
+        "e8f91501-b336-401b-8193-fbb4f49d3ae9"
+      ],
+      "settings": {
+        "show_topline_metatags": true,
+        "online_visitors_count": "",
+        "has_product_buybox": true,
+        "product_buybox_bordered": true,
+        "gallery_is_sticky": true,
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "1657137737fd8e8c9d": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Mach Deinen Weg",
+        "title_size": 80,
+        "subheading": "Schöne & durchdachte Begleiter für die Wege Deines Lebens.",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "{{ product.metafields.my_fields.produktvideo_youtube_url.value }}",
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer viel unterwegs ist, ist mit diesen praktischen Rucksäcken bestens beraten.“<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/Esquire_logo__1993__svg.png",
+            "author": ""
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Wer viel unterwegs ist und zugleich umwerfend aussehen möchte, ist mit dem durchdachten Rucksack bestens bedient.“<\/p>",
+            "image": "shopify:\/\/shop_images\/bunte-de-vector-logo__1_-removebg-preview.png",
+            "author": ""
+          }
+        },
+        "21e3ded2-b733-4d8d-9c74-48b8b45c6125": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Der Rucksack setzt den klassischen Look mit edler Farbkombination optimal um.“<\/p>",
+            "image": "shopify:\/\/shop_images\/ntv__1_-removebg-preview.png",
+            "author": ""
+          }
+        },
+        "da58b39c-1571-4700-8a8c-765d92117166": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>„Das Preis-Leistungs-Verhältnis ist einfach unschlagbar.“<\/p>",
+            "image": "shopify:\/\/shop_images\/sz-690x480-crop-50-50-removebg-preview.png",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "21e3ded2-b733-4d8d-9c74-48b8b45c6125",
+        "da58b39c-1571-4700-8a8c-765d92117166"
+      ],
+      "settings": {
+        "css_class": "",
+        "title": "Das sagen die Experten:",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "Rucksack for Future",
+        "title": "CO2 im Fokus",
+        "text": "<p>Als Familienunternehmen sitzt mit unseren Kindern auch die Zukunft an unserem Tisch. Daher reduzieren wir kontinuierlich den CO2-Fußabdruck unserer Rucksäcke, z.B. durch den Einsatz von recyceltem Material. Unvermeidbare Emissionen kompensieren wir zu 120% durch die Förderung von Klimaschutzprojekten.<\/p><p><a href=\"\/pages\/umwelt\" target=\"_blank\" title=\"Umwelt\">Mehr erfahren<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "{{ product.metafields.my_fields.produkt_hintergrundbild.value }}",
+        "desktop_size": 0,
+        "image_alignment": "center center",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "165713797540399870": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "1\/3 für Soziale Initiativen",
+        "title": "Miteinander Füreinander",
+        "text": "<p>Du wärst gern Teil einer Gemeinschaft, die sich füreinander einsetzt? Wir auch! Deshalb produzieren wir unsere Produkte fair und verwenden 1\/3 unserer Gewinne für soziale Initiativen. Gemeinsam mit Dir und vielen Anderen kämpfen wir für eine Welt, die mitfühlend, gerecht und schön ist. <\/p><p><a href=\"\/pages\/gemeinschaft\" target=\"_blank\" title=\"Gemeinschaft\">Mehr erfahren<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-30_um_14.38.21.png",
+        "desktop_size": 0,
+        "image_alignment": "center center",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "16571380394be5f501": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "Nachricht vom Gründer",
+        "title": "Unser Weg",
+        "text": "<p>Meine Frau und ich haben unser Unternehmen 2017 aus unserer Küche heraus gegründet. Mit der Geburt unserer ersten Tochter war mir zuvor klar geworden, dass ich einen neuen Weg einschlagen musste. Ich wollte dabei sein, wenn meine Kinder groß werden und mich nicht von meinem Managerjob auffressen lassen. Ich kündigte meine Anstellung und startete diese Reise. <\/p><p>Heute unterstützen wir mit unserem kleinen Team und großer Leidenschaft andere Menschen dabei, ihren eigenen Weg zu gehen. Unsere Rucksäcke sind treue Begleiter und eine Erinnerung an das Wichtigste -  <\/p><p><strong>auf Deinen Wegen bist Du nie allein! <\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/IMG_1700.jpg",
+        "desktop_size": -50,
+        "image_alignment": "20% 90%",
+        "color_border": "#f4f4f4",
+        "layout": "right"
+      }
+    },
+    "16571381403699d760": {
+      "type": "text-columns",
+      "blocks": {
+        "1657138140e8420345-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/star.png",
+            "image_width": 140,
+            "title": "100 Tage testen",
+            "text": "<p>Betrachte die ersten 100 Tage mit Deinem Ela Mo™ Produkt als Testphase (Hey, Du kannst die Welt in 80 umrunden;). Wenn Du nicht 100% zufrieden bist, sind wir es auch nicht. Wir erstatten den vollen Kaufpreis oder sorgen für Ersatz - ohne Wenn & Aber!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1657138140e8420345-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/retoure.png",
+            "image_width": 140,
+            "title": "Kostenlose Lieferung + Rückversand",
+            "text": "<p>Deine Bestellung in unserem Shop werten wir als großen Vertrauensvorschuß und übernehmen selbstverständlich alle Versandkosten inkl. Rücksendung, wenn das Produkt nicht Deinen Vorstellungen entsprechen sollte.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657138140e8420345-0",
+        "1657138140e8420345-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "is_slider": false,
+        "bg_color": "",
+        "txt_color": "",
+        "title": "Kein Risiko!",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "165779646907a065f2": {
+      "type": "yotpo-gallery",
+      "settings": {}
+    },
+    "16577955825113c962": {
+      "type": "apps",
+      "blocks": {
+        "6fd2f92f-f272-4d38-bc90-09168e888c42": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "6fd2f92f-f272-4d38-bc90-09168e888c42"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "DAS KÖNNTE DIR AUCH GEFALLEN"
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "2f9442b4-0bc2-4749-8e0b-f52a11462c08": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16169168732424__2f9442b4-0bc2-4749-8e0b-f52a11462c08-1666337351fb620f2a-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Daypack_Wasserabweisend.jpg",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16169168732424__2f9442b4-0bc2-4749-8e0b-f52a11462c08-1666337351fb620f2a-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Daypack_Magnetverschluss.jpg",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "8de2ccfa-4985-459b-aa7d-e1b971d93af2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Recyclet_Plastikflaschen.jpg",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16169168732424__2f9442b4-0bc2-4749-8e0b-f52a11462c08-1666337351fb620f2a-0",
+        "template--16169168732424__2f9442b4-0bc2-4749-8e0b-f52a11462c08-1666337351fb620f2a-1",
+        "8de2ccfa-4985-459b-aa7d-e1b971d93af2"
+      ],
+      "disabled": true,
+      "settings": {
+        "css_class": "",
+        "is_slider": false,
+        "bg_color": "#f4f9ec",
+        "txt_color": "",
+        "title": "",
+        "align_text": "left",
+        "alt": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "1657137737fd8e8c9d",
+    "testimonials",
+    "background-image-text",
+    "165713797540399870",
+    "16571380394be5f501",
+    "16571381403699d760",
+    "165779646907a065f2",
+    "16577955825113c962",
+    "product-recommendations",
+    "collection-return",
+    "2f9442b4-0bc2-4749-8e0b-f52a11462c08"
+  ]
+}

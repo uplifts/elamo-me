@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "collection_image_enable": true,
+        "description_enable": false
+      }
+    },
+    "collection-filters": {
+      "type": "collection-filters",
+      "disabled": true,
+      "settings": {
+        "enable_color_swatches": false,
+        "collection_sort_enable": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "bfb41a3f-8eba-4452-afdd-9eb3fab9233c": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "per_row_desktop": 3,
+            "per_row_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "bfb41a3f-8eba-4452-afdd-9eb3fab9233c",
+        "product_grid"
+      ],
+      "settings": {}
+    },
+    "1657826251f3cef86c": {
+      "type": "rich-text",
+      "blocks": {
+        "e1cbc830-ca8c-4f06-a074-6d6965cfb8b2": {
+          "type": "page",
+          "settings": {
+            "page_text": "reviews"
+          }
+        },
+        "1657826251cb5a4042-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>{{ collection.metafields.custom.seo_kategorietext.value }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e1cbc830-ca8c-4f06-a074-6d6965cfb8b2",
+        "1657826251cb5a4042-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "left",
+        "narrow_column": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "collection-filters",
+    "main-collection",
+    "1657826251f3cef86c"
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16571356332f756627": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Mach Deinen Weg!",
+        "title_size": 86,
+        "subheading": "Schöne & durchdachte Rolltop-Rucksäcke für die Wege Deines Lebens",
+        "link_text": "Jetzt bestellen",
+        "link": "https:\/\/www.elamo.me\/products\/ela-mo-rolltop-rucksack-blumen",
+        "color_accent": "#ffffff",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/Design_ohne_Titel_5bcb266b-6dcc-42a3-b2d0-b56e64e7543b.mp4?v=1629724275",
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "1657135646b3258858": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "1# Bestseller",
+        "description": "Nachhaltige Rolltop-Rucksäcke mit flexibler Größe, USB-Anschluß und Geheimfach.",
+        "home_featured_products": "rolltop-bestseller-von-ela-mo-aus-hamburg",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "1657135660875aa0ea": {
+      "type": "testimonials",
+      "blocks": {
+        "16571356606bd9a1e2-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Ich war lange auf der Suche nach einem Rucksack, der meine Handtasche ersetzt, mich aber nicht wie eine Schildkröte aussehen lässt. Dieser hat viel Stauraum und bleibt dennoch klein und kompakt.<\/p>",
+            "image": "shopify:\/\/shop_images\/testimonials_1.jpg",
+            "author": "Maria aus Stade"
+          }
+        },
+        "16571356606bd9a1e2-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Ich war schon von den Fotos begeistert. Als ich ihn dann endlich in den Händen hielt muss ich sagen: WOW! Er ist noch schöner als erwartet. <\/p>",
+            "image": "shopify:\/\/shop_images\/testimonila1.png",
+            "author": "Marie aus Berlin"
+          }
+        }
+      },
+      "block_order": [
+        "16571356606bd9a1e2-0",
+        "16571356606bd9a1e2-1"
+      ],
+      "settings": {
+        "title": "Schön über 100.000 glückliche Kunden",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "165713592989d1bb42": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Rucksack for Future",
+        "title": "100% KLIMANEUTRAL",
+        "text": "<p>Als Familienunternehmen sitzt mit unseren Kindern auch die Zukunft an unserem Tisch. Für die Herstellung dieses Rucksacks verwenden wir daher Stoffe, die zu 100% aus recyceltem Material bestehen. Der CO2-Ausstoß kann so um 60% reduziert werden. Unvermeidbare Emissionen kompensieren wir zu 100% durch die Förderung von Klimaschutzprojekten. <\/p>",
+        "button_label": "Jetzt bestellen",
+        "button_link": "shopify:\/\/products\/ela-mo-rolltop-rucksack-blumen",
+        "image": "shopify:\/\/shop_images\/ela-mo-recycle6_1_8ddc1f3e-9c53-4c2c-bd79-6f970a4baebc.jpg",
+        "desktop_size": 10,
+        "image_alignment": "80% 50%",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "16571360349f418207": {
+      "type": "slideshow",
+      "blocks": {
+        "1657136034b256870f-0": {
+          "type": "image",
+          "settings": {
+            "title": "ELA MO™ ROLLTOP RUCKSACK | NIGHTBLUE",
+            "title_size": 48,
+            "subheading": "",
+            "link": "shopify:\/\/products\/ela-mo-rolltop-rucksack-nightblue",
+            "link_text": "Jetzt bestellen",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/tulpen.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1657136034b256870f-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1657136123ad715fb9": {
+      "type": "slideshow",
+      "blocks": {
+        "1657136123ad4e2d34-0": {
+          "type": "image",
+          "settings": {
+            "title": "ELA MO™ ROLLTOP RUCKSACK | A ROSE",
+            "title_size": 48,
+            "subheading": "",
+            "link": "shopify:\/\/products\/ela-mo-rolltop-rucksack-blumen",
+            "link_text": "Jetzt bestellen",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/PeachBrothers_ElaMo_25__1629730470_77.20.249.27.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1657136123ad4e2d34-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": -20,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1657136135e4e939b8": {
+      "type": "slideshow",
+      "blocks": {
+        "1657136135b3152d44-0": {
+          "type": "image",
+          "settings": {
+            "title": "ELA MO™ ROLLTOP RUCKSACK | BLACK",
+            "title_size": 48,
+            "subheading": "",
+            "link": "shopify:\/\/products\/ela-mo-rolltop-rucksack-black",
+            "link_text": "Jetzt bestellen",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/PeachBrothers_ElaMo_16__1629726528_77.20.249.27.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1657136135b3152d44-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1657136145ca0dd278": {
+      "type": "slideshow",
+      "blocks": {
+        "1657136144af660845-0": {
+          "type": "image",
+          "settings": {
+            "title": "ELA MO™ ROLLTOP RUCKSACK | THE GREY",
+            "title_size": 48,
+            "subheading": "",
+            "link": "shopify:\/\/products\/ela-mo-rolltop-rucksack-the-grey",
+            "link_text": "Jetzt bestellen",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/PeachBrothers_ElaMo_42__1629730597_77.20.249.27.jpg",
+            "focal_point": "80% 10%"
+          }
+        }
+      },
+      "block_order": [
+        "1657136144af660845-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": -50,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16571361589fd89873": {
+      "type": "text-columns",
+      "blocks": {
+        "1657136158796b5a6c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/service.png",
+            "image_width": 140,
+            "title": "Fragen? Wir sind für Dich da!",
+            "text": "<p>Nimm Kontakt mit uns auf -  unser Team freut sich auf Deine Nachricht.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1657136158796b5a6c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/kerze.png",
+            "image_width": 140,
+            "title": "100 Tage testen",
+            "text": "<p>Stressfrei einkaufen! Wenn Du nicht 100% zufrieden bist, erstatten wir den Kaufpreis oder sorgen für Ersatz.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "18a7495b-9e28-4da8-ac74-932ae49fbaa1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/star.png",
+            "image_width": 140,
+            "title": "Kostenfreie Lieferung",
+            "text": "<p>Lieferung und Rücksendungen sind für Dich komplett kostenfrei. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657136158796b5a6c-0",
+        "1657136158796b5a6c-1",
+        "18a7495b-9e28-4da8-ac74-932ae49fbaa1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16571356332f756627",
+    "1657135646b3258858",
+    "1657135660875aa0ea",
+    "165713592989d1bb42",
+    "16571360349f418207",
+    "1657136123ad715fb9",
+    "1657136135e4e939b8",
+    "1657136145ca0dd278",
+    "16571361589fd89873"
+  ]
+}

@@ -1,0 +1,91 @@
+<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+<script>
+  var klaviyo = klaviyo || [];
+  klaviyo.init({
+    account: "JuarbG",
+     list: 'RbUbGU',
+    platform: "shopify"
+  });
+  klaviyo.enable("backinstock", { 
+    trigger: {
+      product_page_text: "WARTELISTE",
+      product_page_class: "btn btn--full",
+      product_page_text_align: "center",
+      product_page_margin: "0",
+      replace_anchor: true
+    },
+    modal: {
+      close_label: "schließen",
+      newsletter_subscribe_label: "Ich möchte zum Newsletter hinzugefügt werden.",
+      subscribe_checked: false,
+      headline: "{product_name}",
+      body_content: "Dieser Artikel ist beliebt und gerade ausverkauft oder wird erst noch veröffentlicht. Wir benachrichtigen Dich in jedem Fall, wenn er bestellbar ist.",
+      email_field_label: "Deine E-Mail Adresse",
+      button_label: "Bitte benachrichtigt mich",
+      subscription_success_label: "Du bist auf der Liste und wir informieren Dich. Schönen Tag!",
+      footer_content: '',
+      additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+      drop_background_color: "#000",
+      background_color: "#fff",
+      text_color: "#222",
+      button_text_color: "#fff",
+      button_background_color: "#1c5977",
+      close_button_color: "#2d2d2d",
+      error_background_color: "#fcd6d7",
+      error_text_color: "#C72E2F",
+      success_background_color: "#d3efcd",
+      success_text_color: "#1B9500"
+    }
+  });
+  
+  const customFormTriggers = document.querySelectorAll('.klaviyoPopupTrigger');
+  if (customFormTriggers) {
+    customFormTriggers.forEach(function(el) {
+      el.addEventListener('click', function (e) {
+        let formID = el.dataset.formId;
+        if (formID) {
+          console.log(formID)
+          e.preventDefault();
+          setTimeout(() => {
+            window._klOnsite.openForm(formID, () => {})
+          }, 250)
+        }
+      });
+    });
+  }
+  /*
+  token,
+  note,
+  attributes,
+  original_total_price,
+  total_price,
+  total_discount,
+  total_weight,
+  item_count,
+  items,
+  requires_shipping,
+  currency,
+  items_subtotal_price,
+  cart_level_discount_applications
+  */
+  document.addEventListener('ajaxProduct:added', function(evt) {
+    theme.cart.getCart().then((cart) => {
+      var _learnq = window._learnq || [];
+      var klAjax = true;
+      let items = cart.items;
+  
+      var cartObject = {
+        total_price: cart.total_price / 100,
+        $value: cart.total_price / 100,
+        total_discount: cart.total_discount,
+        original_total_price: cart.original_total_price / 100,
+        items: items
+      }
+  
+      if (klAjax) {
+        _learnq.push(['track', 'Added to Cart', cartObject]);
+        klAjax = false;
+      }
+    });
+  });
+</script>

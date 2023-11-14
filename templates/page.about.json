@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16571333201c98bcb4": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "Fabian vom Team Ela Mo™",
+        "title": "Unser Weg",
+        "text": "<p>Meine Frau und ich haben unser Unternehmen 2017 aus unserer Küche heraus gegründet. Mit der Geburt unserer ersten Tochter war mir zuvor klar geworden, dass ich einen neuen Weg einschlagen musste. Ich wollte dabei sein, wenn meine Kinder groß werden und mich nicht von meinem Managerjob auffressen lassen. Ich kündigte meine Anstellung und startete diese Reise. <\/p><p>Heute unterstützen wir mit unserem kleinen Team und großer Leidenschaft andere Menschen dabei, ihren eigenen Weg zu gehen. Unsere Rucksäcke sind treue Begleiter und eine Erinnerung an das Wichtigste -<\/p><p><strong>auf Deinen Wegen bist Du nie allein!<\/strong><\/p><p><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/IMG_1700.jpg",
+        "desktop_size": -70,
+        "image_alignment": "20% 90%",
+        "color_border": "#f4f4f4",
+        "layout": "right"
+      }
+    },
+    "1660165918bb625bbb": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "1\/3 FÜR SOZIALE INITIATIVEN",
+        "title": "MITEINANDER FÜREINANDER",
+        "text": "<p>Du wärst gern Teil einer Gemeinschaft, die sich füreinander einsetzt? Wir auch! Deshalb produzieren wir unsere Produkte fair und verwenden 1\/3 unserer Gewinne für soziale Initiativen. Gemeinsam mit Dir und vielen Anderen setzen wir uns für eine Welt ein, die mitfühlend, gerecht und schön ist. Was wir bereits erreicht haben, erfährst Du in unserem <a href=\"https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view\"><strong>Impact Report 2022<\/strong>.<\/a><\/p>",
+        "button_label": "",
+        "button_link": "https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view",
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-30_um_14.38.21.png",
+        "desktop_size": 0,
+        "image_alignment": "center center",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "1657133326d24300e0": {
+      "type": "background-image-text",
+      "settings": {
+        "css_class": "",
+        "subtitle": "RUCKSACK FOR FUTURE",
+        "title": "CO2 IM FOKUS",
+        "text": "<p>Als Familienunternehmen sitzt mit unseren Kindern auch die Zukunft an unserem Tisch. Daher reduzieren wir kontinuierlich den CO2-Fußabdruck unserer Rucksäcke, z.B. durch den Einsatz von recyceltem Material. Unvermeidbare Emissionen kompensieren wir zu 120% durch die Förderung von Klimaschutzprojekten.<\/p>",
+        "button_label": "Mehr erfahren",
+        "button_link": "https:\/\/www.elamo.me\/pages\/umwelt",
+        "image": "shopify:\/\/shop_images\/28__1598610983_62.96.2.2.jpg",
+        "desktop_size": -60,
+        "image_alignment": "80% 10%",
+        "color_border": "#f4f4f4",
+        "layout": "left"
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-21_um_10.13.47.png",
+            "image_width": 650,
+            "title": "Gemeinschaft",
+            "text": "<p>Als Unternehmen sind wir Teil einer Gemeinschaft und tragen Verantwortung für ihren Zusammenhalt. Deshalb spenden wir <strong>⅓ unseres Gewinns <\/strong>zugunsten sozialer Initiativen und Projekten, die sich ganz konkret für eine Welt einsetzen, die mitfühlend, gerecht und schön ist.<\/p>",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify:\/\/pages\/gemeinschaft"
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/6a39dbe0_a826.jpg",
+            "image_width": 650,
+            "title": "Partner*innen",
+            "text": "<p><a href=\"https:\/\/elamo-me.myshopify.com\/pages\/verantwortung\" title=\"Verantwortung\">Lieferketten sind Menschenketten. Wir stellen daher sicher, dass unsere Produkte <strong>fair und gerecht<\/strong> hergestellt werden. Langfristige und partnerschaftliche Beziehungen zu unseren Produzent*innen sind hierfür die Grundlage. <\/a><\/p>",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify:\/\/pages\/verantwortung"
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Ohne_Titel_7.jpg",
+            "image_width": 650,
+            "title": "Umwelt",
+            "text": "<p><a href=\"https:\/\/elamo-me.myshopify.com\/pages\/umwelt\" title=\"Umwelt\">Wir sind <strong>CO2-neutral <\/strong> (durch Kompensationen) - auf Produkt- und Unternehmensebene. Für uns ist dies erst der Anfang und Ansporn zugleich, unseren ökologischen Fußabdruck kontinuierlich zu verringern.<\/a><\/p>",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify:\/\/pages\/umwelt"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "disabled": true,
+      "settings": {
+        "css_class": "",
+        "is_slider": false,
+        "bg_color": "",
+        "txt_color": "",
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "16571339445afb18ba": {
+      "type": "text-columns",
+      "blocks": {
+        "16571339448359fda5-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/German-B-Corp-Logo-Black-RGB.png",
+            "image_width": 190,
+            "title": "",
+            "text": "<p>Als B Corporation sind wir Teil einer <a href=\"https:\/\/www.bcorporation.de\/\" target=\"_blank\" title=\"https:\/\/www.bcorporation.de\/\"><strong>globalen Bewegung<\/strong><\/a> für eine ökologisch und sozial nachhaltige Wirtschaft.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16571339448359fda5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Impact_Report_2023.jpg",
+            "image_width": 220,
+            "title": "",
+            "text": "<p><a href=\"https:\/\/drive.google.com\/file\/d\/1rW9GkY567KDOnJmeh_EAaeaem6gMB_EU\/view?usp=sharing\" target=\"_blank\" title=\"neu.land_impact report 2021\">Unser <strong>Impact Report<\/strong> <strong>#3 <\/strong>ist da! Erfahre mehr darüber, was wir gemeinsam mit Kund*innen wie Dir erreicht haben und welche Ziele wir uns für 2023 gesetzt haben. <\/a><\/p>",
+            "button_label": "Jetzt zum Report",
+            "button_link": "https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view"
+          }
+        }
+      },
+      "block_order": [
+        "16571339448359fda5-0",
+        "16571339448359fda5-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "is_slider": false,
+        "bg_color": "",
+        "txt_color": "",
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "5bebb0c1-15bb-4e1c-b666-7eaf730886bb": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/fair-wear-foundation-logo.jpg",
+        "image_width": 380,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>Seit September 2023 ist Ela Mo Teil des Fair Wear HRDD Academy-Pilotprojekts.<\/p><p>Die HRDD Academy hat das Ziel, Unternehmen in der Textil- und Bekleidungsindustrie dabei zu unterstützen, menschenrechtliche Sorgfaltspflichten in ihrer eigenen Lieferkette umzusetzen.<\/p><p>Mit unserer Teilnahme am Pilotprojekt unterstützen wir Fair Wear bei der Entwicklung der Academy. Zusammen mit anderen ausgewählten Brands testen wir die Lerninhalte und -methoden.<\/p><p>Wir freuen uns sehr, dabei zu sein und von- und miteinander zu lernen! Weitere Informationen zur Fair Wear HRDD Academy findest Du <a href=\"https:\/\/www.fairwear.org\/join-the-movement\/enabling-garment-and-footwear-brands-to-conduct-hrdd\/\"><span style=\"text-decoration:underline\">hier<\/span><\/a>. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16571333201c98bcb4",
+    "1660165918bb625bbb",
+    "1657133326d24300e0",
+    "text-columns",
+    "16571339445afb18ba",
+    "5bebb0c1-15bb-4e1c-b666-7eaf730886bb"
+  ]
+}

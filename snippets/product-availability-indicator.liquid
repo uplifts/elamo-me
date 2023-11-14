@@ -1,0 +1,5 @@
+{%- if product.available -%}
+  {{ product.metafields.custom.lieferzeit.value }}
+{%- else -%}
+  {{ product.metafields.custom.lieferzeit_ausverkauft.value }}
+{%- endif -%}

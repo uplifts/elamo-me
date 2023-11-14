@@ -1,0 +1,202 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "165713418478e1ac7d": {
+      "type": "slideshow",
+      "blocks": {
+        "165713418427e5cdb6-0": {
+          "type": "image",
+          "settings": {
+            "title": "Unsere Partner*innen",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "bottom_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-top horizontal-center",
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-30_um_14.37.51_ca653008-3611-4452-82c1-05f325ffc315.png",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "165713418427e5cdb6-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": -10,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16571342002b8dfab8": {
+      "type": "rich-text",
+      "blocks": {
+        "16571342007f4bd3f9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Als Auftraggeber*in sind wir mitverantwortlich für die Sicherheit, Gesundheit und Arbeitsbedingungen der Arbeiter*innen, die unsere Rucksäcke und Taschen nähen. Daher verbringen wir viel Zeit mit der Auswahl unserer Partner*innen, bauen gute persönliche Beziehungen auf und investieren in gemeinsame Veränderungsprozesse vor Ort. <\/p><p>Grundlage der Zusammenarbeit bildet unser <a href=\"https:\/\/drive.google.com\/file\/d\/1s-EjUWMSZLv6xHig_O3bKOLL2TDqnHj4\/view?usp=sharing\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1s-EjUWMSZLv6xHig_O3bKOLL2TDqnHj4\/view?usp=sharing\">Supplier Code of Conduct<\/a>, der die Mindeststandards hinsichtlich Arbeits-, Sozial- und Umweltschutz definiert und von beiden Seiten unterschrieben wird. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16571342007f4bd3f9-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "1657134232504570e1": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-26_um_10.23.37.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Die Macher*innen  Eurer Wegbegleiter",
+        "text": "<p>Seit 2017 arbeiten wir mit der inhabergeführten Quanzhou Pengxin Bags in der chinesischen Provinz Fujian zusammen. Der Eigentümer Rick gründete die Fabrik fünf Jahre zuvor. 2023 haben wir Rick und sein Team zuletzt besucht: Es besteht aus knapp 100 Mitarbeitenden - darunter 2\/3 Frauen, sowohl in der Produktion als auch in der Verwaltung und im Management.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right"
+      }
+    },
+    "3d5d15cf-f702-4377-9da5-cfb6a14415f2": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/Bild1.png",
+        "image_width": 430,
+        "subtitle": "",
+        "title": "Die Macher*innen Eurer Wegbegleiter",
+        "text": "<p>Seit Herbst 2022 haben wir <a href=\"https:\/\/vaude.com.vn\/pages\/gioi-thieu-cong-ty\"><span style=\"text-decoration:underline\">Vaude Vietnam<\/span><\/a> als zweiten Produktionspartner mit an Bord. Die Fabrik liegt in der Provinz Thanh Hóa und beschäftigt etwa 1100 Mitarbeitende - davon ca. 90% Frauen. Sie wurde 2008 von Albrecht von Dewitz - dem Gründer der deutschen Marke Vaude - gegründet. 2022 haben wir die Geschäftsführerin Vu und ihr Team zuletzt besucht.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left"
+      }
+    },
+    "16571342495dfb203b": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": true,
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-26_um_10.20.16.png",
+        "image_width": 500,
+        "subtitle": "",
+        "title": "Arbeits- & soziale Standards",
+        "text": "<p>Wir garantieren, dass unsere Produkte frei von Kinder- oder Zwangsarbeit sind und Diskriminierung jeglicher Art nicht geduldet wird. Unserer Einkaufspreise gewährleisten, dass die Näher*innen einen Stundenlohn erhalten, der nach der <a href=\"https:\/\/www.globallivingwage.org\/\"><span style=\"text-decoration:underline\">Global Living Wage Coalition<\/span><\/a> einem existenzsichernden Lohn entspricht. Dieser liegt in China und Vietnam ca. 58% bzw. 26% über dem gesetzlichen Mindestlohn (Stand 2023). Alle Arbeiter*innen sind vertraglich fest angestellt und wählen ihre eigene Mitarbeitendenvertretung.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left"
+      }
+    },
+    "4d2217a3-c584-4230-8b41-be655f7a1e43": {
+      "type": "text-and-image",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "alt": false,
+        "image": "shopify:\/\/shop_images\/fair-wear-foundation-logo_f3a95bb5-fba1-4d3d-8ca0-d3da2a370844.jpg",
+        "image_width": 450,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>Seit September 2023 ist Ela Mo Teil des Fair Wear HRDD Academy-Pilotprojekts.<\/p><p>Die HRDD Academy hat das Ziel, Unternehmen in der Textil- und Bekleidungsindustrie dabei zu unterstützen, menschenrechtliche Sorgfaltspflichten in ihrer eigenen Lieferkette umzusetzen.<\/p><p>Mit unserer Teilnahme am Pilotprojekt unterstützen wir Fair Wear bei der Entwicklung der Academy. Zusammen mit anderen ausgewählten Brands testen wir die Lerninhalte und -methoden.<\/p><p>Wir freuen uns sehr, dabei zu sein und von- und miteinander zu lernen! Weitere Informationen zur Fair Wear HRDD Academy findest Du <a href=\"https:\/\/www.fairwear.org\/join-the-movement\/enabling-garment-and-footwear-brands-to-conduct-hrdd\/\"><span style=\"text-decoration:underline\">hier<\/span><\/a>.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab": false,
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right"
+      }
+    },
+    "16571349698bbb47f8": {
+      "type": "rich-text",
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "165713456752a5a1a1": {
+      "type": "rich-text",
+      "blocks": {
+        "1657134567afdfff4f-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Erfahre mehr in unserem Impact Report 2022\/2023!"
+          }
+        },
+        "1657134567afdfff4f-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>+++ blicke mit uns auf das Jahr 2022 zurück +++ lerne unsere Ziele für 2023 kennen +++<\/p>"
+          }
+        },
+        "699127cb-f12e-436d-87c9-d760b1c15d13": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/drive.google.com\/file\/d\/1a6mlblrXUA3uAGzeSuc65r-xA_DperX2\/view",
+            "link_text": "Report öffnen"
+          }
+        }
+      },
+      "block_order": [
+        "1657134567afdfff4f-0",
+        "1657134567afdfff4f-1",
+        "699127cb-f12e-436d-87c9-d760b1c15d13"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165713418478e1ac7d",
+    "16571342002b8dfab8",
+    "1657134232504570e1",
+    "3d5d15cf-f702-4377-9da5-cfb6a14415f2",
+    "16571342495dfb203b",
+    "4d2217a3-c584-4230-8b41-be655f7a1e43",
+    "16571349698bbb47f8",
+    "165713456752a5a1a1"
+  ]
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+      <!-- ABlyft Snippet from Uplifts -->
+  <script src="https://cdn.ablyft.com/s/34074744.js"></script>
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    {{ 'checkout.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'checkout-3step.css' | asset_url | stylesheet_tag: preload: true }}
+    
+<!-- Hotjar Tracking Code for https://www.elamo.me/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3030900,hjsv:6};
+        a=o.getElementsByTagName(‘head’)[0];
+        r=o.createElement(‘script’);r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,‘https://static.hotjar.com/c/hotjar-','.js?sv=’);
+</script>
+  
+  {% include 'friendbuy' %}
+</head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {% capture reviewsHtml %}<img class="header-reviews" src="{{ settings.reviews_image | img_url: 'master' }}"></a>{% endcapture %}
+        {{ content_for_logo | replace: '</a>', reviewsHtml | replace: 'href', 'data-href' }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {% capture reviewsHtml %}<img class="header-reviews" src="{{ settings.reviews_image | img_url: 'master' }}"></a>{% endcapture %}
+            {{ content_for_logo | replace: '</a>', reviewsHtml | replace: 'href', 'data-href' }}
+            
+            <div class="d-none checkout-breadcrumbs--C">
+              {{ breadcrumb }}
+            </div>
+
+            <nav class="d-none checkout-breadcrumbs--A">
+              <ol class="breadcrumb breadcrumb--center" role="list">
+                <li class="breadcrumb-item mod-completed" data-breadcrumb-step="cart">
+                  <a class="breadcrumb-link" href="/cart">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-step">1</span>
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'check-3' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      {{ 'checkout.breadcrumbs.cart' | t }}
+                    </span>
+                  </a>
+                </li>
+        
+                <li class="breadcrumb-item mod-blank" data-breadcrumb-step="contact_information">
+                  <a class="breadcrumb-link" href="?step=contact_information">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-step">2</span>
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'check-3' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      {{ 'checkout.breadcrumbs.information' | t }}
+                    </span>
+                  </a>
+                </li>
+
+                <li class="breadcrumb-item mod-blank" data-breadcrumb-step="shipping_method">
+                  <a class="breadcrumb-link" href="?previous_step=contact_information&step=shipping_method">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-step">3</span>
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'check-3' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      {{ 'checkout.breadcrumbs.shipping' | t }}
+                    </span>
+                  </a>
+                </li>
+
+                <li class="breadcrumb-item mod-blank" data-breadcrumb-step="payment_method">
+                  <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-step">4</span>
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'check-3' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      {{ 'checkout.breadcrumbs.payment' | t }}
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="breadcrumb-item mod-blank" data-breadcrumb-step="thank_you">
+                  <a class="breadcrumb-link mod-nolink">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-step">5</span>
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'check-3' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      {{ 'checkout.breadcrumbs.thank_you' | t }}
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+            
+            <nav class="d-none checkout-breadcrumbs--B">
+              <ol class="breadcrumb breadcrumb--center" role="list">          
+                <li class="breadcrumb-item mod-blank step-1" data-breadcrumb-step="contact_information">
+                  <a class="breadcrumb-link" href="?step=contact_information">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'location-pin' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">Schritt 1</div>
+                     <div class="breadcrumb-caption--name">Adresse</div>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="breadcrumb-item mod-blank step-2" data-breadcrumb-step="payment_method">
+                  <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'hand-with-card' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">Schritt 2</div>
+                      <div class="breadcrumb-caption--name">Sichere Bezahlung</div>
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="breadcrumb-item mod-blank step-3" data-breadcrumb-step="thank_you">
+                  <a class="breadcrumb-link mod-nolink">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {%- include 'svg-definitions' with 'success' -%}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">Schritt 3</div>
+                      <div class="breadcrumb-caption--name">Fertig</div>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+
+            <nav class="checkout-breadcrumbs checkout-breadcrumbs--3steps">
+              <ol class="breadcrumb breadcrumb--center" role="list">
+                <li class="breadcrumb-step mod-inactive step-1" data-breadcrumb-step="contact_information">
+                  <a class="breadcrumb-link" href="?step=contact_information">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {% render 'icon', icon: 'location-pin' %}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">{{ 'checkout.breadcrumbs.step_1' | t }}</div>
+                     <div class="breadcrumb-caption--name">{{ 'checkout.breadcrumbs.step_1_title' | t }}</div>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="breadcrumb-step mod-inactive step-2" data-breadcrumb-step="payment_method">
+                  <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {% render 'icon', icon: 'hand-with-card' %}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">{{ 'checkout.breadcrumbs.step_2' | t }}</div>
+                      <div class="breadcrumb-caption--name">{{ 'checkout.breadcrumbs.step_2_title' | t }}</div>
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="breadcrumb-step mod-inactive step-3" data-breadcrumb-step="thank_you">
+                  <a class="breadcrumb-link mod-nolink">
+                    <span class="breadcrumb-bubble">
+                      <span class="breadcrumb-icon">
+                        {% render 'icon', icon: 'success' %}
+                      </span>
+                    </span>
+                    <span class="breadcrumb-caption">
+                      <div class="breadcrumb-caption--step">{{ 'checkout.breadcrumbs.step_3' | t }}</div>
+                      <div class="breadcrumb-caption--name">{{ 'checkout.breadcrumbs.step_3_title' | t }}</div>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+            
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+
+            <div class="text-columns-checkout">
+              {% section 'text-columns-checkout' %}
+            </div>
+
+            <div class="checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
+          </main>
+          <footer class="checkout-footer main__footer" role="contentinfo">
+
+            <div class="checkout-page--payicons">
+              <ul class="inline-list payment-icons">
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="icon--payment">
+                    {{ type | payment_type_svg_tag }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+
+            <div class="sidebar-supbox hidden-pocket">
+              <div class="checkoutSupportBoxEl">
+                {% section 'support-box' %}
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+
+      <script>
+        const themeStrings = {
+          proceedToPayment: '{{ 'checkout.steps.proceed_to_payment' | t }}'
+        }
+      </script>
+
+    <script src="{{ 'checkout.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'checkout-3step.js' | asset_url }}" defer="defer"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+{%- assign threshold_1 = settings.cart_freeshipbar_threshold_1 | default: 50 -%}
+{%- assign threshold_2 = settings.cart_freeshipbar_threshold_2 | default: 75 -%}
+
+<div class="custom-free-shipping-bar">
+  <div class="custom-free-shipping-text">
+    <p><strong data-title></strong></p>
+    <p data-subtitle></p>
+  </div>
+  <div class="custom-free-shipping-content">
+    <div class="progress-bar shipping-bar-progress"></div>
+    <div class="progress-bar-icon">
+      <img
+        width="20px"
+        height="20px"
+        loading="eager"
+        src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free_delivery.png?v=1696584317"
+        alt="car"
+      >
+    </div>
+    <div class="progress-bar gift-bar-progress"></div>
+    <div class="progress-bar-icon">
+      <img
+        width="20px"
+        height="20px"
+        loading="eager"
+        src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free_gift.png?v=1696584320"
+        alt="gift"
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-free-shipping-bar {
+  	 padding: 15px 30px;
+    border-bottom: 1.71px solid #F0F0F0;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-text {
+  	 display: flex;
+  	 flex-direction: column;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-text p {
+  	 margin: 0;
+     color: #000;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 16.774px;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-text p[data-subtitle] {
+  	 font-weight: 500;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-content {
+  	 display: flex;
+  	 justify-content: space-between;
+  	 align-items: center;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-content .progress-bar {
+  	 width: calc(50% - 30px);
+  	 height: 7px;
+  	 background: #f0f0f0;
+  	 border-radius: 25px;
+  	 position: relative;
+  	 overflow: hidden;
+     transition: .25s all;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-content .progress-bar::before {
+  	 content: "";
+  	 height: 100%;
+  	 width: var(--completed-width, 0);
+  	 position: absolute;
+  	 left: 0;
+  	 top: 0;
+  	 background-color: #6da472;
+     transition: .25s all;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-content .progress-bar-icon {
+  	 width: 20px;
+  	 height: 20px;
+  }
+   .custom-free-shipping-bar .custom-free-shipping-content .progress-bar-icon img {
+  	 width: 100%;
+  }
+   .cartDrawerSuccessMessage {
+  	 display: none;
+  }
+  @media screen and (max-width: 992px) {
+    .custom-free-shipping-text{
+      padding-bottom:3px;
+    }
+  }
+</style>
+
+<script>
+  const threshold1 = {{ threshold_1 }};
+  const threshold2 = {{ threshold_2 }};
+  const thresholdDiff = threshold2 - threshold1;
+  function waitForElem(waitFor, callback, minElements = 1, isVariable = false, timer = 10000, frequency = 25) {
+    let elements = isVariable ? window[waitFor] : document.querySelectorAll(waitFor);
+    if (timer <= 0) return;
+    ((!isVariable && elements.length >= minElements) || (isVariable && (typeof window[waitFor] !== 'undefined'))) ?
+      callback(elements) :
+      setTimeout(() => waitForElem(waitFor, callback, minElements, isVariable, (timer - frequency)), frequency);
+  };
+  const getCurrencySymbol = (locale, currency) => (0).toLocaleString(locale, { style: 'currency', currency, minimumFractionDigits: 0, maximumFractionDigits: 0 }).replace(/\d/g, '').trim();
+  const changeOnProgressbar = () => {
+    const currencySymbol = getCurrencySymbol(navigator.language, Shopify.currency.active);
+    waitForElem('#CartDrawer .drawer__inner, #CartDrawerForm [data-subtotal]', () => {
+      function updateSubtotal(subtotal){
+        const titleWhenUncomplete = "Juhu! Fast geschafft!";
+        const titleWhenComplete = "Juhu! Geschafft!";
+        const subtitleWhenShipping = "Nur noch price für GRATIS Versand 🥳";
+        const subtitleWhenGift = "Nur noch price für ein GRATIS GESCHENK 🥳";
+        const subtitleWhenComplete = "Du erhältst ein ÜBERRASCHUNGSGESCHENK 🥳";
+        const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
+        const isCompleted = subtotal >= threshold2;
+        let subtitleApplied = subtitleWhenComplete;
+        console.log(subtitleApplied)
+        if (!isCompleted) {
+          subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
+        }
+        subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
+        document.querySelector(".custom-free-shipping-text [data-title]").textContent = isCompleted ? titleWhenComplete : titleWhenUncomplete;
+        document.querySelector(".custom-free-shipping-text [data-subtitle]").textContent = isCompleted ? subtitleWhenComplete : subtitleApplied;
+      }
+
+      function updateShipping(subtotal = 0) {
+        subtotal = subtotal > threshold1 ? threshold1 : subtotal;
+        const percentageDone = subtotal / threshold1 * 100;
+        const shippingElem = document.querySelector(".progress-bar.shipping-bar-progress");
+        if (!shippingElem) return;
+        shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
+      }
+
+      function updateGift(subtotal = 0) {
+        subtotal = subtotal - threshold1;
+        subtotal = subtotal < 0 ? 0 : subtotal;
+        subtotal = subtotal > thresholdDiff ? thresholdDiff : subtotal;
+        const percentageDone = subtotal / thresholdDiff * 100;
+        const shippingElem = document.querySelector(".progress-bar.gift-bar-progress");
+        if (!shippingElem) return;
+        shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
+      }
+
+      const getText = document.querySelector('#CartDrawerForm [data-subtotal]').textContent.trim();
+      const subTotalAmount = parseFloat(getText.replace(',', '.').replace(currencySymbol, ''));
+
+      updateSubtotal(subTotalAmount);
+      updateShipping(subTotalAmount);
+      updateGift(subTotalAmount);
+
+    }, 2);
+  }
+  changeOnProgressbar();
+
+  waitForElem('#CartDrawerForm [data-subtotal]', () => {
+    const changedPrice = document.querySelector('#CartDrawerForm [data-subtotal]'); ``
+    const observer = new MutationObserver(changeOnProgressbar);
+    observer.observe(changedPrice, { attributes: true, childList: true, subtree: true });
+  });
+</script>

@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1657133111e406dd50": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "e96c72bd-3f81-4fdd-850c-04a4f4bb2a1f": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "16571331116320da7d-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h1 style align: center >Hilfe & Kontakt<\/h1>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "e96c72bd-3f81-4fdd-850c-04a4f4bb2a1f",
+        "16571331116320da7d-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Hilfe & Kontakt<\/strong><\/p><p>Wir möchten, dass Dein Besuch in unserem Onlineshop so schön und unkompliziert für Dich ist, wie ein Einkauf in Deinem Lieblingsladen um die Ecke. Dein Vertrauen und Deine Zufriedenheit bedeuten uns super viel. Zögere also nicht, Kontakt mit uns aufzunehmen. Du erreichst uns von Montag bis Freitag und bekommst innerhalb von 24h eine Antwort (wir sind meist viel schneller).<\/p><p><\/p><p>Du erreichst uns unter: <\/p><p><\/p><p><\/p><p>E-Mail: hello@elamo.me<\/p><p><a href=\"http:\/\/m.me\/1928824544105913\" title=\"http:\/\/m.me\/1928824544105913\">Facebook Messenger<\/a><\/p><p><a href=\"https:\/\/www.instagram.com\/elamo.me\/\" title=\"https:\/\/www.instagram.com\/elamo.me\/\">Instagram Direct Messenger<\/a><\/p><p><strong>Du möchtest Deine Bestellung zurückgeben? <\/strong><\/p><p>Gib bitte in unserem Retourenportal unter <a href=\"https:\/\/elamo.hive.app\/de\" title=\"https:\/\/elamo.hive.app\/de\">https:\/\/elamo.hive.app\/de<\/a> Deine PLZ und Deine Bestellnummer inkl. # ein und drucke das Retourenlabel aus. Einfach auf dem Paket anbringen, zur nächsten Versandstelle bringen und innerhalb von 3-4 Werktagen ist der zu erstattende Betrag gleich wieder auf Deinem Konto.<\/p><p>Du liebäugelst mit einem Rucksack, hast aber noch Fragen? Du möchtest wissen, wann Deine Sendung ankommt? Unser Service-Team hat die häufigsten Fragen gesammelt und hier für Dich beantwortet:<\/p><p><a href=\"\/pages\/faqs\" title=\"FAQ\"><strong>Häufig gestellte Fragen<\/strong><\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "title": "Contact us",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657133111e406dd50",
+    "rich-text",
+    "form"
+  ]
+}

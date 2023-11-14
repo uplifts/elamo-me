@@ -1,0 +1,654 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#2d2d2d",
+    "color_button": "#1c5977",
+    "color_button_text": "#ffffff",
+    "color_sale_price": "#000000",
+    "color_sale_tag": "#990000",
+    "color_cart_dot": "#f2e4d8",
+    "color_cart_dot_text": "#a68071",
+    "color_alt_bg": "#f9f9f9",
+    "color_alt_text": "#2d2d2d",
+    "color_announcement": "#1c5977",
+    "color_announcement_text": "#ffffff",
+    "color_newsletter": "#479091",
+    "color_newsletter_text": "#2d2d2d",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#2d2d2d",
+    "color_image_text": "#ffffff",
+    "color_image_overlay": "#000000",
+    "color_image_overlay_opacity": 0,
+    "color_image_overlay_text_shadow": 0,
+    "color_small_image_bg": "#ffffff",
+    "color_large_image_bg": "#000000",
+    "type_header_font_family": "roboto_condensed_n7",
+    "type_header_capitalize": false,
+    "type_header_spacing": -25,
+    "type_header_base_size": 46,
+    "type_header_line_height": 1,
+    "type_base_font_family": "roboto_condensed_n4",
+    "type_product_capitalize": false,
+    "type_base_spacing": 25,
+    "type_base_size": 18,
+    "type_base_line_height": 1.6,
+    "button_type_style": "normal",
+    "button_style": "round-slight",
+    "animate_images": false,
+    "logo_loader_image": "shopify:\/\/shop_images\/You_Are_2.png",
+    "desktop_loader_width": 210,
+    "mobile_loader_width": 100,
+    "product_hover_details": false,
+    "product_hover_image": false,
+    "product_image_scatter": false,
+    "product_grid_image_size": "square",
+    "enable_product_reviews": true,
+    "product_image_type": "slider",
+    "cart_type": "drawer",
+    "cart_success_message": "<b>Gute Wahl!<\/b> Du wirst deinen Rucksack lieben!",
+    "cart_freeshipbar_threshold_1": 50,
+    "cart_freeshipbar_threshold_2": 74,
+    "cart_additional_buttons": false,
+    "cart_advantage_icon_1": "shopify:\/\/shop_images\/icons8-shipped.png",
+    "cart_advantage_text_1": "Gratis Versand ab 50€",
+    "cart_advantage_icon_2": "shopify:\/\/shop_images\/icons8-100.png",
+    "cart_advantage_text_2": "Tage Rückagberecht",
+    "cart_advantage_icon_3": "shopify:\/\/shop_images\/icons8-cardboard_box.png",
+    "cart_advantage_text_3": "Kostenlose Retouren",
+    "cart_upsells_freegifts_header": "",
+    "show_app_upsell": true,
+    "cart_freegift_1_threshold": 74,
+    "cart_freegift_1_product": "bookman-clip",
+    "cart_freegift_2_threshold": 0,
+    "cart_freegift_2_product": "",
+    "social_instagram_link": "https:\/\/instagram.com\/elamo.me",
+    "social_facebook_link": "https:\/\/www.facebook.com\/elamo.me",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "reviews_image": "shopify:\/\/shop_images\/Group_2_3.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/elamo_logo_schwarz.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#111111",
+    "checkout_button_color": "#1c5977",
+    "checkout_error_color": "#ff6d6d",
+    "animate_page_transition_style": "page-logo",
+    "checkout_banner_background_color": "#ffffff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "product_video_style": "muted",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_style": "bar",
+          "main_menu_alignment": "right",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "header_search_enable": true,
+          "logo": "shopify:\/\/shop_images\/elamo_logo_schwarz-cut.webp",
+          "logo-inverted": "shopify:\/\/shop_images\/elamo_logoentwurf_weiss-opti.webp",
+          "desktop_logo_width": 90,
+          "mobile_logo_width": 110,
+          "logo_hide_mobile": false,
+          "main_menu_link_list": "main-menu",
+          "secondary_menu_link_list": "secondary-menu",
+          "show_announcement": true,
+          "show_announcement_home_only": false,
+          "announcement_text": "🚚 GRATIS VERSAND ab 50 €  |  🛍️ 100 TAGE TESTEN  |  NACHHALTIG & MIT  ❤️",
+          "announcement_link": ""
+        }
+      },
+      "header-new": {
+        "type": "header-new",
+        "settings": {
+          "header_style": "bar",
+          "main_menu_alignment": "center-split",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "header_search_enable": true,
+          "logo": "shopify:\/\/shop_images\/elamo_logo_schwarz-cut.webp",
+          "logo-inverted": "shopify:\/\/shop_images\/elamo_logoentwurf_weiss-opti.webp",
+          "desktop_logo_width": 90,
+          "mobile_logo_width": 110,
+          "logo_hide_mobile": false,
+          "main_menu_link_list": "main-menu",
+          "secondary_menu_link_list": "secondary-menu",
+          "show_announcement": true,
+          "show_announcement_home_only": false,
+          "announcement_text": "🚚 GRATIS VERSAND ab 50 €  |  🛍️ 100 TAGE TESTEN  |  NACHHALTIG & MIT  ❤️",
+          "announcement_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "custom_css": [
+          ".site-footer {margin-top: 10px !important;}"
+        ],
+        "settings": {
+          "show_newsletter": false,
+          "newsletter_title": "Join the club",
+          "newsletter_richtext": "",
+          "show_locale_selector": true,
+          "show_currency_selector": false,
+          "show_currency_flags": false,
+          "klaviyo_signup_title": "<h3>Jetzt zum Newsletter anmelden<\/h3>",
+          "klaviyo_signup_btn_label": "Jetzt anmelden",
+          "klaviyo_signup_form_id": "",
+          "show_social_icons": true,
+          "trust_badge_image": "shopify:\/\/shop_images\/DEU-B-Corp-Logo-Tagline-Lockup-Standards-Black-RGB.png",
+          "menu": "footer",
+          "show_payment_icons": true,
+          "show_copyright": true,
+          "copyright_text": "| created with ❤️ in Hamburg"
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "blocks": {
+          "reminder-block": {
+            "type": "header",
+            "disabled": true,
+            "settings": {
+              "reminder_label": "Get 10% off"
+            }
+          }
+        },
+        "block_order": [
+          "reminder-block"
+        ],
+        "settings": {
+          "mode": false,
+          "disable_for_account_holders": true,
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Hurra! Du nimmst am Gewinnspiel teil",
+          "popup_text": "<p>Wir benachrichtigen die glücklichen Gewinner per E-Mail.<\/p>",
+          "image_position": "left",
+          "show_social_icons": false,
+          "enable_newsletter": true,
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true
+        }
+      },
+      "social": {
+        "type": "social",
+        "settings": {
+          "enable_home": false,
+          "enable_product": false,
+          "enable_collection": false,
+          "title": "On social",
+          "description": "<p>Send us yours <a href=\"https:\/\/instagram.com\/youraccount\/\">@youraccount<\/a><\/p>"
+        }
+      },
+      "text-columns-checkout": {
+        "type": "text-columns-checkout",
+        "blocks": {
+          "4447f875-42b3-4e2c-9662-e4c761f68c65": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/icons8-shipped.svg",
+              "text": "Gratis Versand ab 50€"
+            }
+          },
+          "b8330558-afa6-44b4-903c-117b2c770c27": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/icons8-100.png",
+              "text": "Ganze 100 Tage Rückgaberecht"
+            }
+          },
+          "0b0b6ecd-9bdc-47de-b567-672cd3357c3c": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/icons8-cardboard_box.svg",
+              "text": "Kostenlose Retouren"
+            }
+          }
+        },
+        "block_order": [
+          "4447f875-42b3-4e2c-9662-e4c761f68c65",
+          "b8330558-afa6-44b4-903c-117b2c770c27",
+          "0b0b6ecd-9bdc-47de-b567-672cd3357c3c"
+        ],
+        "settings": {
+          "text": "<p><a href=\"#\" title=\"#\">Mit deiner Bestellung<\/a>, stimmst du unseren AGB, der Datenschutzerklarung sowie unserer Widerrufsbelehrung zu.<\/p>"
+        }
+      },
+      "support-box": {
+        "type": "support-box",
+        "settings": {
+          "title": "Immer an deiner Seite!",
+          "message": "Unser Kundenservice ist von Mo. - Fr. zwischen 9.00-20.00 Uhr für dich da.",
+          "photo": "shopify:\/\/shop_images\/ElaMo_Support_Team-removebg-preview.png",
+          "agent_name": "Service Team",
+          "agent_position": "ElaMo™",
+          "contact_info": "<b>Email: <\/b><a href=\"mailto:hello@elamo.me\">hello@elamo.me <\/a><br>\n<p>Antwortet in wenigen Stunden<\/p>"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {}
+      },
+      "3650027678699231211": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/article\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {
+          "author": "Trailblazers",
+          "authorUrl": "",
+          "publisher": "Ela Mo™",
+          "publisherLogoURL": "https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/3470\/4268\/files\/elamo_logo_schwarz-cut_110x.webp?"
+        }
+      },
+      "18331215849590791805": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/carousel\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {}
+      },
+      "6472724134860490182": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/breadcrumb\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {}
+      },
+      "6039927293107162517": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/logo\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {
+          "businessName": "Ela Mo™",
+          "logoURL": "shopify:\/\/shop_images\/elamo_logo_schwarz-cut_110x_da694354-40e7-4c05-a74f-12383cbff980.webp",
+          "url": "https:\/\/www.elamo.me\/",
+          "description": "",
+          "twitterUrl": "",
+          "facebookUrl": "https:\/\/www.facebook.com\/elamo.me",
+          "instagramUrl": "https:\/\/www.instagram.com\/elamo.me\/",
+          "pinterestUrl": "",
+          "linkedinUrl": "",
+          "telephone": "001",
+          "streetAddress": "",
+          "city": "",
+          "state": "",
+          "country": "",
+          "zipCode": "",
+          "isReviewAvailable": "no",
+          "reviewCount": "",
+          "ratingValue": "",
+          "bestRating": "",
+          "worstRating": ""
+        }
+      },
+      "9467949409069952136": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/productFAQ\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {}
+      },
+      "9389739334699838615": {
+        "type": "shopify:\/\/apps\/seo-json-ld-schema\/blocks\/search\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {
+          "searchVariable": "search?q={search_term}"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "13647546867862338453": {
+        "type": "shopify:\/\/apps\/webrex-seo-schema-breadcrumb\/blocks\/product\/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {
+          "isShopifyName": "seo",
+          "reviewsFrom": "yotpo",
+          "moneyFormat": "amount",
+          "globalIdentifier": "none",
+          "pattern": "",
+          "currency": "USD",
+          "shippingDestination": "",
+          "unit": "DAY",
+          "handlingMin": "",
+          "handlingMax": "",
+          "transitMin": "",
+          "transitMax": "",
+          "applicableCountry": "",
+          "ReturnDays": 7,
+          "returnPolicyCategory": "MerchantReturnFiniteReturnWindow",
+          "returnMethod": "ReturnAtKiosk",
+          "returnFees": "FreeReturn"
+        }
+      },
+      "8847685616676869210": {
+        "type": "shopify:\/\/apps\/webrex-announcement-bar-banner\/blocks\/app-embed\/3494d573-4520-4d27-b2eb-ba0554423f65",
+        "disabled": true,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Core": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "round",
+      "button_type_style": "normal",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#f9f9f9",
+      "color_alt_text": "#000000",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_button": "#000000",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#f75d44",
+      "color_cart_dot_text": "#ffffff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_overlay_text_shadow": 20,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#fff",
+      "color_sale_price": "#000000",
+      "color_sale_tag": "#990000",
+      "color_small_image_bg": "#ffffff",
+      "desktop_loader_width": 100,
+      "mobile_loader_width": 100,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "type_base_font_family": "roboto_condensed_n4",
+      "type_base_line_height": 1.6,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 46,
+      "type_header_capitalize": true,
+      "type_header_font_family": "roboto_condensed_i7",
+      "type_header_line_height": 1,
+      "type_header_spacing": "-25",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": true,
+            "show_announcement": false,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "newsletter_title": "Join the club",
+            "newsletter_richtext": "",
+            "show_social_icons": true,
+            "menu": "footer",
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "blocks": {
+            "reminder-block": {
+              "type": "header",
+              "disabled": true,
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "reminder-block"
+          ],
+          "settings": {
+            "mode": false,
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true
+          }
+        }
+      }
+    },
+    "Luxe": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#ffffff",
+      "color_alt_text": "#333029",
+      "color_announcement": "#c67066",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#fdfbfa",
+      "color_body_text": "#333029",
+      "color_button": "#c67066",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#c67066",
+      "color_drawer_background": "#fdf9f5",
+      "color_drawer_text": "#333029",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#eee5e0",
+      "color_newsletter": "#c67066",
+      "color_newsletter_text": "#ffffff",
+      "color_sale_price": "#333029",
+      "color_sale_tag": "#c67066",
+      "color_small_image_bg": "#fdfbfa",
+      "desktop_loader_width": 140,
+      "mobile_loader_width": 130,
+      "product_grid_image_size": "natural",
+      "product_hover_details": true,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "type_base_font_family": "futura_n4",
+      "type_base_line_height": 1.7,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 50,
+      "type_header_capitalize": false,
+      "type_header_font_family": "itc_novarese_n5",
+      "type_header_line_height": 1.1,
+      "type_header_spacing": "0",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": true,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "show_social_icons": true,
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "blocks": {
+            "reminder-block": {
+              "type": "header",
+              "disabled": true,
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "reminder-block"
+          ],
+          "settings": {
+            "mode": false,
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {}
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true
+          }
+        }
+      }
+    },
+    "Hype": {
+      "animate_images": false,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "color_alt_bg": "#000000",
+      "color_alt_text": "#ffffff",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_cart_dot": "#FF2300",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#ffffff",
+      "color_small_image_bg": "#f2f2f2",
+      "desktop_loader_width": 190,
+      "mobile_loader_width": 180,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": true,
+      "product_video_style": "muted",
+      "type_base_font_family": "basic_commercial_n7",
+      "type_base_line_height": 1.3,
+      "type_base_size": 20,
+      "type_base_spacing": "25",
+      "type_header_base_size": 48,
+      "type_header_capitalize": true,
+      "type_header_font_family": "basic_commercial_n7",
+      "type_header_line_height": 0.9,
+      "type_header_spacing": "25",
+      "type_product_capitalize": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "blocks": {
+            "reminder-block": {
+              "type": "header",
+              "disabled": true,
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "reminder-block"
+          ],
+          "settings": {
+            "mode": false,
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true
+          }
+        }
+      }
+    }
+  }
+}

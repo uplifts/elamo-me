@@ -1,0 +1,12 @@
+<div class="comparison01-column--icon-group comparison01-column--unit">
+  <div class="comparison01-column--icon-group-img">
+    {%- if icon != blank -%}
+      <img src="{{ icon | img_url: 'master' }}" alt="{{ icon.alt }}">
+    {%- endif -%}
+  </div>
+  {%- if text != blank -%}
+    <div class="comparison01-column--icon-group-text">
+      {{ text }}
+    </div>
+  {%- endif -%}
+</div>

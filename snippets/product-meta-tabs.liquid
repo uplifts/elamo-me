@@ -1,0 +1,73 @@
+{%- assign blockId = block.id -%}
+{% if product %}
+  {%- assign blockId = block.id | append: product.id -%}
+{% endif %}
+
+{%- assign has_custom_tabs = false -%}
+{% for tag in product.tags %}
+  {% if tag contains '_tab' %}
+    {%- assign has_custom_tabs = true -%}
+  {% endif %}
+{% endfor %}
+
+{%- assign all_tab_content = '' -%}
+{%- assign is_first = true -%}
+
+{% if has_custom_tabs %}
+  <div
+    class="collapsibles-wrapper collapsibles-wrapper--tabs small--text-center">
+
+    {% if product.description or product.empty?%}
+      <button type="button"
+        class="label collapsible-trigger collapsible-trigger--tab collapsible--auto-height{% if is_first %} is-open{% endif %}"
+        data-id="{{ section_id }}"
+        aria-controls="Product-description-{{ section_id }}">
+        {{ 'products.product.description' | t }}
+      </button>
+      {% capture tab_content %}
+        <div id="Product-description-{{ section_id }}" class="collapsible-content collapsible-content--all{% if is_first %} is-open{% endif %}"
+        {% if is_first %} style="height: auto"{% endif %}>
+          <div class="collapsible-content__inner rte">
+            {% if product.empty? %}
+              {{ 'home_page.onboarding.product_description' | t }}
+            {% else %}
+              {{ product.description }}
+            {% endif %}
+          </div>
+        </div>
+      {% endcapture %}
+      {%- assign all_tab_content = all_tab_content | append: tab_content -%}
+      {%- assign is_first = false -%}
+    {% endif %}
+
+    {% for tag in product.tags %}
+      {% if tag contains '_tab' %}
+        {%- assign include_page_handle = tag | split: '_' -%}
+        {%- assign include_page = pages[include_page_handle.last] -%}
+        {% if include_page.title != blank %}
+          <button type="button"
+            class="label collapsible-trigger collapsible-trigger--tab collapsible--auto-height{% if is_first %} is-open{% endif %}"
+            data-id="{{ section_id }}"
+            aria-controls="Product-content-{{ include_page_handle.last }}-{{ section_id }}">
+            {{ include_page.title }}
+          </button>
+          {% capture tab_content %}
+            <div id="Product-content-{{ include_page_handle.last }}-{{ section_id }}" class="collapsible-content collapsible-content--all{% if is_first %} is-open{% endif %}"
+            {% if is_first %} style="height: auto"{% endif %}>
+              <div class="collapsible-content__inner rte">
+                {{ include_page.content }}
+              </div>
+            </div>
+          {% endcapture %}
+          {%- assign all_tab_content = all_tab_content | append: tab_content -%}
+          {%- assign is_first = false -%}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="collapsibles-content-wrapper">
+      {{ all_tab_content }}
+    </div>
+
+  </div>
+{% endif %}

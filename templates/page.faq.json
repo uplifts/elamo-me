@@ -1,0 +1,249 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1657136685da2b12e2": {
+      "type": "faq",
+      "blocks": {
+        "81299177-7cba-47f7-a5c7-3d1ffafb8806": {
+          "type": "rich-text",
+          "settings": {
+            "title": "",
+            "text": "<p>Du liebäugelst mit einem Rucksack, hast aber noch Fragen? Du möchtest wissen, wann Deine Sendung ankommt? Unser Service-Team hat die häufigsten Fragen und Antworten gesammelt. Für alle anderen Fragen schreib uns bitte eine E-Mail an hello@elamo.me und Du bekommst innerhalb von 24h eine Antwort (wir sind meist viel schneller).<\/p>",
+            "align_text": "left"
+          }
+        },
+        "0abb4654-6949-43f0-98ac-655b62334290": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Fragen zum Produkt",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "165713668507e2b19a-0": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Farbe hat das Innenfutter?",
+            "text": "<p>Wir haben zwei verschiedene Futterfarben: A ROSE ist rot, alle andere Rucksäcke sind innen hellgrau.<\/p>"
+          }
+        },
+        "165713668507e2b19a-1": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Maße hat das Produkt?",
+            "text": "<p><strong>Rolltop<\/strong>: 45 (bis 58 erweiterbar) x 30 x 13 cm <br\/><strong>Daypack<\/strong>: 38 x 27 x 12 cm<br\/><strong>Flow<\/strong>: 46 x 26 x 13,5 cm<br\/><strong>Lieblingstasche<\/strong>: 38 (H) x 54 (B - oben) und 39 unten x 20 cm (T)<br\/><strong>Crossbody<\/strong>: 20 x 24 x 5 cm<br\/><strong>Mini<\/strong>: 30 cm (H) x 23 cm (B) x10 cm (T)<br\/><strong>Taschen-Set für Rucksäcke<\/strong>:<br\/>1. Lila: 24 cm (H), 35 cm (B),<br\/>2. Schwarz: 18 cm (H), 26 (B),<br\/>3. Berry: 10 cm (H), 17 cm (B)<\/p><p><strong>Humble & Tiger<\/strong><\/p><p><strong>Tote Bag<\/strong>: 38,5 x 36 x 12,5 cm <br\/><strong>Shopper<\/strong>: 32 x 42 x 11 cm<\/p>"
+          }
+        },
+        "c192ca76-d1d4-4293-aff0-b31f8cbeee13": {
+          "type": "question",
+          "settings": {
+            "title": "Wie viel wiegt das Produkt?",
+            "text": "<p><strong>Rolltop<\/strong>: 750g<br\/><strong>Daypack<\/strong>: 498g<br\/><strong>Flow<\/strong>: 601g<br\/><strong>Mini<\/strong>: 350g<br\/><strong>Lieblingstasche<\/strong>: 500g<br\/><strong>Crossbody<\/strong>: 278g<br\/><strong>Taschen-Set für Rucksäcke<\/strong>: 230g<\/p><p><strong>Humble & Tiger<\/strong><\/p><p><strong>Tote Bag<\/strong>: 650g<br\/><strong>Shopper<\/strong>: 600g<\/p>"
+          }
+        },
+        "3793880e-9bec-4350-895a-b2f65065f0e6": {
+          "type": "question",
+          "settings": {
+            "title": "Ist der Rucksack wasserabweisend?",
+            "text": "<p>Unsere Taschen und Rucksäcke sind bei leichtem Regen und Spritzwasser bis zu einer  Wassersäule von 1500 mm wasserabweisend. Damit auch alles bei starken Regen vor Wasser geschützt bleibt, zum Beispiel beim Fahrradfahren, haben wir den <a href=\"https:\/\/www.elamo.me\/collections\/rucksacke-von-ela-mo-aus-hamburg\/products\/ela-mo-rucksack-regenschutz\" title=\"https:\/\/www.elamo.me\/collections\/rucksacke-von-ela-mo-aus-hamburg\/products\/ela-mo-rucksack-regenschutz\">Ela Mo Regenschutz in unserem Shop<\/a>. <\/p>"
+          }
+        },
+        "33e89559-8221-46f0-a110-5433fcf78705": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich den USB Port nutzen?",
+            "text": "<p>Im Inneren des Rucksacks findest Du ein Kabel. Dieses führt von der Rückseite des USB-Anschlusses durch eine ca. 4 cm kleine mit einem Reißverschluss versehene Öffnung in das Innenfach. Du schließt Deine Powerbank an das Kabel und verbindest außen Dein Telefon mit Deinem Ladekabel an den USB-Anschluss.<\/p><p><a href=\"https:\/\/youtu.be\/iMynm-rKdlc\" title=\"https:\/\/youtu.be\/iMynm-rKdlc\">Hier<\/a> ist auch ein Video, in dem wir das erklären. <\/p>"
+          }
+        },
+        "667c2ac4-f9cd-4ae9-831d-efc19c47b5cd": {
+          "type": "question",
+          "settings": {
+            "title": "Wie reinige ich meinen Rucksack?",
+            "text": "<p>Kleine Flecken einfach mit einem feuchten Tuch entfernen. Größere Verschmutzungen mit einer Bürste entfernen und in der Badewanne mit einer ph-neutralen Seife auswaschen. Bitte beachten:  Der USB Anschluß darf nicht ins Wasser. <\/p>"
+          }
+        },
+        "e21bb8e9-9e47-4cb6-95c8-1112eff7194e": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich den Rucksack als Fahrradtasche nutzen?",
+            "text": "<p>Ja, eine Kundin hat uns Bilder versprochen, sobald wir diese haben, stellen wir sie ein.<\/p>"
+          }
+        },
+        "ba959cd4-5a9e-4050-a26a-48d2beed10d1": {
+          "type": "question",
+          "settings": {
+            "title": "Aus welchem Material sind die Rücksäcke und Sporttaschen?",
+            "text": "<p>Die Rückenpolster sind aus atmungsaktivem Meshstoff. Das Außenmaterial ist aus pflegeleichtem und wetterfestem 900D Polyester. Seit August 2020 ist 90% unserer Kollektion aus recyceltem Post-Consumer-Waste (überwiegend PET Flaschen).<\/p>"
+          }
+        },
+        "b85d82e0-b1ca-46df-8eb0-a4665837d063": {
+          "type": "question",
+          "settings": {
+            "title": "Ist mein iPhone mit USB Kabel ladbar ?",
+            "text": "<p>Iphone mag ja gerne immer Originalkabel. Das können wir leider nicht garantieren, ABER probiere es doch einfach aus, Du gehst ja kein Risiko ein, weil Du eine Zufriedenheitsgarantie bei uns hast. <br\/>Wenn etwas nicht passt, finden wir eine Lösung oder nehmen ihn ganz zurück :) <\/p>"
+          }
+        },
+        "ce9fb87e-a016-47c1-8954-08a36d9de167": {
+          "type": "question",
+          "settings": {
+            "title": "Wieviele Seitentaschen (Flaschentasche) hat der Rucksack? Wie groß ist die Seitentasche?",
+            "text": "<p>Beim Rolltop-Rucksack und Flow-Rucksack jeweils eine Tasche auf jeder Seite. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "81299177-7cba-47f7-a5c7-3d1ffafb8806",
+        "0abb4654-6949-43f0-98ac-655b62334290",
+        "165713668507e2b19a-0",
+        "165713668507e2b19a-1",
+        "c192ca76-d1d4-4293-aff0-b31f8cbeee13",
+        "3793880e-9bec-4350-895a-b2f65065f0e6",
+        "33e89559-8221-46f0-a110-5433fcf78705",
+        "667c2ac4-f9cd-4ae9-831d-efc19c47b5cd",
+        "e21bb8e9-9e47-4cb6-95c8-1112eff7194e",
+        "ba959cd4-5a9e-4050-a26a-48d2beed10d1",
+        "b85d82e0-b1ca-46df-8eb0-a4665837d063",
+        "ce9fb87e-a016-47c1-8954-08a36d9de167"
+      ],
+      "settings": {
+        "title": "Häufig gestellte Fragen"
+      }
+    },
+    "1657136882f1f8492c": {
+      "type": "faq",
+      "blocks": {
+        "5dd4960d-f13e-4e7a-acbf-7b152242b3a2": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Fragen zur Lieferung",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "16571368821237d57f-0": {
+          "type": "question",
+          "settings": {
+            "title": "Wann kommt meine Bestellung an?",
+            "text": "<p>Bestellungen, die Werktags vor 12 Uhr mittags eingehen, werden noch am selben Tag an unsere Logistikpartner DHL oder DPD übergeben und innerhalb von wenigen Tagen (2-4 Werktagen) ausgeliefert. Den Status Deiner Sendung kannst Du der Mail mit Deiner Bestellbestätigung entnehmen.<\/p>"
+          }
+        },
+        "16571368821237d57f-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wann ist das Design z.B. BLOOM wieder verfügbar?",
+            "text": "<p>Wir versuchen alle Varianten dauerhaft auf Lager zu halten, aber manchmal ist die Nachfrage einfach zu groß. Wenn Du auf der Warteliste stehst, wirst Du als Erste informiert, wenn die Variante verfügbar ist. Wir haben die Verfügbarkeit auch auf <a href=\"https:\/\/www.elamo.me\/pages\/verfuegbarkeit\" title=\"https:\/\/www.elamo.me\/pages\/verfuegbarkeit\">dieser Seite<\/a> zusammgefasst. Wenn Du es ganz genau wissen möchtest, wann es soweit ist, schreibe uns bitte. <\/p>"
+          }
+        },
+        "b13ffcd2-20c0-453e-8373-37a457f870da": {
+          "type": "question",
+          "settings": {
+            "title": "Mit welchem Unternehmen verschickt Ihr?",
+            "text": "<p>Wir nutzen DHL und DPD für alle Lieferung nach Deutschland und Österreich. Ins Europäische Ausland und weltweit verschicken wir meistens mit Fedex. <\/p>"
+          }
+        },
+        "a2defb1d-2b1e-4bf1-94f0-fb6a6570fa2b": {
+          "type": "question",
+          "settings": {
+            "title": "Ich kann im Shop nicht an meine Adresse bestellen.",
+            "text": "<p>.. dann ist nur der Artikel in der Farbe \/ in dem Design nicht lieferbar, aber der Shop drückt das leider so verquer aus ;\/. Schreib uns doch einfach schnell an hello@elamo.me, dann schauen wir zusammen, wann der Artikel wieder lieferbar ist.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5dd4960d-f13e-4e7a-acbf-7b152242b3a2",
+        "16571368821237d57f-0",
+        "16571368821237d57f-1",
+        "b13ffcd2-20c0-453e-8373-37a457f870da",
+        "a2defb1d-2b1e-4bf1-94f0-fb6a6570fa2b"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "165713698884c2677a": {
+      "type": "faq",
+      "blocks": {
+        "089d240f-f4d6-4adf-b0bf-b6150f468962": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Fragen zu meiner Bestellung",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "16571369885114892c-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich meine Bestellung zurückgeben?",
+            "text": "<p>Du hast im Ela Mo Online-Shop zugeschlagen und willst Deinen Rucksack oder Tasche zurückgeben? Kein Problem! Gib bitte in unserem Retourenportal unter <a href=\"https:\/\/elamo.hive.app\/de\" title=\"https:\/\/elamo.hive.app\/de\">https:\/\/elamo.hive.app\/de<\/a> Deine PLZ und Deine Bestellnummer inkl. # ein und drucke das Retourenlabel aus. Einfach auf dem Paket anbringen, zur nächsten Versandstelle bringen und innerhalb von 3-4 Werktagen ist der zu erstattende Betrag gleich wieder auf Deinem Konto.<\/p>"
+          }
+        },
+        "96ba0176-280a-4807-b278-f3df60b50e19": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich Ware umtauschen?",
+            "text": "<p>Du hast Ela Mo Produkte in unserem Online-Shop gekauft und willst sie nun umtauschen? Kein Problem! Schreibe uns eine E-Mail und trag ein, was Du anstelle der bestellten Ware haben möchtest. Sobald Deine Nachricht bei uns eingeht, bekommst Du ein Retourenlabel per e-Mail zugesandt, worauf du das Paket kostenfrei zurück senden kannst. In der Regel ist die neue Ware innerhalb von 2-3 Werktagen bei dir. <\/p>"
+          }
+        },
+        "83795c28-d0e5-4406-977e-8865253e3c8b": {
+          "type": "question",
+          "settings": {
+            "title": "Was mache ich mit meiner Amazon Retoure?",
+            "text": "<p>Retouren von Ela Mo Produkten, die über Amazon bestellt wurden, können innerhalb von 30 Tagen super einfach über das <a href=\"https:\/\/www.amazon.de\/gp\/orc\/returns\/homepage.html\/ref=ascnlcr?fg=1\" title=\"https:\/\/www.amazon.de\/gp\/orc\/returns\/homepage.html\/ref=ascnlcr?fg=1\"><strong>Online-Rückgabezentrum von Amazon <\/strong><\/a><strong> <\/strong>abgewickelt werden. Beispielsweise kann dort direkt ein Versandetikett ausgedruckt werden. Solltest Du es verpasst haben, innerhalb dieser Frist bei Amazon Retoure einzuleiten, schreibe uns bitte eine Nachricht.<\/p>"
+          }
+        },
+        "e783cc5a-6eaa-4701-a0ed-29f1d5eeaf64": {
+          "type": "question",
+          "settings": {
+            "title": "Mein Rucksack ist defekt. Was passiert nun?",
+            "text": "<p>Erst einmal tut es uns leid, dass es Probleme mit Deinem Rucksack gibt. Das soll nicht passieren. Damit wir dem Fehler auf die Schliche kommen, wäre es wundervoll, wenn Du uns für unser Qualitätsmanagement ein Foto des Defekts zusenden könntest. Es gibt mehrere Lösungsoptionen, unter denen Du wählen kannst (Erstattung, Ersatz und Reparatur). Unser Service-Team ist für Dich da unter hello@elamo.me <\/p>"
+          }
+        },
+        "806c1d34-4b62-460d-9080-c3698199676b": {
+          "type": "question",
+          "settings": {
+            "title": "Die Schnalle ist defekt, kann ich diese nachbestellen?",
+            "text": "<p>Wir haben Ersatzschnallen, schickst Du uns eine Email an hello@elamo.me, dann schicken wir sie Dir gerne kostenlos zu.<\/p>"
+          }
+        },
+        "064796d7-20a6-44dc-b9f3-215314e43320": {
+          "type": "question",
+          "settings": {
+            "title": "Der Rucksack riecht chemisch. Was kann ich tun?",
+            "text": "<p>Hier hilft eine gute Portion Geduld und frische Luft, wenn das nach ein paar Tagen immer noch nicht verschwinden will, schreib uns schnell eine Nachricht, dann lösen wir das zusammen. Zum Hintergrund: Um den Stoff wasserabweisend zu machen, wird eine Beschichtung verwendet, die bei zu kurzer Auslüftungszeit unangenehm riecht. Das ist gesundheitlich völlig unbedenklich und in der Regel nach kurzer Zeit weg. <\/p>"
+          }
+        },
+        "6c9589e4-dd50-4545-b6a6-0b6c83b7cb22": {
+          "type": "question",
+          "settings": {
+            "title": "Warum ist meine Erstattung noch nicht eingetroffen?",
+            "text": "<p>Melde Dich gerne bei uns per mail: <a href=\"mailto:hello@elamo.me\" target=\"_blank\">hello@elamo.me<\/a>, manchmal stauen sich die Retouren bei unserem Dienstleistungspartner und werden uns zeitlich versetzt gemeldet. Wenn Du Dich meldest, können wir es direkt prüfen und in der Regel auch direkt erstatten. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "089d240f-f4d6-4adf-b0bf-b6150f468962",
+        "16571369885114892c-1",
+        "96ba0176-280a-4807-b278-f3df60b50e19",
+        "83795c28-d0e5-4406-977e-8865253e3c8b",
+        "e783cc5a-6eaa-4701-a0ed-29f1d5eeaf64",
+        "806c1d34-4b62-460d-9080-c3698199676b",
+        "064796d7-20a6-44dc-b9f3-215314e43320",
+        "6c9589e4-dd50-4545-b6a6-0b6c83b7cb22"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657136685da2b12e2",
+    "1657136882f1f8492c",
+    "165713698884c2677a"
+  ]
+}

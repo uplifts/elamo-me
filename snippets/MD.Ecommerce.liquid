@@ -1,0 +1,183 @@
+<!-- Monkeys.Digital - eCommerce Data Layer - START -->
+  
+  <script>
+    const mdCurrency = "{{ shop.currency }}";
+
+    function moneyStringToNumber(moneyString) {
+        return Number(moneyString.replace(/[^0-9-]+/g,"")) / 100.0;
+    }
+
+    console.log("current template", '{{ template }}');
+
+// PRODUCT PAGE
+{% if template contains 'product' %}
+(async () => {
+    window.dataLayer.push({
+        'event': 'view_item',
+        'ecomm_page_type': '{{ template }}',
+        'user': {
+            'type': '{USERTYPE}'
+        },
+        'currency': mdCurrency,
+        'value': moneyStringToNumber("{{ product.price }}"), //number, should not be in ''
+        'items': [
+            {
+                'item_parent_id': "{{ product.id }}",
+                'item_id': "{% if product.variants[0].id %}{{ product.variants[0].id }}{% else %}{{ product.variants[0].variant_id }}{% endif %}",
+                'item_name': "{{ product.title }}",
+                // The Shopify API does not return some of those fields:
+                // see https://shopify.dev/docs/api/ajax#get-product
+//                'index': { POSITION ON THE PAGE },    //number, should not be in ''
+                'item_brand': "{{ product.vendor }}",
+                {% capture p_tags %}{%- for t in product.tags  -%}{%- unless forloop.first -%},{%- endunless -%}"{{ t | replace: '"', '″' }}"{%- endfor -%}{% endcapture %}
+                'item_tags': [{{ p_tags }}],
+                'item_category': '{{ product.type }}',
+//              'item_list_id': '{PAGE ID}',
+//              'item_list_name': '{PAGE NAME}',
+                'item_variant_id': '{{ product.variants[0].id }}',
+                'item_variant': "{% if product.variants[0].title %}{{ product.variants[0].title }}{% else %}{{ product.variants[0].option1 }}{% endif %}",
+                'price': moneyStringToNumber("{{ product.price }}"),                      //number, should not be in ''
+                // What does "quantity" mean here? We're viewing a product, not adding it to the cart.
+//                'quantity': 1                       //number, should not be in ''
+            }
+        ]
+    });
+})();
+{% endif %}
+    
+
+// COLLECTION
+{% if template contains 'collection' %}
+window.dataLayer.push({
+    'event': 'view_item_list',
+    'ecomm_page_type': '{{ template }}',
+    'user': {
+        'type': '{USERTYPE}'
+    },
+    'item_list_id': '{{ collection.id }}',
+    'item_list_name': '{{ collection.title }}',
+    'items': [
+        {% for product in collection.products %}
+        {
+            'item_parent_id': '{{ product.id }}',
+            'item_name': '{{ product.title }}',
+            'item_brand': '{{ product.vendor }}',
+            {% capture p_tags %}{%- for t in product.tags  -%}{%- unless forloop.first -%},{%- endunless -%}"{{ t | replace: '"', '″' }}"{%- endfor -%}{% endcapture %}
+            'item_tags': [{{ p_tags }}],
+            'item_category': '{{product.type}}',
+            'item_list_id': '{{ collection.id }}',
+            'item_list_name': '{{ collection.title }}',
+            'item_id': '{{ product.variants[0].id }}',
+            'item_variant': '{{ product.variants[0].title }}',
+            'price': moneyStringToNumber("{{ product.variants[0].price }}"), //number, should not be in ''
+            'quantity': 1 //number, should not be in ''
+        },
+        {% endfor %}
+    ]
+});
+{% endif %}
+
+// ADD TO CART
+
+window.dataLayer = window.dataLayer || [];
+async function addedToCart() {
+    const cart = await fetch(window.Shopify.routes.root + "cart.js").then(resp => resp.json());
+    console.log("cart", cart);
+    window.dataLayer.push({
+        'event': 'add_to_cart',
+        'ecomm_page_type': '{{ template }}',
+        'user': {
+            'type': '{USERTYPE}'
+        },
+        'currency': mdCurrency,
+        'value': cart.total_price / 100,                         //number, should not be in ''
+        'items': 
+            cart.items.map((item, index) => {
+                return {
+                    'item_parent_id': item.product_id,
+                    'item_name': item.product_title,
+                    'index': index, 
+                    'item_brand': item.vendor,
+                    //            'item_category': '{{ item.product_type }}',
+                    //            'item_category2': '{{ item.product_type }}',
+                    //            'item_category3': '{{ item.product_type }}',
+                    'item_tags': item.product_tag,
+                    'item_category': item.product_type,
+                    'item_id': item.variant_id,
+                    'price': item.final_price / 100, //number, should not be in ''
+                    'quantity': item.quantity //number, should not be in ''
+                }
+            })
+    });
+}
+// call addedToCart when the add to cart button is clicked
+(function () {
+    var d = XMLHttpRequest.prototype.send;
+    XMLHttpRequest.prototype.send = function () {
+        this.addEventListener("load", function (event) {
+            if (event.target._url === "/cart/add" || event.target._url === "/cart/add.js") {
+                addedToCart();
+            }
+        });
+        return d.apply(this, arguments);
+    }
+    const mdOldFetch = window.fetch;
+    fetch = (url, options) => {
+        console.log("Fetch", url, options);
+        if (url === "/cart/add" || url === "/cart/add.js") {
+            return new Promise((resolve, reject) => {
+                const res = mdOldFetch(url, options);
+                res.then(() => {
+                    addedToCart();
+                });
+                resolve(res);
+            });
+        }
+        return mdOldFetch(url, options);
+    }
+})();
+
+
+// SITE SEARCH
+    window.dataLayer = window.dataLayer || [];
+
+    const MONKEYS_SEARCH_QUERY_PARAM = "q";
+    if (new URLSearchParams(window.location.search).has(MONKEYS_SEARCH_QUERY_PARAM)) {
+        window.dataLayer.push({
+            'event': 'site_search',
+            'search_term': new URLSearchParams(window.location.search).get(MONKEYS_SEARCH_QUERY_PARAM)
+        });
+    }
+
+// NEWSLETTER SUBSCRIBE 
+window.dataLayer = window.dataLayer || [];
+
+window.addEventListener("load", () => {
+
+const MONKEYS_SUBSCRIBE_BUTTON_TEXTS = [
+    "Abonnieren",
+		"senden",
+		"eintragen",
+		"subscribe",
+]
+.map(text => text.toLowerCase());
+
+// search for buttons including that text
+const subscribeButtons = [...document.querySelectorAll("button, input[type='submit'], input[type='button']")]
+    .filter(button => {
+        return MONKEYS_SUBSCRIBE_BUTTON_TEXTS.includes(button.innerText.toLowerCase()) || MONKEYS_SUBSCRIBE_BUTTON_TEXTS.includes(button.innerHTML.toLowerCase()) || MONKEYS_SUBSCRIBE_BUTTON_TEXTS.includes(button.value.toLowerCase());
+    });
+
+// add click event listener to each button
+subscribeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        console.debug("Click");
+        window.dataLayer.push({
+            'event': 'newsletter_subscribe'
+        });
+    });
+});
+
+});
+
+</script>

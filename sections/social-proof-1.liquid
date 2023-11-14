@@ -1,0 +1,136 @@
+<style>
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} .index-section--alt {
+      background-color: {{ section.settings.bg_color }};
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .index-section {
+    color: {{ section.settings.txt_color }};
+  }
+</style>
+
+{%- assign assign_product = section.settings.product -%}
+{%- if template contains 'product' -%}
+  {%- assign assign_product = product -%}
+{%- endif -%}
+
+<div class="index-section{% if section.settings.alt %} index-section--alt{% endif %} {{ section.settings.css_class }}">
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    <div class="sec-social-proof1--grid">
+      {%- if section.settings.media_title != blank or section.settings.media_image != blank -%}
+        <div class="sec-social-proof1--media">
+          <div class="text-center">
+            {%- if section.settings.media_title != blank -%}
+              <div class="sec-social-proof1--media-title">
+                {{ section.settings.media_title }}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.media_image != blank -%}
+              <div class="sec-social-proof1--media-image">
+                <img src="{{ section.settings.media_image | img_url: 'master' }}" alt="{{ section.settings.media_image.alt }}">
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.title != blank or section.settings.text != blank or product != blank -%}
+        <div class="sec-social-proof1--content">
+          {%- if section.settings.title != blank -%}
+            <div class="sec-social-proof1--title">
+              {{ section.settings.title }}
+            </div>
+          {%- endif -%}
+          {%- if product != blank -%}
+            <div class="sec-social-proof1--rating">
+              {% render 'yotpo-star-rating', product: assign_product %}
+            </div>
+            {%- if section.settings.text != blank -%}
+              <div class="sec-social-proof1--content-panel">
+                {{ section.settings.text }}
+
+                {%- if section.settings.reviewer_image != blank -%}
+                  <div class="sec-social-proof1--content-reviewer">
+                    <img src="{{ section.settings.reviewer_image | img_url: 'master' }}" alt="{{ section.settings.reviewer_image.alt }}">
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.social_proof_1.name",
+  "class": "sec-social-proof1",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "t:sections.social_proof_1.settings.css_class.label"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "t:sections.social_proof_1.settings.bg_color.label"
+    },
+    {
+      "type": "color",
+      "id": "txt_color",
+      "label": "t:sections.social_proof_1.settings.txt_color.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "t:sections.social_proof_1.settings.narrow_column.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "alt",
+      "label": "t:sections.social_proof_1.settings.alt.label"
+    },
+    {
+      "type": "textarea",
+      "id": "media_title",
+      "label": "t:sections.social_proof_1.settings.media_title.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "media_image",
+      "label": "t:sections.social_proof_1.settings.media_image.label"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "t:sections.social_proof_1.settings.title.label"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:sections.social_proof_1.settings.product.label",
+      "info": "t:sections.social_proof_1.settings.product.info"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.social_proof_1.settings.text.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "reviewer_image",
+      "label": "t:sections.social_proof_1.settings.reviewer_image.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.social_proof_1.presets.social_proof_1.name"
+    }
+  ]
+}
+{% endschema %}

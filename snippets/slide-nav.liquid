@@ -1,0 +1,213 @@
+<div class="slide-nav__overflow{% if mobile_menu_style == 'thumb'%} slide-nav__overflow--thumb{% else %} slide-nav__overflow--slide{% endif %}">
+  <div class="slide-nav__header flex-align-center">
+    <a class="slide-nav__account flex-align-center" href="{{ routes.account_url }}">
+      {%- if customer -%}
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user-alt" viewBox="0 0 29 29"><path d="M14.5 0C6.49934 0 0 6.49934 0 14.5C0 22.5007 6.49934 29 14.5 29C22.5007 29 29 22.5007 29 14.5C29 6.49934 22.5007 0 14.5 0ZM14.5 1.26087C21.8192 1.26087 27.7391 7.18076 27.7391 14.5C27.7391 18.1153 26.2906 21.3854 23.9467 23.7731C22.7899 22.9281 21.3723 22.5237 20.1702 22.1194C19.4925 21.8915 18.8813 21.6664 18.4353 21.4102C18.0274 21.1758 17.8122 20.9292 17.6805 20.6504C18.6855 20.5191 19.6662 20.36 20.3759 20.1013C20.8098 19.9431 21.1761 19.7688 21.4754 19.5422C21.7748 19.3157 22.0652 18.9919 22.0652 18.5264C22.0652 18.4385 22.0468 18.3516 22.0111 18.2712C21.9755 18.1908 21.9235 18.1188 21.8584 18.0597C21.8043 18.0108 21.6673 17.7688 21.5887 17.3431C21.5101 16.9174 21.4732 16.337 21.4631 15.6734C21.4428 14.3463 21.5211 12.6843 21.4508 11.0523C21.3805 9.42031 21.1762 7.80949 20.4854 6.53214C19.8195 5.30067 18.5771 4.45174 16.8555 4.44875C16.2926 4.05953 15.5351 3.79615 14.5579 3.79615C14.5427 3.79601 14.5275 3.79643 14.5123 3.79738C12.1604 3.96643 10.5294 4.92133 9.51439 6.27603C8.49939 7.63073 8.07967 9.32354 7.87797 10.9969C7.67627 12.6703 7.69624 14.3445 7.63787 15.6784C7.60868 16.3453 7.5581 16.927 7.46671 17.3567C7.37532 17.7863 7.23421 18.035 7.14657 18.1127C7.07995 18.1719 7.02663 18.2445 6.99012 18.3258C6.95361 18.4071 6.93475 18.4952 6.93478 18.5843C6.93478 19.0411 7.2137 19.4429 7.5369 19.6838C7.8601 19.9248 8.24279 20.0763 8.68202 20.2072C9.39131 20.4185 10.3323 20.5391 11.2838 20.6627C11.1552 20.9531 10.9292 21.2009 10.5155 21.4385C10.0757 21.6911 9.47311 21.9129 8.80269 22.1366C7.61351 22.5334 6.20734 22.9301 5.05333 23.7731C2.70938 21.3854 1.26087 18.1153 1.26087 14.5C1.26087 7.18076 7.18076 1.26087 14.5 1.26087ZM14.58 5.06072C15.426 5.0662 16.0444 5.33444 16.2854 5.54093C16.4054 5.6438 16.5597 5.69785 16.7176 5.69238C18.1593 5.64131 18.8561 6.16801 19.3773 7.13179C19.8984 8.09558 20.1242 9.55283 20.1912 11.1065C20.2581 12.6601 20.181 14.3024 20.2022 15.6931C20.2129 16.3885 20.247 17.0206 20.3488 17.5721C20.4149 17.9307 20.534 18.25 20.6997 18.5436C20.5576 18.6488 20.2955 18.7885 19.9437 18.9167C19.2262 19.1783 18.1636 19.4059 16.9639 19.5176C16.8075 19.532 16.6622 19.6043 16.5563 19.7202C16.4504 19.8361 16.3916 19.9874 16.3913 20.1444V20.8043C16.3914 20.8814 16.4056 20.9578 16.4332 21.0297C16.689 21.6987 17.2168 22.1631 17.8073 22.5023C18.3979 22.8416 19.0728 23.0813 19.7676 23.315C20.9098 23.6992 22.096 24.0792 22.9936 24.6559C20.6954 26.5793 17.7358 27.7391 14.5 27.7391C11.2642 27.7391 8.30455 26.5793 6.00637 24.6559C6.89981 24.0817 8.07162 23.7093 9.20164 23.3322C9.88926 23.1028 10.5575 22.8684 11.1434 22.5319C11.7293 22.1954 12.2541 21.73 12.509 21.0629C12.524 21.0239 12.5352 20.9835 12.5422 20.9423C12.6058 20.5618 12.6087 20.3177 12.6087 20.1444C12.6085 19.9901 12.5518 19.8412 12.4492 19.7259C12.3467 19.6106 12.2054 19.5369 12.0521 19.5189C10.8479 19.3756 9.76284 19.2142 9.04157 18.9992C8.68093 18.8918 8.41546 18.7661 8.29046 18.6729C8.18644 18.5954 8.20752 18.6019 8.21166 18.5991C8.40589 18.2923 8.61965 17.999 8.70049 17.6189C8.81902 17.0616 8.8671 16.4285 8.8975 15.7338C8.95832 14.3443 8.94184 12.7099 9.13022 11.1471C9.3186 9.5843 9.71519 8.11166 10.5241 7.03206C11.3294 5.95724 12.5282 5.21405 14.58 5.06072Z"/></svg>
+        <span class="slide-nav__account-text">
+          {{ 'layout.customer.account' | t }}
+        </span>
+      {%- else -%}
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-login" viewBox="0 0 20 20"><path d="M10 0.799988C6.10318 0.799988 2.76941 3.22766 1.43048 6.65468C1.40853 6.7041 1.39683 6.75745 1.39609 6.81152C1.39534 6.86559 1.40557 6.91925 1.42615 6.96926C1.44672 7.01926 1.47723 7.06458 1.51581 7.10246C1.55439 7.14035 1.60025 7.17002 1.65063 7.18968C1.701 7.20935 1.75484 7.21859 1.80888 7.21686C1.86293 7.21513 1.91606 7.20247 1.96508 7.17962C2.01409 7.15678 2.05796 7.12424 2.09404 7.08397C2.13013 7.04369 2.15767 6.99652 2.17501 6.9453C3.39687 3.81792 6.43524 1.59999 10 1.59999C14.6438 1.59999 18.4 5.35617 18.4 9.99999C18.4 14.6438 14.6438 18.4 10 18.4C6.43524 18.4 3.39687 16.1821 2.17501 13.0547C2.15767 13.0035 2.13013 12.9563 2.09404 12.916C2.05796 12.8757 2.01409 12.8432 1.96508 12.8204C1.91606 12.7975 1.86293 12.7848 1.80888 12.7831C1.75484 12.7814 1.701 12.7906 1.65063 12.8103C1.60025 12.83 1.55439 12.8596 1.51581 12.8975C1.47723 12.9354 1.44672 12.9807 1.42615 13.0307C1.40557 13.0807 1.39534 13.1344 1.39609 13.1885C1.39683 13.2425 1.40853 13.2959 1.43048 13.3453C2.76941 16.7723 6.10318 19.2 10 19.2C15.0762 19.2 19.2 15.0762 19.2 9.99999C19.2 4.9238 15.0762 0.799988 10 0.799988ZM10.3961 6.39608C10.3165 6.3961 10.2388 6.41985 10.1728 6.4643C10.1068 6.50874 10.0555 6.57186 10.0256 6.64559C9.99563 6.71931 9.98835 6.80029 10.0047 6.87818C10.021 6.95606 10.0602 7.0273 10.1172 7.0828L12.6344 9.59999H1.20001C1.147 9.59924 1.09438 9.60903 1.04519 9.6288C0.996004 9.64856 0.951236 9.67791 0.913488 9.71512C0.87574 9.75234 0.845765 9.79669 0.825306 9.84559C0.804847 9.8945 0.794312 9.94698 0.794312 9.99999C0.794312 10.053 0.804847 10.1055 0.825306 10.1544C0.845765 10.2033 0.87574 10.2476 0.913488 10.2849C0.951236 10.3221 0.996004 10.3514 1.04519 10.3712C1.09438 10.3909 1.147 10.4007 1.20001 10.4H12.6344L10.1172 12.9172C10.0788 12.954 10.0482 12.9982 10.027 13.047C10.0059 13.0959 9.99477 13.1485 9.99423 13.2017C9.99369 13.2549 10.0038 13.3077 10.0239 13.357C10.044 13.4062 10.0737 13.451 10.1114 13.4886C10.149 13.5262 10.1938 13.556 10.243 13.5761C10.2923 13.5962 10.3451 13.6063 10.3983 13.6058C10.4515 13.6052 10.5041 13.5941 10.553 13.573C10.6018 13.5518 10.646 13.5212 10.6828 13.4828L13.8828 10.2828C13.9578 10.2078 13.9999 10.1061 13.9999 9.99999C13.9999 9.89392 13.9578 9.79219 13.8828 9.71718L10.6828 6.51718C10.6455 6.47886 10.601 6.4484 10.5517 6.4276C10.5025 6.4068 10.4496 6.39608 10.3961 6.39608Z"/></svg>
+        <span class="slide-nav__account-text">
+          {{ 'layout.customer.log_in' | t }}
+        </span>
+      {%- endif -%}
+    </a>
+
+    <button class="slide-nav__close flex-align-center js-close-slide-nav">
+      <span class="slide-nav__close-text">
+        {{ 'general.accessibility.close' | t }}
+      </span>
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+    </button>
+  </div>
+
+  {%- if section.settings.header_search_enable -%}
+    <div class="slide-nav__search">
+      {%- render 'search-bar', search_btn_style: 'btn', search_bar_location: 'search-bar--slidenav' -%}
+    </div>
+  {%- endif -%}
+
+  <nav class="slide-nav__wrapper">
+    <ul id="SlideNav" class="slide-nav">
+      {% comment %}
+        Do not show hardcoded 'Home' link if it matches the first menu link
+      {% endcomment %}
+      {%- unless main_menu.links[0].url == routes.root_url -%}
+        <li class="slide-nav__item border-bottom">
+          <a href="{{ routes.root_url }}" class="slide-nav__link">
+            {{ 'general.drawers.home' | t }}
+          </a>
+        </li>
+      {%- endunless -%}
+      {%- for link in main_menu.links -%}
+        {%- liquid
+          assign link_index = forloop.index
+          assign child_list_handle = link.title | handleize | append: link_index
+          assign has_dropdown = false
+          if link.links != blank
+            assign has_dropdown = true
+          endif
+        -%}
+
+        <li class="slide-nav__item">
+          {%- if has_dropdown -%}
+            <button
+              type="button"
+              class="js-toggle-submenu slide-nav__link"
+              data-target="tier-2-{{ child_list_handle }}"
+              data-level="1"
+              {% if link.active or link.child_active %}data-active="true"{% endif %}>
+              {{ link.title }}
+              <span class="slide-nav__icon">
+                {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg> {% endcomment %}
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-right" viewBox="0 0 38 18"><path d="M28.9067 0.63109C28.598 0.625153 28.316 0.809215 28.1913 1.09125C28.0696 1.37625 28.1319 1.70578 28.3486 1.92547L34.4108 8.24H1.53784C1.26471 8.23703 1.0094 8.37953 0.872837 8.61703C0.733306 8.85453 0.733306 9.14547 0.872837 9.38297C1.0094 9.62047 1.26471 9.76297 1.53784 9.76H34.4108L28.3486 16.0745C28.0577 16.3773 28.0696 16.8583 28.3724 17.1492C28.6752 17.4402 29.1561 17.4312 29.4471 17.1255L37.2489 9L29.4471 0.874528C29.3075 0.723121 29.1116 0.637028 28.9067 0.63109Z"/></svg>
+                <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+              </span>
+            </button>
+            <ul
+              class="slide-nav__dropdown"
+              data-parent="tier-2-{{ child_list_handle }}"
+              data-level="2">
+              <li class="slide-nav__item slide-nav__item-top border-bottom">
+                <div class="slide-nav__table">
+                  <div class="slide-nav__table-cell slide-nav__return">
+                    <button class="js-toggle-submenu slide-nav__return-btn" type="button">
+                      {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg> {% endcomment %}
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-left" viewBox="0 0 38 18"><path d="M8.34216 16.7302C8.65091 16.7361 8.93294 16.5521 9.05762 16.27C9.17934 15.985 9.117 15.6555 8.90028 15.4358L2.83809 9.12127L35.7111 9.12127C35.9842 9.12424 36.2395 8.98174 36.3761 8.74424C36.5156 8.50674 36.5156 8.2158 36.3761 7.9783C36.2395 7.7408 35.9842 7.5983 35.7111 7.60127L2.83809 7.60127L8.90028 1.28674C9.19122 0.983928 9.17934 0.502991 8.87653 0.212054C8.57372 -0.0788836 8.09278 -0.0699781 7.80184 0.235804L-3.12492e-05 8.36127L7.80184 16.4867C7.94138 16.6381 8.13731 16.7242 8.34216 16.7302Z"/></svg>
+                      <span class="icon__fallback-text">{{ 'general.drawers.collapse_submenu' | t }}</span>
+                    </button>
+                  </div>
+                  <a href="{{ link.url }}" class="slide-nav__sublist-link slide-nav__sublist-header">
+                    {{ link.title }}
+                  </a>
+                </div>
+              </li>
+
+              {%- for childlink in link.links -%}
+                {%- liquid
+                  assign has_sub_dropdown = false
+                  assign grand_child_list_handle = childlink.title | handleize
+                  assign grand_child_link_id = grand_child_list_handle | append: link_index
+                  if childlink.links != blank
+                    assign has_sub_dropdown = true
+                  endif
+                -%}
+
+                <li class="slide-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                  {%- if has_sub_dropdown -%}
+                    <button type="button"
+                      class="js-toggle-submenu slide-nav__link slide-nav__sublist-link"
+                      data-target="tier-3-{{ grand_child_link_id }}">
+                      {{ childlink.title }}
+                      <span class="slide-nav__icon">
+                        {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg> {% endcomment %}
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-right" viewBox="0 0 38 18"><path d="M28.9067 0.63109C28.598 0.625153 28.316 0.809215 28.1913 1.09125C28.0696 1.37625 28.1319 1.70578 28.3486 1.92547L34.4108 8.24H1.53784C1.26471 8.23703 1.0094 8.37953 0.872837 8.61703C0.733306 8.85453 0.733306 9.14547 0.872837 9.38297C1.0094 9.62047 1.26471 9.76297 1.53784 9.76H34.4108L28.3486 16.0745C28.0577 16.3773 28.0696 16.8583 28.3724 17.1492C28.6752 17.4402 29.1561 17.4312 29.4471 17.1255L37.2489 9L29.4471 0.874528C29.3075 0.723121 29.1116 0.637028 28.9067 0.63109Z"/></svg>
+                        <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+                      </span>
+                    </button>
+                    <ul class="slide-nav__dropdown" data-parent="tier-3-{{ grand_child_link_id }}" data-level="3">
+                      <li class="slide-nav__item border-bottom">
+                        <div class="slide-nav__table">
+                          <div class="slide-nav__table-cell slide-nav__return">
+                            <button type="button"
+                              class="js-toggle-submenu slide-nav__return-btn"
+                              data-target="tier-2-{{ child_list_handle }}">
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                              <span class="icon__fallback-text">{{ 'general.drawers.collapse_submenu' | t }}</span>
+                            </button>
+                          </div>
+                          <a href="{{ childlink.url }}" class="slide-nav__sublist-link slide-nav__sublist-header">
+                            {{ childlink.title }}
+                          </a>
+                        </div>
+                      </li>
+                      {%- for grandchildlink in childlink.links -%}
+                        <li class="slide-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                          <a href="{{ grandchildlink.url }}" class="slide-nav__sublist-link">
+                            {{ grandchildlink.title | escape }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- else -%}
+                    <a href="{{ childlink.url }}" class="slide-nav__sublist-link">
+                      {{ childlink.title | escape }}
+                    </a>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- else -%}
+            <a href="{{ link.url }}" class="slide-nav__link">
+              {{ link.title }}
+            </a>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+      {%- if shop.customer_accounts_enabled -%}
+        <li class="slide-nav__item hide medium-up--hide">
+          <a
+            href="{{ routes.account_url }}"
+            class="slide-nav__link">
+            {%- if customer -%}
+              {{ 'layout.customer.account' | t }}
+            {%- else -%}
+              {{ 'layout.customer.log_in' | t }}
+            {%- endif -%}
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if section.settings.header_search_enable -%}
+        <li class="slide-nav__item hide medium-up--hide">
+          <a
+            href="{{ routes.search_url }}"
+            class="slide-nav__link js-modal-open-search-modal js-no-transition">
+            {{ 'general.search.title' | t }}
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
+  </nav>
+
+  {%- if section.settings.secondary_menu_link_list != blank -%}
+    {% assign main_menu = linklists[section.settings.secondary_menu_link_list] %}
+    <div class="slide-nav__secondary-menu">
+      <div class="slide-nav mod-secondary">
+        {%- for link in main_menu.links -%}
+          <div class="slide-nav__item">
+            <a
+              href="{{ link.url }}"
+              class="slide-nav__link">
+              {{ link.title }}
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="slide-nav__socials">
+    <div class="slide-nav__socials-title">{{ 'general.social.title' | t }}</div>
+    <ul class="no-bullets inline-list social-icons ">
+      {%- if settings.social_instagram_link != blank -%}
+        <li>
+          <a target="_blank" rel="noopener" href="{{ settings.social_instagram_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram-alt" viewBox="0 0 44 44"><path d="M13 0C5.83248 0 0 5.83248 0 13V31C0 38.1675 5.83248 44 13 44H31C38.1675 44 44 38.1675 44 31V13C44 5.83248 38.1675 0 31 0H13ZM13 2H31C37.0865 2 42 6.91352 42 13V31C42 37.0865 37.0865 42 31 42H13C6.91352 42 2 37.0865 2 31V13C2 6.91352 6.91352 2 13 2ZM34 8C33.4696 8 32.9609 8.21071 32.5858 8.58579C32.2107 8.96086 32 9.46957 32 10C32 10.5304 32.2107 11.0391 32.5858 11.4142C32.9609 11.7893 33.4696 12 34 12C34.5304 12 35.0391 11.7893 35.4142 11.4142C35.7893 11.0391 36 10.5304 36 10C36 9.46957 35.7893 8.96086 35.4142 8.58579C35.0391 8.21071 34.5304 8 34 8ZM22 11C15.9367 11 11 15.9367 11 22C11 28.0633 15.9367 33 22 33C28.0633 33 33 28.0633 33 22C33 15.9367 28.0633 11 22 11ZM22 13C26.9824 13 31 17.0176 31 22C31 26.9824 26.9824 31 22 31C17.0176 31 13 26.9824 13 22C13 17.0176 17.0176 13 22 13Z" fill="currentColor"/></svg>
+            <span class="icon__fallback-text">Instagram</span>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if settings.social_facebook_link != blank -%}
+        <li>
+          <a target="_blank" rel="noopener" href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook-alt" viewBox="0 0 42 43"><path d="M5 0C2.25048 0 0 2.25048 0 5V37C0 39.7495 2.25048 42 5 42H21.832C21.94 42.0178 22.0502 42.0178 22.1582 42H27.832C27.94 42.0178 28.0502 42.0178 28.1582 42H37C39.7495 42 42 39.7495 42 37V5C42 2.25048 39.7495 0 37 0H5ZM5 2H37C38.6685 2 40 3.33152 40 5V37C40 38.6685 38.6685 40 37 40H29V26H32.8203L34.2207 19H29V17C29 16.4425 29.0531 16.3989 29.2402 16.2773C29.4274 16.1558 30.0058 16 31 16H34V10.3691L33.4297 10.0977C33.4297 10.0977 31.1326 9 28 9C25.75 9 23.9016 9.89645 22.7188 11.375C21.5359 12.8535 21 14.8333 21 17V19H18V26H21V40H5C3.33152 40 2 38.6685 2 37V5C2 3.33152 3.33152 2 5 2ZM28 11C30.0791 11 31.3874 11.4585 32 11.7012V14H31C29.8492 14 28.927 14.0952 28.1504 14.5996C27.3738 15.104 27 16.0615 27 17V21H31.7793L31.1797 24H27V40H23V24H20V21H23V17C23 15.1667 23.4641 13.6465 24.2812 12.625C25.0984 11.6035 26.25 11 28 11Z" fill="currentColor"/></svg>
+            <span class="icon__fallback-text">Facebook</span>
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>  
+  </div>
+</div>
+
+<div class="slide-nav__overlay js-close-slide-nav"></div>

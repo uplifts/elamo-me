@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "Da kommt was \nKLEINES auf dich zu!",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "bottom_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/klein_73d35051-1def-46ad-9b97-90b9e11973a6.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "Unser neuer Mini",
+        "description": "Da kommt was KLEINES auf dich zu 😮 - unser neuer Mini Rucksack kombiniert kleines Format mit durchdachten Funktionen und stylischem Look. Hab deine Hände frei, wenn du fröhlich pfeifend durch die Stadt bummelst, und trotzdem alles griffbereit, ohne dass dir die Schulter abfällt (Handtasche adieu!).",
+        "home_featured_products": "mini-rucksack",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "featured-collection2": {
+      "type": "featured-collection-slider",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "description": "",
+        "home_featured_products": "",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection1": {
+          "type": "collection",
+          "settings": {
+            "collection": "rolltop-rucksaecke",
+            "focal_point": "center center"
+          }
+        },
+        "collection2": {
+          "type": "collection",
+          "settings": {
+            "collection": "daypacks",
+            "focal_point": "center center"
+          }
+        },
+        "collection3": {
+          "type": "collection",
+          "settings": {
+            "collection": "flow",
+            "image": "shopify:\/\/shop_images\/ela-mo-flow-rucksack-beauty-in-darkness-32598170566834_a18ef81c-0fe7-4826-8c58-01f107f7372e.jpg",
+            "focal_point": "center center"
+          }
+        },
+        "collection4": {
+          "type": "collection",
+          "settings": {
+            "collection": "strandtaschen",
+            "image": "shopify:\/\/shop_images\/ela-mo-lieblingstasche-starry-night-41056031998216_92dca533-7068-4b02-a9cb-d6c295342674.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection1",
+        "collection2",
+        "collection3",
+        "collection4"
+      ],
+      "settings": {
+        "title": "Das könnte dir auch gefallen",
+        "alt": true
+      }
+    },
+    "featured-collection3": {
+      "type": "featured-collection-slider",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "description": "",
+        "home_featured_products": "",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "disabled": true,
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "per_row_desktop": 3,
+            "per_row_mobile": "1"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "product_grid"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "featured-collection2",
+    "featured-collections",
+    "featured-collection3",
+    "main-collection"
+  ]
+}

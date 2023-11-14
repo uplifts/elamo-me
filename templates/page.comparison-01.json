@@ -1,0 +1,237 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "b3aba623-fc65-4a7c-a7fd-a67e63624e88": {
+      "type": "advanced-content",
+      "blocks": {
+        "80602b3b-0b99-4a9c-a897-606f8944f063": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"color:#39525E\"><div class=\"h4 fw-400\">Rucksäcke vergleichen<\/div>\n<div class=\"h1\">Kaufe nicht irgend einen Rucksack. \nFinde genau den richtigen für dich.<\/div>\n<\/div>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "166f0ae7-0b47-4133-b60b-ebf2ccc5da38": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-vergleich-removebg-preview_6d4b8cdb-8323-4e49-9ffe-d0374cfa8f1b.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "15ecee05-fe4f-49b7-bb31-3072d19adb73": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<h3 style=\"color:#3A505E;font-weight:500;\">Scrolle nach rechts, um alle Modelle zu vergleichen. ➔<\/h3>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "80602b3b-0b99-4a9c-a897-606f8944f063",
+        "166f0ae7-0b47-4133-b60b-ebf2ccc5da38",
+        "15ecee05-fe4f-49b7-bb31-3072d19adb73"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; padding-left: 0px; margin-bottom: 30px;} }"
+      ],
+      "settings": {
+        "css_class": "comparison-01-rte-top",
+        "full_width": false,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "1010dbca-fc18-4a45-b980-c5da3d6a1264": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18222051000584__1010dbca-fc18-4a45-b980-c5da3d6a1264-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3 style=\"color:#3A505E;font-weight:500;\">Scrolle nach rechts, um alle Modelle zu vergleichen. ➔<\/h3>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18222051000584__1010dbca-fc18-4a45-b980-c5da3d6a1264-liquid-1"
+      ],
+      "custom_css": [
+        "h3 {margin-bottom: 0px !important;}",
+        ".custom__item {margin-bottom: 0px !important;}",
+        "@media only screen and (max-width: 768px) {.custom__item {flex: 0 0 auto; padding-left: 0px; margin-bottom: 30px; }}"
+      ],
+      "settings": {
+        "css_class": "",
+        "full_width": false,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "d85864b0-a9af-4eb4-ac95-a1faa9311ca5": {
+      "type": "comparison-01",
+      "blocks": {
+        "4d4c394c-8b12-47fb-821a-16eee87e1f26": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pink-blue-ela-mo-rolltop-rucksack-pink-blue-30216914895026_1800x1800_995b8823-cf90-4a08-ace5-ff37453742af.webp",
+            "title": "Rolltop",
+            "link": "shopify:\/\/collections\/rolltop-rucksaecke",
+            "sizing": "<div style=\"font-size:2em;font-weight:500\">18-26 L<\/div>\nFlexible Größe",
+            "icon_01": "shopify:\/\/shop_images\/Laptop_2.png",
+            "icon_01_text": "Laptops bis 17 Zoll (38 x 24,5 x 3cm)",
+            "icon_02": "shopify:\/\/shop_images\/Read_1.png",
+            "icon_02_text": "Für DIN-A4 Ordner",
+            "icon_03": "shopify:\/\/shop_images\/Water_1.png",
+            "icon_03_text": "Wasserabweisend",
+            "icon_04": "shopify:\/\/shop_images\/icons8-plane_d208a5db-4275-49c7-b1ff-b4d43ac44d23.svg",
+            "icon_04_text": "Handgepäck geeignet",
+            "icon_05": "shopify:\/\/shop_images\/icons8-secure.png",
+            "icon_05_text": "Mit Geheimfach",
+            "icon_06": "shopify:\/\/shop_images\/icons8-backpack_b61ac281-53e0-4582-8231-04cb5bc37a76.png",
+            "icon_06_text": "Außentasche",
+            "icon_07": "shopify:\/\/shop_images\/icons8-sport_bottle.png",
+            "icon_07_text": "Flaschenhalter",
+            "icon_08": "shopify:\/\/shop_images\/icons8-usb_on_b868b69f-5e57-46c6-b9f1-9f075255130f.svg",
+            "icon_08_text": "Mit USB-Anschluss",
+            "button_label": "Alle Rolltops ansehen"
+          }
+        },
+        "e895cf67-6cbb-4c77-a68a-beda02486c5f": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ela-mo-flow-rucksack-beauty-in-darkness-32601746800818_1800x1800_341e0815-3154-4202-ac7a-9fcf739da8d3.webp",
+            "title": "Flow",
+            "link": "shopify:\/\/collections\/flow",
+            "sizing": "<div style=\"font-size:2em;font-weight:500\">18 L<\/div>\nGröße",
+            "icon_01": "shopify:\/\/shop_images\/Laptop_2.png",
+            "icon_01_text": "Laptops bis 15 Zoll (30 x 24,5 x 3cm)",
+            "icon_02": "shopify:\/\/shop_images\/Read_1.png",
+            "icon_02_text": "Für DIN-A4 Ordner",
+            "icon_03": "shopify:\/\/shop_images\/Water_1.png",
+            "icon_03_text": "Wasserabweisend",
+            "icon_04": "shopify:\/\/shop_images\/icons8-plane_d208a5db-4275-49c7-b1ff-b4d43ac44d23.svg",
+            "icon_04_text": "Handgepäck geeignet",
+            "icon_05": "shopify:\/\/shop_images\/icons8-secure.png",
+            "icon_05_text": "Mit Geheimfach",
+            "icon_06": "shopify:\/\/shop_images\/icons8-backpack_b61ac281-53e0-4582-8231-04cb5bc37a76.png",
+            "icon_06_text": "Außentasche",
+            "icon_07": "shopify:\/\/shop_images\/icons8-sport_bottle.png",
+            "icon_07_text": "Flaschenhalter",
+            "icon_08": "shopify:\/\/shop_images\/icons8-unavailable_3d16d481-8d83-43aa-bd34-c937c8c599ab.png",
+            "icon_08_text": "Kein USB",
+            "button_label": "Alle Flow-Rucksäcke ansehen"
+          }
+        },
+        "0a2e3e71-316d-4446-956c-cc60a67c1407": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ela-mo-work-rucksack-black-45441738965256.jpg",
+            "title": "Work",
+            "link": "shopify:\/\/collections\/work-rucksacke",
+            "sizing": "<div style=\"font-size:2em;font-weight:500\">15 L<\/div>\nGröße",
+            "icon_01": "shopify:\/\/shop_images\/Laptop_2.png",
+            "icon_01_text": "Laptops bis 17 Zoll (38 x 24,5 x 3cm)",
+            "icon_02": "shopify:\/\/shop_images\/Read_1.png",
+            "icon_02_text": "Für DIN-A4 Ordner",
+            "icon_03": "shopify:\/\/shop_images\/Water_1.png",
+            "icon_03_text": "Wasserabweisend",
+            "icon_04": "shopify:\/\/shop_images\/icons8-plane_d208a5db-4275-49c7-b1ff-b4d43ac44d23.svg",
+            "icon_04_text": "Handgepäck geeignet",
+            "icon_05": "shopify:\/\/shop_images\/icons8-unavailable_7f7e8e60-7e5c-43fc-85c5-bb5ac2a2ac8e.svg",
+            "icon_05_text": "Kein Geheimnfach",
+            "icon_06": "shopify:\/\/shop_images\/icons8-backpack_b61ac281-53e0-4582-8231-04cb5bc37a76.png",
+            "icon_06_text": "Außentasche",
+            "icon_07": "shopify:\/\/shop_images\/icons8-sport_bottle.png",
+            "icon_07_text": "Flaschenhalter",
+            "icon_08": "shopify:\/\/shop_images\/icons8-unavailable_7f7e8e60-7e5c-43fc-85c5-bb5ac2a2ac8e.svg",
+            "icon_08_text": "Kein USB",
+            "button_label": "Alle Work-Rucksäcke ansehen"
+          }
+        },
+        "5a3f1b96-5732-4925-a170-fa75b2f4b388": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ela-mo-daypack-rucksack-bloom-30235660714162_1800x1800_2523d5fe-1533-49fc-bd40-34066240369d.webp",
+            "title": "Daypack",
+            "link": "shopify:\/\/collections\/daypacks",
+            "sizing": "<div style=\"font-size:2em;font-weight:500\">12 L<\/div>\nGröße",
+            "icon_01": "shopify:\/\/shop_images\/Laptop_2.png",
+            "icon_01_text": "Laptops bis 13 Zoll (30 x 23,5 x 1,5cm)",
+            "icon_02": "shopify:\/\/shop_images\/Two-Pocket_Folder_1.png",
+            "icon_02_text": "Für DIN-A4 Mappen\/ Zeitschriften",
+            "icon_03": "shopify:\/\/shop_images\/Water_1.png",
+            "icon_03_text": "Wasserabweisend",
+            "icon_04": "shopify:\/\/shop_images\/icons8-plane_d208a5db-4275-49c7-b1ff-b4d43ac44d23.svg",
+            "icon_04_text": "Handgepäck geeignet",
+            "icon_05": "shopify:\/\/shop_images\/icons8-secure.png",
+            "icon_05_text": "Mit Geheimfach",
+            "icon_06": "shopify:\/\/shop_images\/icons8-unavailable_3d16d481-8d83-43aa-bd34-c937c8c599ab.png",
+            "icon_06_text": "Nicht vorhanden",
+            "icon_07": "shopify:\/\/shop_images\/icons8-unavailable_7f7e8e60-7e5c-43fc-85c5-bb5ac2a2ac8e.svg",
+            "icon_07_text": "Nicht vorhanden",
+            "icon_08": "shopify:\/\/shop_images\/icons8-unavailable_3d16d481-8d83-43aa-bd34-c937c8c599ab.png",
+            "icon_08_text": "Kein USB",
+            "button_label": "Alle Daypacks ansehen"
+          }
+        },
+        "aff5157b-d97d-4474-b7c3-30bb4dcb280b": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ela-mo-mini-rucksack-old-mint-44557081084168_500x500_d8d119d7-4ef1-4d50-8821-7616db1648f8.png",
+            "title": "Mini",
+            "link": "shopify:\/\/collections\/mini-rucksack",
+            "sizing": "<div style=\"font-size:2em;font-weight:500\">7 L<\/div>\nGröße",
+            "icon_01": "shopify:\/\/shop_images\/icons8-ipad_home_screen.svg",
+            "icon_01_text": "Tablets (30x23cm)",
+            "icon_02": "shopify:\/\/shop_images\/Two-Pocket_Folder_1.png",
+            "icon_02_text": "A5 Umschlag",
+            "icon_03": "shopify:\/\/shop_images\/Water_1.png",
+            "icon_03_text": "Wasserabweisend",
+            "icon_04": "shopify:\/\/shop_images\/icons8-plane_d208a5db-4275-49c7-b1ff-b4d43ac44d23.svg",
+            "icon_04_text": "Handgepräck geeignet",
+            "icon_05": "shopify:\/\/shop_images\/icons8-secure.png",
+            "icon_05_text": "Mit Geheimfach",
+            "icon_06": "shopify:\/\/shop_images\/icons8-backpack_b61ac281-53e0-4582-8231-04cb5bc37a76.png",
+            "icon_06_text": "Außentasche",
+            "icon_07": "shopify:\/\/shop_images\/icons8-sport_bottle.png",
+            "icon_07_text": "Flaschenhalter",
+            "icon_08": "shopify:\/\/shop_images\/icons8-unavailable_7f7e8e60-7e5c-43fc-85c5-bb5ac2a2ac8e.svg",
+            "icon_08_text": "Kein USB",
+            "button_label": "Alle Minis ansehen"
+          }
+        }
+      },
+      "block_order": [
+        "4d4c394c-8b12-47fb-821a-16eee87e1f26",
+        "e895cf67-6cbb-4c77-a68a-beda02486c5f",
+        "0a2e3e71-316d-4446-956c-cc60a67c1407",
+        "5a3f1b96-5732-4925-a170-fa75b2f4b388",
+        "aff5157b-d97d-4474-b7c3-30bb4dcb280b"
+      ],
+      "settings": {
+        "css_class": "comparison-01-slider",
+        "is_slider": true,
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "center",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b3aba623-fc65-4a7c-a7fd-a67e63624e88",
+    "1010dbca-fc18-4a45-b980-c5da3d6a1264",
+    "d85864b0-a9af-4eb4-ac95-a1faa9311ca5"
+  ]
+}

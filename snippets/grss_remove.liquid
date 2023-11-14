@@ -1,0 +1,27 @@
+{% if shop.metafields.ws_seo_json.ws_seo_json_premium %}
+ <script id="ws_json_ld_script" type="module">
+    const wsSeoUrlParams = new URLSearchParams(location.search);
+    let wsSeoTestParam = wsSeoUrlParams.get('seoJsonDisabled');
+        if(typeof window.ws_script === 'undefined'){
+            window.ws_script=true;
+            if(!wsSeoTestParam || (wsSeoTestParam && wsSeoTestParam != 'true')){
+                const remove = () =>{
+                    document.querySelectorAll('[type="application/ld+json"]').forEach(e => {
+                        if(e.className != "ws_schema")
+                            e.remove();
+                    })
+                }
+                remove();
+                setInterval(remove, 1000);
+            }else{
+                document.querySelectorAll('[type="application/ld+json"]').forEach(e => {
+                    if(e.className == "ws_schema")
+                        e.remove();
+                })
+            }
+            document.querySelectorAll('[itemscope]').forEach(e=> e.removeAttribute("itemscope"))
+        }else{
+            document.getElementById("ws_json_ld_script").remove();
+        }
+    </script>
+{%- endif -%}
