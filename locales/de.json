@@ -133,7 +133,8 @@
       },
       "free_from": "Geschenkt ab",
       "add_to": "Hinzufügen",
-      "add_for_free": "Kostenlos hinzufügen"
+      "add_for_free": "Kostenlos hinzufügen",
+      "add_for_free_ext": "Füge dein Geschenk gratis hinzu 🎉"
     },
     "label": {
       "price": "Preis",

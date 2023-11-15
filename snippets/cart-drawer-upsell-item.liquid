@@ -23,6 +23,9 @@
     <div class="cart-drawer--gift-wrap flex-align-center">
       {%- if product.featured_media != blank -%}
         <div class="cart-drawer--gift-image">
+          <div class="cart-drawer--gift-popover">
+            {{  }}
+          </div>
           <div class="cart-drawer--gift-picture img-contain">
             <img 
               src="{{ product.featured_media | img_url: '200x' }}"
