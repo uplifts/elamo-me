@@ -2132,6 +2132,7 @@ display: none;
   white-space: nowrap;
   padding: 8px;
   animation: show-and-hide 20s ease;
+  opacity: 0;
 }
 
 .cart-drawer--gift-popover:before {
