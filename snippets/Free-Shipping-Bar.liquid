@@ -18,7 +18,7 @@
         alt="car"
       >
     </div>
-    {%- if settings.cart_freeshipbar_threshold_2 != blank -%}
+    {%- if settings.cart_freeshipbar_threshold_2 != blank and settings.cart_freeshipbar_threshold_2 != 0 -%}
       <div class="progress-bar gift-bar-progress"></div>
       <div class="progress-bar-icon">
         <img
@@ -30,7 +30,7 @@
         >
       </div>
     {%- endif -%}
-    {%- if settings.cart_freeshipbar_threshold_3 != blank -%}
+    {%- if settings.cart_freeshipbar_threshold_3 != blank and settings.cart_freeshipbar_threshold_3 != 0 -%}
       <div class="progress-bar gift-bar-progress"></div>
       <div class="progress-bar-icon">
         <img
