@@ -2118,6 +2118,11 @@ display: none;
   font-size: 12px;
 }
 
+.cart-drawer--gift-popover {
+  position: absolute;
+  left: 8px;
+}
+
 @media (min-width: 769px) {
   .cart-drawer--upsells-title {
     padding: 20px;
