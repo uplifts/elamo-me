@@ -2138,12 +2138,12 @@ display: none;
   content: '';
   position: absolute;
   left: 50px;
-  bottom: -7px;
+  bottom: -11px;
   z-index: 2;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 8px 6px 0 6px;
+  border-width: 12px 9px 0 9px;
   border-color: #ffffff transparent transparent transparent;
 }
 
