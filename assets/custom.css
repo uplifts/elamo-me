@@ -2045,6 +2045,7 @@ display: none;
 
 .cart-drawer--gift-image {
   width: var(--icon-width);
+  position: relative;
 }
 
 .cart-drawer--gift-content {
