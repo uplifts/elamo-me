@@ -2137,8 +2137,8 @@ display: none;
 .cart-drawer--gift-popover:before {
   content: '';
   position: absolute;
-  left: 50px; 
-  bottom: -1px;
+  left: 50px;
+  bottom: -11px;
   z-index: 2;
   width: 0;
   height: 0;
