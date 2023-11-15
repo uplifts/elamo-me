@@ -2138,7 +2138,7 @@ display: none;
   content: '';
   position: absolute;
   left: 50px;
-  bottom: -11px;
+  bottom: -8px;
   z-index: 2;
   width: 0;
   height: 0;
