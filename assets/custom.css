@@ -2039,6 +2039,10 @@ display: none;
   color: #A1A1A1;
 }
 
+.cart-drawer--gift-wrap {
+  gap: 12px;
+}
+
 .cart-drawer--gift-image {
   width: var(--icon-width);
 }
