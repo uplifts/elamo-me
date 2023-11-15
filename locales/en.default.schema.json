@@ -1975,7 +1975,8 @@
       }
     },
     "store-availability": {
-      "name": {}
+      "name": {
+      }
     },
     "testimonials": {
       "name": "Testimonials",
@@ -2669,7 +2670,8 @@
         "free_shipping_bar": {
           "heading": "Free shipping bar",
           "threshold_1": "Threshold 1",
-          "threshold_2": "Threshold 2"
+          "threshold_2": "Threshold 2",
+          "threshold_3": "Threshold 3"
         },
         "cart_additional_buttons": {
           "label": "Enable additional checkout buttons",
