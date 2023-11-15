@@ -2044,8 +2044,8 @@ display: none;
 }
 
 .cart-drawer--gift-content {
-  flex: 0 0 calc(100% - var(--icon-width));
-  max-width: calc(100% - var(--icon-width));
+  flex: 1;
+  max-width: 100%;
 }
 
 .cart-drawer--gift-picture {
