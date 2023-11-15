@@ -18,26 +18,30 @@
         alt="car"
       >
     </div>
-    <div class="progress-bar gift-bar-progress"></div>
-    <div class="progress-bar-icon">
-      <img
-        width="20px"
-        height="20px"
-        loading="eager"
-        src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free_gift.png"
-        alt="gift"
-      >
-    </div>
-    <div class="progress-bar gift-bar-progress"></div>
-    <div class="progress-bar-icon">
-      <img
-        width="20px"
-        height="20px"
-        loading="eager"
-        src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free-umbrella.png"
-        alt="gift"
-      >
-    </div>
+    {%- if settings.cart_freeshipbar_threshold_2 != blank -%}
+      <div class="progress-bar gift-bar-progress"></div>
+      <div class="progress-bar-icon">
+        <img
+          width="20px"
+          height="20px"
+          loading="eager"
+          src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free_gift.png"
+          alt="gift"
+        >
+      </div>
+    {%- endif -%}
+    {%- if settings.cart_freeshipbar_threshold_3 != blank -%}
+      <div class="progress-bar gift-bar-progress"></div>
+      <div class="progress-bar-icon">
+        <img
+          width="20px"
+          height="20px"
+          loading="eager"
+          src="https://cdn.shopify.com/s/files/1/0277/3470/4268/files/free-umbrella.png"
+          alt="gift"
+        >
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
