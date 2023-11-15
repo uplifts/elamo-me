@@ -2020,7 +2020,7 @@ display: none;
 .cart-drawer--gift {
   background-color: #DCECE4;
   padding: 12px;
-  --icon-width: 112px;
+  --icon-width: 100px;
   position: relative;
 }
 
@@ -2041,7 +2041,6 @@ display: none;
 
 .cart-drawer--gift-image {
   width: var(--icon-width);
-  padding-right: 12px;
 }
 
 .cart-drawer--gift-content {
