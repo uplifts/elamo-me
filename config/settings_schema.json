@@ -608,6 +608,11 @@
         "label": "t:settings_schema.cart.settings.free_shipping_bar.threshold_2"
       },
       {
+        "type": "number",
+        "id": "cart_freeshipbar_threshold_3",
+        "label": "t:settings_schema.cart.settings.free_shipping_bar.threshold_3"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.cart.settings.header_cart_page"
       },
