@@ -136,6 +136,11 @@
         const subtitleWhenCompleteFinal = "Du erhältst GRATIS GESCHENKE 🥳";
         const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
         const isCompleted = subtotal >= threshold2;
+        if (giftThreshold2) {
+          const isCompleted = subtotal >= threshold3;
+        } else {
+          const isCompleted = subtotal >= threshold2;        
+        }
         let subtitleApplied = subtitleWhenComplete;
         console.log(subtitleApplied)
         if (!isCompleted) {
