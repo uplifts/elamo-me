@@ -137,10 +137,17 @@
         const subtitleWhenComplete2 = "Du erhältst GRATIS GESCHENKE 🥳";
         if (giftThreshold2) {
           {% comment %} Threshold 3 is reached {% endcomment %}  
-          const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
-          const isCompleted = subtotal >= threshold2;
           const isCompleted = subtotal >= threshold3;
-          let subtitleApplied = subtitleWhenComplete2;
+          if (subtotal >= threshold1 && subtotal < threshold2) {
+            {% comment %} Total bigger than shipping threshold and less than gift threshold 1 {% endcomment %}
+            const remaining = threshold2 - subtotal;
+          } else if (subtotal >= threshold2 && subtotal < threshold3) {
+            {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
+            const remaining = threshold3 - subtotal;            
+          } else {
+            {% comment %} Total less than shipping threshold {% endcomment %}
+            const remaining = threshold1 - subtotal;
+          }
           if (!isCompleted) {
             subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
           }
@@ -148,7 +155,6 @@
         } else {
           {% comment %} Threshold 2 is reached {% endcomment %}
           const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
-          const isCompleted = subtotal >= threshold2;
           const isCompleted = subtotal >= threshold2;
           let subtitleApplied = subtitleWhenComplete;
           if (!isCompleted) {
