@@ -2148,7 +2148,7 @@ display: none;
   border-color: #ffffff transparent transparent transparent;
 }
 
-.drawer--cart.start-popover-animation .cart-drawer--gift:not(.is-disabled) .cart-drawer--gift-popover {
+.cart-drawer--gift:not(.is-disabled) .cart-drawer--gift-popover {
   animation: show-and-hide 20s ease;
 }
 

@@ -8660,7 +8660,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
         cartDrawerUpsellsGlob.classList.remove('d-none');
       }
     }
-console
+
     document.addEventListener('cart:updated', function(e) {
       let cartObj = e.detail.cart;
       let cartDrawerUpsells = document.querySelector('.cartDrawerUpsells');
