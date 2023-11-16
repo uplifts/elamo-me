@@ -146,6 +146,7 @@
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
             }
+            subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           } else if (subtotal >= threshold2 && subtotal < threshold3) {
             {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
             const isCompleted = subtotal >= threshold3;
@@ -154,11 +155,12 @@
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold2 ? subtitleWhenGift2 : subtitleWhenGift;
             }
+            subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           } else {
             {% comment %} Total less than shipping threshold {% endcomment %}
             const remaining = threshold1 - subtotal;
+            subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           }
-          subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
         } else {
           {% comment %} Threshold 2 is reached {% endcomment %}
           const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
