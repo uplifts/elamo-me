@@ -2358,6 +2358,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
             el.classList.add('d-none');
           })
         }
+        this.drawer.classList.remove('start-popover-animation');
       },
   
       bindEvents: function() {
