@@ -2050,7 +2050,7 @@ display: none;
 
 .cart-drawer--gift-content {
   flex: 1;
-  max-width: 100%;
+  max-width: calc(100% - 112px);
 }
 
 .cart-drawer--gift-picture {
@@ -2148,7 +2148,7 @@ display: none;
   border-color: #ffffff transparent transparent transparent;
 }
 
-.cart-drawer--gift:not(.is-disabled) .cart-drawer--gift-popover {
+.drawer--cart.start-popover-animation .cart-drawer--gift:not(.is-disabled) .cart-drawer--gift-popover {
   animation: show-and-hide 20s ease;
 }
 
