@@ -1,0 +1,241 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "collection_image_enable": true,
+        "collection_image_ratio": 1,
+        "description_enable": false,
+        "boxed_layout_desktop": false
+      }
+    },
+    "380645f4-317d-4d4b-a3f2-10e38c7e8f2e": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-rolltop-rucksack-salmon-41742839644424_1080x-removebg-preview_d4eb1afe-caec-4527-adb7-c71bcb304727.png",
+            "image_width": 150,
+            "title": "Rolltop",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/rolltop-rucksaecke"
+          }
+        },
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-daypack-rucksack-waterleaf-gold-31951441100978-fotor-bg-remover-20230327184651.png",
+            "image_width": 150,
+            "title": "Daypack",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/daypacks"
+          }
+        },
+        "d1e96881-0232-449a-be7d-e08505e27566": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-mini-rucksack-old-mint-44557081084168_500x500_d8d119d7-4ef1-4d50-8821-7616db1648f8.png",
+            "image_width": 150,
+            "title": "Mini Rucksäcke",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/mini-rucksack"
+          }
+        },
+        "5245ce0c-b2a2-4933-a251-f9bffbbacd5d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-work-rucksack-black-45441738965256-removebg-preview.png",
+            "image_width": 650,
+            "title": "Work",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/business-rucksack"
+          }
+        },
+        "aff27b79-5185-4ba2-8c2b-2d29aed92cce": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ela-mo-flow-rucksack-beauty-in-darkness-32601746800818-removebg-preview.png",
+            "image_width": 150,
+            "title": "Flow",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/flow"
+          }
+        },
+        "8a837a97-10fc-4be9-b71d-af12940d7409": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Rucksack-Regenschutz.png",
+            "image_width": 150,
+            "title": "Zubehör",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/zubehor"
+          }
+        },
+        "257209c2-0f8d-4617-8946-304d6e155dc3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Lieblingstasche-Handtasche_567ba9aa-da86-4eda-afbf-2d59a42f4713.png",
+            "image_width": 150,
+            "title": "Taschen",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/taschen"
+          }
+        },
+        "1f2cfa2b-5957-4fb7-9632-8e1173f5e4c2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-alle-produkte.png",
+            "image_width": 150,
+            "title": "Alle Produkte",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/alle-produkte"
+          }
+        },
+        "a2916c04-05dd-44cb-b387-08ad35152632": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Reisetasche-Sporttasche.png",
+            "image_width": 110,
+            "title": "Reisetaschen",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/products\/ela-mo-sporttasche-pastell-shades"
+          }
+        },
+        "f09ad588-7a84-4486-b8c4-8d3b3d51acd1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Elamo-Crossbody-tasche.png",
+            "image_width": 110,
+            "title": "Crossbody",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/crossbody-taschen"
+          }
+        }
+      },
+      "block_order": [
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-0",
+        "template--16396353700104__7f3d38f1-c187-454c-aa0e-afed8c599b45-1669820357c519ab36-1",
+        "d1e96881-0232-449a-be7d-e08505e27566",
+        "5245ce0c-b2a2-4933-a251-f9bffbbacd5d",
+        "aff27b79-5185-4ba2-8c2b-2d29aed92cce",
+        "8a837a97-10fc-4be9-b71d-af12940d7409",
+        "257209c2-0f8d-4617-8946-304d6e155dc3",
+        "1f2cfa2b-5957-4fb7-9632-8e1173f5e4c2",
+        "a2916c04-05dd-44cb-b387-08ad35152632",
+        "f09ad588-7a84-4486-b8c4-8d3b3d51acd1"
+      ],
+      "settings": {
+        "css_class": "collection-text-columns-slider",
+        "is_slider": true,
+        "bg_color": "rgba(0,0,0,0)",
+        "txt_color": "",
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "collection-filters": {
+      "type": "collection-filters",
+      "disabled": true,
+      "settings": {
+        "enable_color_swatches": false,
+        "collection_sort_enable": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "bfb41a3f-8eba-4452-afdd-9eb3fab9233c": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "per_row_desktop": 3,
+            "per_row_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "bfb41a3f-8eba-4452-afdd-9eb3fab9233c",
+        "product_grid"
+      ],
+      "custom_css": [
+        ".text-center {max-width: 900px; margin: auto;}"
+      ],
+      "settings": {
+      }
+    },
+    "1657826251f3cef86c": {
+      "type": "rich-text",
+      "blocks": {
+        "b3bc4b8a-9691-4a22-889e-dd5928e6ab28": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>{{ collection.metafields.custom.seo_kategorietext.value }}<\/p>"
+          }
+        },
+        "0d879b70-fd1e-4a6b-82c5-723f1e370c32": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": ""
+          }
+        },
+        "2159c665-142b-43fd-8422-f72d93c81c8e": {
+          "type": "page",
+          "settings": {
+            "page_text": "reviews"
+          }
+        }
+      },
+      "block_order": [
+        "b3bc4b8a-9691-4a22-889e-dd5928e6ab28",
+        "0d879b70-fd1e-4a6b-82c5-723f1e370c32",
+        "2159c665-142b-43fd-8422-f72d93c81c8e"
+      ],
+      "settings": {
+        "css_class": "",
+        "bg_color": "",
+        "txt_color": "",
+        "align_text": "left",
+        "narrow_column": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "380645f4-317d-4d4b-a3f2-10e38c7e8f2e",
+    "collection-filters",
+    "main-collection",
+    "1657826251f3cef86c"
+  ]
+}
