@@ -136,14 +136,17 @@
         const subtitleWhenComplete = "Du erhältst ein ÜBERRASCHUNGSGESCHENK 🥳";
         const subtitleWhenComplete2 = "Du erhältst GRATIS GESCHENKE 🥳";
         if (giftThreshold2) {
-          {% comment %} Threshold 3 is reached {% endcomment %}  
-          const isCompleted = subtotal >= threshold3;
+          {% comment %} Threshold 3 is present {% endcomment %}  
           if (subtotal >= threshold1 && subtotal < threshold2) {
             {% comment %} Total bigger than shipping threshold and less than gift threshold 1 {% endcomment %}
+            const isCompleted = subtotal >= threshold2;
             const remaining = threshold2 - subtotal;
+            let subtitleApplied = subtitleWhenComplete;
           } else if (subtotal >= threshold2 && subtotal < threshold3) {
             {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
-            const remaining = threshold3 - subtotal;            
+            const isCompleted = subtotal >= threshold3;
+            const remaining = threshold3 - subtotal;
+            let subtitleApplied = subtitleWhenComplete2;
           } else {
             {% comment %} Total less than shipping threshold {% endcomment %}
             const remaining = threshold1 - subtotal;
