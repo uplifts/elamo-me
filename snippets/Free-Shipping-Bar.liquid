@@ -142,17 +142,20 @@
             const isCompleted = subtotal >= threshold2;
             const remaining = threshold2 - subtotal;
             let subtitleApplied = subtitleWhenComplete;
+            if (!isCompleted) {
+              subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
+            }
           } else if (subtotal >= threshold2 && subtotal < threshold3) {
             {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
             const isCompleted = subtotal >= threshold3;
             const remaining = threshold3 - subtotal;
             let subtitleApplied = subtitleWhenComplete2;
+            if (!isCompleted) {
+              subtitleApplied = subtotal >= threshold2 ? subtitleWhenGift2 : subtitleWhenGift;
+            }
           } else {
             {% comment %} Total less than shipping threshold {% endcomment %}
             const remaining = threshold1 - subtotal;
-          }
-          if (!isCompleted) {
-            subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
           }
           subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
         } else {
