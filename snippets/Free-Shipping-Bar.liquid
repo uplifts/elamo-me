@@ -163,7 +163,7 @@
             subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           }
         } else {
-          {% comment %} Threshold 2 is reached {% endcomment %}
+          {% comment %} Only threshold 2 is present {% endcomment %}
           const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
           const isCompleted = subtotal >= threshold2;
           let subtitleApplied = subtitleWhenComplete;
