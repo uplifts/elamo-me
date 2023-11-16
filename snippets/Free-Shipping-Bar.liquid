@@ -162,7 +162,12 @@
           } else {
             console.log('case 3')
             {% comment %} Total less than shipping threshold {% endcomment %}
+            isCompleted = subtotal >= threshold1;
             var remaining = threshold1 - subtotal;
+            subtitleApplied = subtitleWhenComplete;
+            if (!isCompleted) {
+              subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
+            }
             subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           }
           console.log(isCompleted);
