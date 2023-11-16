@@ -143,7 +143,7 @@
             {% comment %} Total bigger than shipping threshold and less than gift threshold 1 {% endcomment %}
             isCompleted = subtotal >= threshold2;
             var remaining = threshold2 - subtotal;
-            let subtitleApplied = subtitleWhenComplete;
+            subtitleApplied = subtitleWhenComplete;
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
             }
@@ -152,7 +152,7 @@
             {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
             isCompleted = subtotal >= threshold3;
             var remaining = threshold3 - subtotal;
-            let subtitleApplied = subtitleWhenComplete2;
+            subtitleApplied = subtitleWhenComplete2;
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold2 ? subtitleWhenGift2 : subtitleWhenGift;
             }
@@ -166,7 +166,7 @@
           {% comment %} Only threshold 2 is present {% endcomment %}
           var remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
           isCompleted = subtotal >= threshold2;
-          let subtitleApplied = subtitleWhenComplete;
+          subtitleApplied = subtitleWhenComplete;
           if (!isCompleted) {
             subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
           }
