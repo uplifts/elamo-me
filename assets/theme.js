@@ -8662,6 +8662,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
     }
 
     document.addEventListener('cart:updated', function(e) {
+      let cartDrawer = document.querySelector('#CartDrawer');
       let cartObj = e.detail.cart;
       let cartDrawerUpsells = document.querySelector('.cartDrawerUpsells');
       let customATCForm = document.querySelectorAll('.customATCForm');
@@ -8678,6 +8679,12 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
         (matchItem.length > 0 && matchItemHasScripts.length > 0) && customATCFormPassed++;
       });
       cartDrawerUpsells && cartDrawerUpsells.classList.toggle('d-none', customATCFormPassed === customATCFormCount);
+
+      
+      cartDrawer.classList.add('start-popover-animation');
+      setTimeout(() => {
+        cartDrawer.classList.remove('start-popover-animation');
+      }, 20000)
     });
   });
 })();
