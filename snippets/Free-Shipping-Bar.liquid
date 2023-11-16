@@ -31,7 +31,7 @@
       </div>
     {%- endif -%}
     {%- if settings.cart_freeshipbar_threshold_3 != blank and settings.cart_freeshipbar_threshold_3 != 0 -%}
-      <div class="progress-bar gift-bar-progress-2 giftThreshold2"></div>
+      <div class="progress-bar gift-bar-progress2 giftThreshold2"></div>
       <div class="progress-bar-icon">
         <img
           width="20px"
@@ -164,19 +164,19 @@
         subtotal = subtotal < 0 ? 0 : subtotal;
         subtotal = subtotal > thresholdDiff ? thresholdDiff : subtotal;
         const percentageDone = subtotal / thresholdDiff * 100;
-        const shippingElem = document.querySelector(".progress-bar.gift-bar-progress");
-        if (!shippingElem) return;
-        shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
+        const giftElem = document.querySelector(".progress-bar.gift-bar-progress");
+        if (!giftElem) return;
+        giftElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
       }
 
       function updateGift2(subtotal = 0) {
-        subtotal = subtotal - threshold1;
+        subtotal = subtotal - threshold2;
         subtotal = subtotal < 0 ? 0 : subtotal;
-        subtotal = subtotal > thresholdDiff ? thresholdDiff : subtotal;
-        const percentageDone = subtotal / thresholdDiff * 100;
-        const shippingElem = document.querySelector(".progress-bar.gift-bar-progress");
-        if (!shippingElem) return;
-        shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
+        subtotal = subtotal > thresholdDiff2 ? thresholdDiff2 : subtotal;
+        const percentageDone = subtotal / thresholdDiff2 * 100;
+        const giftElem2 = document.querySelector(".progress-bar.gift-bar-progress2");
+        if (!giftElem2) return;
+        giftElem2.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
       }
 
       const getText = document.querySelector('#CartDrawerForm [data-subtotal]').textContent.trim();
