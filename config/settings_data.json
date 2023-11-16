@@ -48,7 +48,7 @@
     "cart_success_message": "<b>Gute Wahl!<\/b> Du wirst deinen Rucksack lieben!",
     "cart_freeshipbar_threshold_1": 50,
     "cart_freeshipbar_threshold_2": 74,
-    "cart_freeshipbar_threshold_3": 100,
+    "cart_freeshipbar_threshold_3": 0,
     "cart_additional_buttons": false,
     "cart_advantage_icon_1": "shopify:\/\/shop_images\/icons8-shipped.png",
     "cart_advantage_text_1": "Gratis Versand ab 50€",
