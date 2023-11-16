@@ -115,7 +115,7 @@
   const threshold2 = {{ threshold_2 }};
   const threshold3 = {{ threshold_3 }};
   const thresholdDiff = threshold2 - threshold1;
-  const thresholdDiff2 = threshold2 - threshold1;
+  const thresholdDiff2 = threshold3 - threshold2;
   function waitForElem(waitFor, callback, minElements = 1, isVariable = false, timer = 10000, frequency = 25) {
     let elements = isVariable ? window[waitFor] : document.querySelectorAll(waitFor);
     if (timer <= 0) return;
