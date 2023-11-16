@@ -141,8 +141,8 @@
           {% comment %} Threshold 2 and 3 are present {% endcomment %}  
           if (subtotal >= threshold1 && subtotal < threshold2) {
             {% comment %} Total bigger than shipping threshold and less than gift threshold 1 {% endcomment %}
-            const isCompleted = subtotal >= threshold2;
-            const remaining = threshold2 - subtotal;
+            isCompleted = subtotal >= threshold2;
+            var remaining = threshold2 - subtotal;
             let subtitleApplied = subtitleWhenComplete;
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
@@ -150,8 +150,8 @@
             subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           } else if (subtotal >= threshold2 && subtotal < threshold3) {
             {% comment %} Total bigger than gift threshold 1 and less than gift threshold 2  {% endcomment %}
-            const isCompleted = subtotal >= threshold3;
-            const remaining = threshold3 - subtotal;
+            isCompleted = subtotal >= threshold3;
+            var remaining = threshold3 - subtotal;
             let subtitleApplied = subtitleWhenComplete2;
             if (!isCompleted) {
               subtitleApplied = subtotal >= threshold2 ? subtitleWhenGift2 : subtitleWhenGift;
@@ -159,13 +159,13 @@
             subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           } else {
             {% comment %} Total less than shipping threshold {% endcomment %}
-            const remaining = threshold1 - subtotal;
+            var remaining = threshold1 - subtotal;
             subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
           }
         } else {
           {% comment %} Only threshold 2 is present {% endcomment %}
-          const remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
-          const isCompleted = subtotal >= threshold2;
+          var remaining = subtotal >= threshold1 ? threshold2 - subtotal : threshold1 - subtotal;
+          isCompleted = subtotal >= threshold2;
           let subtitleApplied = subtitleWhenComplete;
           if (!isCompleted) {
             subtitleApplied = subtotal >= threshold1 ? subtitleWhenGift : subtitleWhenShipping;
