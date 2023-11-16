@@ -176,7 +176,7 @@
         const percentageDone = subtotal / thresholdDiff2 * 100;
         const giftElem2 = document.querySelector(".progress-bar.gift-bar-progress2");
         if (!giftElem2) return;
-        {% comment %} giftElem2.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%"); {% endcomment %}
+        giftElem2.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
       }
 
       const getText = document.querySelector('#CartDrawerForm [data-subtotal]').textContent.trim();
