@@ -2291,6 +2291,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
   
         theme.utils.prepareTransition(this.drawer, function() {
           this.drawer.classList.add(this.config.activeDrawer);
+          this.drawer.classList.add('start-popover-animation');
         }.bind(this));
   
         document.documentElement.classList.add(this.config.openClass);
