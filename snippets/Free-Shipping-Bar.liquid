@@ -172,6 +172,7 @@
           }
           subtitleApplied = subtitleApplied.replace("price", (remaining.toFixed(2).replace(".", ",") + ` ${currencySymbol}`));
         }
+        console.log(isCompleted);
         document.querySelector(".custom-free-shipping-text [data-title]").textContent = isCompleted ? titleWhenComplete : titleWhenUncomplete;
         document.querySelector(".custom-free-shipping-text [data-subtitle]").textContent = isCompleted ? subtitleWhenComplete : subtitleApplied;
       }
