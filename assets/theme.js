@@ -2294,7 +2294,7 @@ matchMedia(theme.config.mediaQuerySmall).addListener(function(mql) {
           this.drawer.classList.add('start-popover-animation');
           setTimeout(() => {
             this.drawer.classList.remove('start-popover-animation');
-          }, 20000)
+          }, 20000);
         }.bind(this));
   
         document.documentElement.classList.add(this.config.openClass);
