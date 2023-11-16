@@ -601,28 +601,6 @@
         "logo_opacity": 76,
         "alt": false
       }
-    },
-    "d49055a1-5287-48a3-a408-266b0546b6ac": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--18413244219656__d49055a1-5287-48a3-a408-266b0546b6ac-liquid-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div class=\"klaviyo-form-RB4Dgn\"><\/div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--18413244219656__d49055a1-5287-48a3-a408-266b0546b6ac-liquid-1"
-      ],
-      "settings": {
-        "css_class": "",
-        "full_width": false,
-        "space_around": true,
-        "alt": false
-      }
     }
   },
   "order": [
@@ -641,7 +619,6 @@
     "57c445ef-1b38-4a42-b93b-45a97644f1fd",
     "16577961056a248a50",
     "d4b6f58f-584b-4e83-b291-6edcdec8d244",
-    "8f443ac8-40cf-4e20-8241-5cd6a1e2db0c",
-    "d49055a1-5287-48a3-a408-266b0546b6ac"
+    "8f443ac8-40cf-4e20-8241-5cd6a1e2db0c"
   ]
 }
