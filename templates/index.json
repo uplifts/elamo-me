@@ -608,7 +608,7 @@
         "template--18413244219656__d49055a1-5287-48a3-a408-266b0546b6ac-liquid-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=“klaviyo-form-RB4Dgn”><\/div>",
+            "code": "<div class=\"klaviyo-form-RB4Dgn\"><\/div>",
             "width": "100%",
             "alignment": "center"
           }
