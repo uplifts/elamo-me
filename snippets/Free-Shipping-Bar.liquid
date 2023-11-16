@@ -169,12 +169,23 @@
         shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
       }
 
+      function updateGift2(subtotal = 0) {
+        subtotal = subtotal - threshold1;
+        subtotal = subtotal < 0 ? 0 : subtotal;
+        subtotal = subtotal > thresholdDiff ? thresholdDiff : subtotal;
+        const percentageDone = subtotal / thresholdDiff * 100;
+        const shippingElem = document.querySelector(".progress-bar.gift-bar-progress");
+        if (!shippingElem) return;
+        shippingElem.style.setProperty("--completed-width", percentageDone.toFixed(2) + "%");
+      }
+
       const getText = document.querySelector('#CartDrawerForm [data-subtotal]').textContent.trim();
       const subTotalAmount = parseFloat(getText.replace(',', '.').replace(currencySymbol, ''));
 
       updateSubtotal(subTotalAmount);
       updateShipping(subTotalAmount);
       updateGift(subTotalAmount);
+      updateGift2(subTotalAmount);
 
     }, 2);
   }
